@@ -35,7 +35,7 @@ jobs:
       - name: Generate HTML
         run: |
           mkdir -p public
-          resume resumed --theme jsonresume-theme-even -o public/index.html
+          resumed --theme jsonresume-theme-even -o public/index.html
           cp resume.json public/resume.json
  
       - name: Setup Pages
