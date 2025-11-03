@@ -28,7 +28,9 @@ jobs:
           node-version: '20'
  
       - name: Install resume-cli
-        run: npm install -g resume-cli
+        run: |
+          npm install -g resume-cli
+          npm install -g jsonresume-theme-professional
  
       - name: Generate HTML
         run: |
