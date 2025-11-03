@@ -28,7 +28,7 @@ jobs:
           node-version: '24'
  
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-cora
+        run: npm install -g resumed puppeteer jsonresume-theme-even jsonresume-theme-cora
               
       - name: Generate HTML
         run: |
