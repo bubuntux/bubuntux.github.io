@@ -84,13 +84,30 @@
       "summary": "There is no spoon."
     }
   ],
-  "publications": [
+  "certificates": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "Oracle Certified Professional, Java SE 6 Programmer",
+      "date": "2011-03-23",
+      "url": "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
+      "issuer": "Oracle"
+    },
+    {
+      "name": "Oracle Certified Professional, Java EE 5 Web Component Developer",
+      "date": "2013-11-19",
+      "url": "https://www.credly.com/badges/7a58ac90-8119-485d-bd8a-83f0d3e6c69f",
+      "issuer": "Oracle"
+    },
+    {
+      "name": "Spring 5.0 and Spring Boot 2.0 New Features",
+      "date": "2020-03-12",
+      "url": "https://www.linkedin.com/learning/certificates/4e6d727e9810872c4ac81b0afbec96019841248b30afcd76366d3d9ab394260d?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BZ8bhY2bOQqekIvU76YS65g%3D%3D",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Certified SAFe® 4 Agile Software Engineer",
+      "date": "2019-10-22",
+      "url": "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
+      "issuer": "SAFe by Scaled Agile, Inc"
     }
   ],
   "skills": [
