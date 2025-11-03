@@ -57,7 +57,7 @@
     },
     {
       "name": "Switchfly",
-      "url": "https://www.natera.com",
+      "url": "https://www.switchfly.com",
       "location": "San Francisco, CA - Denver, CO - (Remote) Austin, TX",
       "description": "Travel platform",
       "position": "Senior Software Engineer",
@@ -69,7 +69,7 @@
     {
       "name": "Nearsoft, Inc",
       "url": "http://nearsoft.com",
-      "location": "Hermosillo, SON - (Remote) Monterrey, NL",
+      "location": "Hermosillo, SO - (Remote) Monterrey, NL",
       "description": "",
       "position": "Software Engineer",
       "startDate": "2011-08-01",
@@ -78,19 +78,7 @@
       "highlights": []
     }
   ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
+  "volunteer": [],
   "education": [
     {
       "institution": "Facultad de Ciencias Físico Matemáticas, UANL",
@@ -106,14 +94,7 @@
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
+  "awards": [],
   "certificates": [
     {
       "name": "Oracle Certified Professional, Java SE 6 Programmer",
@@ -180,19 +161,29 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Boardgames",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Cards",
+        "Legacy",
+        "Strategy"
+      ]
+    },
+    {
+      "name": "Self-host",
+      "keywords": [
+        "Container",
+        "Linux",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Pickleball",
+      "keywords": [
+        "Sport"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
+  "references": [],
   "projects": [
     {
       "name": "Miss Direction",
