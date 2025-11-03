@@ -2,9 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Julio Gutierrez",
-    "label": "Programmer",
+    "label": "Software Engineer",
     "image": "",
-    "email": "richard.hendriks@mail.com",
+    "email": "cv.unfold922@passmail.com",
     "url": "https://bubuntux.github.io",
     "summary": "",
     "location": {
@@ -14,12 +14,12 @@
     },
     "profiles": [
       {
-        "network": "Github",
+        "network": "GitHub",
         "username": "bubuntux",
         "url": "https://github.com/bubuntux"
       },
       {
-        "network": "Linkedin",
+        "network": "LinkedIn",
         "username": "julio-guti",
         "url": "https://www.linkedin.com/in/julio-guti"
       },
@@ -62,16 +62,17 @@
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
+      "institution": "Facultad de Ciencias Físico Matemáticas, UANL",
+      "url": "https://www.fcfm.uanl.mx",
+      "area": "Computer Science",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
+      "startDate": "2005",
+      "endDate": "2009",
+      "score": "0",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "Software Engineering",
+        "Design Patterns",
+        "Database Systems"
       ]
     }
   ],
