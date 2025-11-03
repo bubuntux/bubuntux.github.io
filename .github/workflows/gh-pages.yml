@@ -28,7 +28,7 @@ jobs:
           node-version: '24'
  
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-cora
+        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-cora jsonresume-theme-kendall
               
       - name: Generate HTML
         run: |
@@ -52,6 +52,7 @@ jobs:
             <div class="theme-grid">
               <div class="theme-card"><a href="/even.html">Even</a></div>
               <div class="theme-card"><a href="/cora.html">Cora</a></div>
+              <div class="theme-card"><a href="/kendall.html">Kendall</a></div>
             </div>
             <p><a href="/resume.json">Download JSON</a> | <a href="/resume.pdf">Download PDF</a></p>
           </body>
@@ -60,6 +61,7 @@ jobs:
 
           resumed --theme jsonresume-theme-even -o public/even.html
           resumed --theme jsonresume-theme-cora -o public/cora.html
+          resumed --theme jsonresume-theme-kendall -o public/kendall.html
 
           #resumed export --theme jsonresume-theme-even -o public/resume.pdf
           cp resume.json public/resume.json
