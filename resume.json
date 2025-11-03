@@ -98,15 +98,15 @@
       "issuer": "Oracle"
     },
     {
-      "name": "Spring 5.0 and Spring Boot 2.0 New Features",
-      "date": "2020-03-12",
-      "url": "https://www.linkedin.com/learning/certificates/4e6d727e9810872c4ac81b0afbec96019841248b30afcd76366d3d9ab394260d",
-      "issuer": "LinkedIn"
-    },
-    {
       "name": "Spring: Design Patterns",
       "date": "2020-03-02",
       "url": "https://www.linkedin.com/learning/certificates/06f3e5cf12a330fb5988f790c0a2ceb3acc14602f254064169b45066d199d49f",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Spring 5.0 and Spring Boot 2.0 New Features",
+      "date": "2020-03-12",
+      "url": "https://www.linkedin.com/learning/certificates/4e6d727e9810872c4ac81b0afbec96019841248b30afcd76366d3d9ab394260d",
       "issuer": "LinkedIn"
     },
     {
