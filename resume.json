@@ -1,30 +1,32 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Richard Hendriks",
+    "name": "Julio Gutierrez",
     "label": "Programmer",
     "image": "",
     "email": "richard.hendriks@mail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "url": "https://bubuntux.github.io",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "city": "Austin",
       "countryCode": "US",
-      "region": "California"
+      "region": "Texas"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": "https://www.twitter.com"
+        "network": "Github",
+        "username": "bubuntux",
+        "url": "https://github.com/bubuntux"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "network": "Linkedin",
+        "username": "julio-guti",
+        "url": "https://www.linkedin.com/in/julio-guti"
+      },
+      {
+        "network": "Docker",
+        "username": "bubuntux",
+        "url": "https://hub.docker.com/u/bubuntux"
       }
     ]
   },
@@ -113,6 +115,10 @@
   "languages": [
     {
       "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
       "fluency": "Native speaker"
     }
   ],
@@ -157,8 +163,8 @@
     }
   ],
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "canonical": "https://bubuntux.github.io/resume.json",
+    "version": "v0.0.1",
+    "lastModified": "2025-11-02T00:00:00"
   }
 }
