@@ -28,7 +28,7 @@ jobs:
           node-version: '24'
  
       - name: Install renderer
-        run: npm install -g resumed puppeteer jsonresume-theme-even jsonresume-theme-cora
+        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-cora
               
       - name: Generate HTML
         run: |
@@ -61,7 +61,7 @@ jobs:
           resumed --theme jsonresume-theme-even -o public/even.html
           resumed --theme jsonresume-theme-cora -o public/cora.html
 
-          resumed export --theme jsonresume-theme-even -o public/resume.pdf
+          #resumed export --theme jsonresume-theme-even -o public/resume.pdf
           cp resume.json public/resume.json
 
        
