@@ -28,9 +28,7 @@ jobs:
           node-version: '24'
  
       - name: Install renderer
-        run: |
-          npm install -g resumed
-          npm install jsonresume-theme-even
+        run: npm install -g resumed jsonresume-theme-even
  
       - name: Generate HTML
         run: |
