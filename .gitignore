@@ -2,3 +2,5 @@ public/
 node_modules/
 package.json
 package-lock.json
+resume.html
+index.html
