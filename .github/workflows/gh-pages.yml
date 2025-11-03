@@ -30,7 +30,7 @@ jobs:
       - name: Install resume-cli
         run: |
           npm install -g resume-cli
-          npm install -g jsonresume-theme-professional --legacy-peer-deps
+          npm install jsonresume-theme-professional --legacy-peer-deps
  
       - name: Generate HTML
         run: |
