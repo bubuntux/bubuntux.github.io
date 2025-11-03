@@ -32,17 +32,15 @@
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
+      "name": "Indeed",
+      "url": "https://www.indeed.com",
+      "location": "(Remote) Austin, TX",
+      "description": "We Help People Get Jobs",
+      "position": "Staff Software Engineer",
+      "startDate": "2021-10-11",
       "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
+        "Lead the transition to AWS EMR",
         "Optimized an algorithm that holds the current world record for Weisman Scores"
       ]
     }
@@ -66,9 +64,8 @@
       "url": "https://www.fcfm.uanl.mx",
       "area": "Computer Science",
       "studyType": "Bachelor",
-      "startDate": "2005",
-      "endDate": "2009",
-      "score": "0",
+      "startDate": "2005-03-01",
+      "endDate": "2009-12-01",
       "courses": [
         "Software Engineering",
         "Design Patterns",
@@ -127,12 +124,14 @@
       ]
     },
     {
-      "name": "Compression",
+      "name": "Containerization",
       "level": "Master",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "bash",
+        "compose",
+        "docker",
+        "podman",
+        "s6"
       ]
     }
   ],
