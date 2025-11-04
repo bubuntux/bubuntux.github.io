@@ -28,7 +28,7 @@ jobs:
           node-version: '24'
  
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-elegant jsonresume-theme-professional
+        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-elegant
               
       - name: Generate HTML
         run: |
@@ -61,7 +61,6 @@ jobs:
 
           resumed --theme jsonresume-theme-even -o public/even.html
           resumed --theme jsonresume-theme-elegant -o public/cora.html
-          resumed --theme jsonresume-theme-professional -o public/kendall.html
 
           #resumed export --theme jsonresume-theme-even -o public/resume.pdf
           cp resume.json public/resume.json
