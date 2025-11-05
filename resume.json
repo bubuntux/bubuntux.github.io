@@ -6,7 +6,7 @@
     "image": "https://bubuntux.github.io/avatar.png",
     "email": "cv.unfold922@passmail.com",
     "url": "https://bubuntux.github.io",
-    "summary": "",
+    "summary": "Summary -- test --",
     "location": {
       "city": "Austin",
       "countryCode": "US",
@@ -27,6 +27,11 @@
         "network": "Docker",
         "username": "bubuntux",
         "url": "https://hub.docker.com/u/bubuntux"
+      },
+      {
+        "network": "LeetCode",
+        "username": "lccjulio",
+        "url": "https://leetcode.com/u/lccjulio"
       }
     ]
   },
@@ -74,6 +79,28 @@
       "position": "Software Engineer",
       "startDate": "2011-08-01",
       "endDate": "2017-02-01",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": []
+    },
+    {
+      "name": "FEMSA",
+      "url": "https://www.femsa.com",
+      "location": "Monterrey, NL",
+      "description": "",
+      "position": "Software Engineer",
+      "startDate": "2011-07-01",
+      "endDate": "2017-03-01",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": []
+    },
+    {
+      "name": "S&C Contsuctores de Sistemas",
+      "url": "https://www.syc.com.mx",
+      "location": "(Remote) Monterrey, NL",
+      "description": "TI | Outosurcing",
+      "position": "Software Engineer",
+      "startDate": "2011-02-01",
+      "endDate": "2010-01-01",
       "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
       "highlights": []
     }
