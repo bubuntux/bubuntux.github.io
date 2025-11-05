@@ -216,6 +216,10 @@
       "roles": [
         "Owner"
       ],
+      "highlights": [
+        "+800 stars",
+        "+200 forks"
+      ],
       "type": "Container",
       "url": "https://github.com/bubuntux/nordvpn",
       "keywords": [
