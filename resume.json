@@ -216,10 +216,7 @@
       "roles": [
         "Owner"
       ],
-      "highlights": [
-        "+800 stars",
-        "+200 forks"
-      ],
+      "highlights": [],
       "type": "Container",
       "url": "https://github.com/bubuntux/nordvpn",
       "keywords": [
@@ -228,6 +225,25 @@
         "Docker",
         "Podman",
         "s6"
+      ]
+    },
+    {
+      "name": "Nordlynx container",
+      "description": "NordLynx is a technology built around the WireGuard® VPN protocol. It lets you experience WireGuard’s speed benefits without compromising your privacy",
+      "startDate": "2021-03-16",
+      "roles": [
+        "Owner"
+      ],
+      "highlights": [],
+      "type": "Container",
+      "url": "https://github.com/bubuntux/nordlynx",
+      "keywords": [
+        "VPN",
+        "Container",
+        "Docker",
+        "Podman",
+        "s6",
+        "Wireguard"
       ]
     }
   ],
