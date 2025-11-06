@@ -28,39 +28,41 @@ jobs:
           node-version: '24'
  
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-elegant
+        run: npm install -g resumed jsonresume-theme-even jsonresume-theme-mocha-responsive jsonresume-theme-elegant jsonresume-theme-lucide
               
       - name: Generate HTML
         run: |
           mkdir -p public
 
-          cat > public/index.html <<EOF
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>My Resume - Multiple Themes</title>
-            <style>
-              body { font-family: system-ui; max-width: 800px; margin: 50px auto; }
-              .theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-              .theme-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; }
-              .theme-card a { text-decoration: none; color: #0066cc; font-weight: bold; }
-            </style>
-          </head>
-          <body>
-            <h1>My Resume</h1>
-            <p>Choose a theme:</p>
-            <div class="theme-grid">
-              <div class="theme-card"><a href="/even.html">Even</a></div>
-              <div class="theme-card"><a href="/cora.html">Cora</a></div>
-              <div class="theme-card"><a href="/kendall.html">Kendall</a></div>
-            </div>
-            <p><a href="/resume.json">Download JSON</a> | <a href="/resume.pdf">Download PDF</a></p>
-          </body>
-          </html>
-          EOF
+          # cat > public/index.html <<EOF
+          # <!DOCTYPE html>
+          # <html>
+          # <head>
+          #   <title>My Resume - Multiple Themes</title>
+          #   <style>
+          #     body { font-family: system-ui; max-width: 800px; margin: 50px auto; }
+          #     .theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+          #     .theme-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; }
+          #     .theme-card a { text-decoration: none; color: #0066cc; font-weight: bold; }
+          #   </style>
+          # </head>
+          # <body>
+          #   <h1>My Resume</h1>
+          #   <p>Choose a theme:</p>
+          #   <div class="theme-grid">
+          #     <div class="theme-card"><a href="/even.html">Even</a></div>
+          #     <div class="theme-card"><a href="/cora.html">Cora</a></div>
+          #     <div class="theme-card"><a href="/kendall.html">Kendall</a></div>
+          #   </div>
+          #   <p><a href="/resume.json">Download JSON</a> | <a href="/resume.pdf">Download PDF</a></p>
+          # </body>
+          # </html>
+          # EOF
 
-          resumed --theme jsonresume-theme-even -o public/even.html
-          resumed --theme jsonresume-theme-elegant -o public/cora.html
+          resumed --theme jsonresume-theme-even -o public/index.html
+          resumed --theme jsonresume-theme-elegant -o public/elegant.html
+          resumed --theme jsonresume-theme-lucide -o public/lucide.html
+          resumed --theme jsonresume-theme-mocha-responsive -o public/mocha.html
 
           #resumed export --theme jsonresume-theme-even -o public/resume.pdf
           cp resume.json public/resume.json
