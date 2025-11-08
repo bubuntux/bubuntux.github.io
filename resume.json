@@ -208,22 +208,61 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Frontend",
+      "level": "Intermediate",
       "keywords": [
-        "HTML",
         "CSS",
-        "Javascript"
+        "HTML",
+        "Javascript",
+        "React"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Senior",
+      "keywords": [
+        "Java",
+        "Kotlin"
+      ]
+    },
+    {
+      "name": "AI Technology",
+      "level": "Intermediate",
+      "keywords": [
+        "SLM",
+        "LLM",
+        "DNN",
+        "CNN",
+        "vLLM",
+        "Triton",
+        "PyTourch"
+      ]
+    },
+    {
+      "name": "AI Tools",
+      "keywords": [
+        "Claude",
+        "Gemini",
+        "Windsurf"
+      ]
+    },
+    {
+      "name": "Version Control",
+      "level": "Advanced",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "GitLab"
       ]
     },
     {
       "name": "Containerization",
       "level": "Master",
       "keywords": [
-        "bash",
-        "compose",
-        "docker",
-        "podman",
+        "Bash",
+        "Compose",
+        "Docker",
+        "Podman",
         "s6"
       ]
     }
