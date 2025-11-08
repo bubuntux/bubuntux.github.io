@@ -3,9 +3,9 @@
   "basics": {
     "name": "Julio Gutierrez",
     "label": "Software Engineer",
-    "image": "https://bubuntux.github.io/avatar.png",
+    "image": "https://julioguti.dev/avatar.png",
     "email": "cv.unfold922@passmail.com",
-    "url": "https://bubuntux.github.io",
+    "url": "https://julioguti.dev",
     "summary": "Summary -- test --",
     "location": {
       "city": "Austin",
@@ -122,22 +122,22 @@
   ],
   "certificates": [
     {
-      "name": "Oracle Certified Professional, Java SE 6 Programmer",
-      "date": "2011-03-23",
-      "url": "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
-      "issuer": "Oracle"
-    },
-    {
       "name": "Oracle Certified Professional, Java EE 5 Web Component Developer",
       "date": "2013-11-19",
       "url": "https://www.credly.com/badges/7a58ac90-8119-485d-bd8a-83f0d3e6c69f",
       "issuer": "Oracle"
     },
     {
-      "name": "Spring: Design Patterns",
-      "date": "2020-03-02",
-      "url": "https://www.linkedin.com/learning/certificates/06f3e5cf12a330fb5988f790c0a2ceb3acc14602f254064169b45066d199d49f",
-      "issuer": "LinkedIn"
+      "name": "Oracle Certified Professional, Java SE 6 Programmer",
+      "date": "2011-03-23",
+      "url": "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
+      "issuer": "Oracle"
+    },
+    {
+      "name": "Certified SAFe® 4 Agile Software Engineer",
+      "date": "2019-10-22",
+      "url": "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
+      "issuer": "SAFe by Scaled Agile, Inc"
     },
     {
       "name": "Spring 5.0 and Spring Boot 2.0 New Features",
@@ -146,10 +146,64 @@
       "issuer": "LinkedIn"
     },
     {
-      "name": "Certified SAFe® 4 Agile Software Engineer",
-      "date": "2019-10-22",
-      "url": "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
-      "issuer": "SAFe by Scaled Agile, Inc"
+      "name": "Spring: Design Patterns",
+      "date": "2020-03-02",
+      "url": "https://www.linkedin.com/learning/certificates/06f3e5cf12a330fb5988f790c0a2ceb3acc14602f254064169b45066d199d49f",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Docker for Developers",
+      "date": "2020-02-05",
+      "url": "https://www.linkedin.com/learning/certificates/43d293727d1d3109a1fcdd4ef520e6af17ed854024e40196275c48e6b287ec39",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Docker for Java Developers",
+      "date": "2020-02-06",
+      "url": "https://www.linkedin.com/learning/certificates/bd30b667330a74592e804c7575ea92700e9dd5d184a58bdedcb355a3bdf87db0",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Git Intermediate Techniques",
+      "date": "2020-02-20",
+      "url": "https://www.linkedin.com/learning/certificates/bb6e0b92b61d885c3343d1da3209efe352584d34e9cf34acab51f4ac4f4503a0",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Git for Teams",
+      "date": "2020-02-21",
+      "url": "https://www.linkedin.com/learning/certificates/ce2e4c08aedc48fc7e91846627281d6b74aeb909a22a17e7bbd3a6b1119d520c",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Kubernetes: Microservices",
+      "date": "2020-02-25",
+      "url": "https://www.linkedin.com/learning/certificates/7e39d5ffd6fc570855515664df23ec24e7b18a88081e8bdb26fd924da356a6d6",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Learning Terraform",
+      "date": "2020-02-15",
+      "url": "https://www.linkedin.com/learning/certificates/600cd18c5f54d29ba89fbf279d300107cea6440f6bcf80a2207dcd2defb5a89d",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Microservices Foundations",
+      "date": "2020-02-04",
+      "url": "https://www.linkedin.com/learning/certificates/87d8ee2ef7b4a38a99988f8b52a41f7345c59f5645ba69822e18c5252bcb7776",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Spring Boot Essential Training",
+      "date": "2020-02-26",
+      "url": "https://www.linkedin.com/learning/certificates/c62fc3f52e481b3244ea3fb8cd856c6e596192bda0aec395ba28ab8599776f40",
+      "issuer": "LinkedIn"
+    },
+    {
+      "name": "Succeeding in DevOps",
+      "date": "2020-02-14",
+      "url": "https://www.linkedin.com/learning/certificates/3eb5ab3ce0a933c265bfbe45c2a4e1a0c5bdd4bfbac5e3e0e1128ce68869c494",
+      "issuer": "LinkedIn"
     }
   ],
   "skills": [
@@ -248,7 +302,7 @@
     }
   ],
   "meta": {
-    "canonical": "https://bubuntux.github.io/resume.json",
+    "canonical": "https://julioguti.dev/resume.json",
     "version": "v0.0.1",
     "lastModified": "2025-11-02T00:00:00"
   }
