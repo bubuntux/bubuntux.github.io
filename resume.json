@@ -242,23 +242,34 @@
     {
       "name": "Boardgames",
       "keywords": [
-        "Cards",
-        "Legacy",
+        "Analytics",
+        "Logic",
+        "Planning",
+        "Problem-solving",
         "Strategy"
       ]
     },
     {
       "name": "Self-host",
       "keywords": [
-        "Container",
+        "Automation",
+        "Bash",
+        "Containerization",
+        "Homelab",
         "Linux",
-        "Bash"
+        "Networking",
+        "Open-source",
+        "Server"
       ]
     },
     {
       "name": "Pickleball",
       "keywords": [
-        "Sport"
+        "Collaboration",
+        "Community",
+        "Coordination",
+        "Strategy",
+        "Teamwork"
       ]
     }
   ],
