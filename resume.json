@@ -134,6 +134,59 @@
       "endDate": "2010-01-01",
       "summary": "",
       "highlights": []
+    },
+    {
+      "name": "Playful Interactive",
+      "url": "https://www.playful.mx/",
+      "location": "Monterrey, NL",
+      "description": "",
+      "position": "Game developer",
+      "startDate": "2010-08-01",
+      "endDate": "2010-11-01",
+      "summary": "",
+      "highlights": [],
+      "skills": [
+        "c#",
+        "javascript",
+        ".net",
+        "Unity"
+      ]
+    },
+    {
+      "name": "Expert Sistemas Computacionales",
+      "url": "",
+      "location": "Monterrey, NL",
+      "description": "",
+      "position": "Software Engineer (Internship)",
+      "startDate": "2009-02-01",
+      "endDate": "2009-07-30",
+      "summary": "",
+      "highlights": [],
+      "skills": []
+    },
+    {
+      "name": "Marcatel International",
+      "url": "https://marcatel.com",
+      "location": "Monterrey, NL",
+      "description": "",
+      "position": "Software Engineer (Internship)",
+      "startDate": "2008-09-01",
+      "endDate": "2009-01-15",
+      "summary": "",
+      "highlights": [],
+      "skills": []
+    },
+    {
+      "name": "Block Networks",
+      "url": "https://bnext.mx",
+      "location": "Monterrey, NL",
+      "description": "",
+      "position": "Software Engineer (Internship)",
+      "startDate": "2008-03-01",
+      "endDate": "2008-07-01",
+      "summary": "",
+      "highlights": [],
+      "skills": []
     }
   ],
   "education": [
