@@ -142,12 +142,16 @@
       "name": "Playful Interactive",
       "url": "https://www.playful.mx/",
       "location": "Monterrey, NL",
-      "description": "",
+      "description": "Main developer for a mobile platforming game.",
       "position": "Game developer",
       "startDate": "2010-08-01",
       "endDate": "2010-11-01",
       "summary": "",
-      "highlights": [],
+      "highlights": [
+        "Led the development of a mobile platforming game, overseeing all technical aspects from conception to implementation.",
+        "Utilized Unity 3D, C#, and JavaScript to build core game mechanics, user interfaces, and interactive elements.",
+        "Contributed to a dynamic and engaging gaming experience for mobile users."
+      ],
       "skills": [
         "c#",
         "javascript",
