@@ -43,10 +43,31 @@
       "description": "Hiring platform",
       "position": "Staff Software Engineer",
       "startDate": "2021-10-11",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "summary": "",
       "highlights": [
-        "Lead the transition to AWS EMR",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Provided mentorship to interns and new team members, guiding their development into successful software engineers",
+        "Led the transition to AWS EMR, leveraging its architecture to achieve greater scalability and stability in data processing tasks",
+        "Design/implementation of a system that downshifts email alerts in order to save resources and reduce costs",
+        "Worked collaboratively to create a new interview protocol that enhances efficiency in talent acquisition",
+        "Collaborate with leadership the prioritization of initiatives to ensure alignment with business goals while optimizing on resources"
+      ],
+      "skills": [
+        "AWS",
+        "Hadoop",
+        "Java",
+        "Javascript",
+        "Kotlin",
+        "Python",
+        "Pytorch",
+        "React",
+        "Docker",
+        "Scala",
+        "SLM",
+        "Spring",
+        "Triton",
+        "vLLM",
+        "DataDog",
+        "Claude"
       ]
     },
     {
@@ -57,8 +78,12 @@
       "position": "Senior Software Engineer",
       "startDate": "2020-10-11",
       "endDate": "2021-10-11",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": []
+      "summary": "",
+      "highlights": [
+        "Design and implementation of a serverless application to opt out patients and clinics from different types of communications",
+        "Optimized the application response time by doing query optimization, pagination and data caching",
+        "Leveraged migration skills to upgrade Spring Boot, resolving security concerns by transitioning to a more current and secure version"
+      ]
     },
     {
       "name": "Switchfly",
@@ -68,8 +93,14 @@
       "position": "Senior Software Engineer",
       "startDate": "2017-02-01",
       "endDate": "2020-10-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": []
+      "summary": "",
+      "highlights": [
+        "Spearheaded a team of 4 developers, guiding their technical skills and project execution",
+        "Increased market reach to several countries by connecting with external Hotel/Car/Insurance/Flight systems",
+        "Redesigned the system to speed up the implementation of new 3rd party APIs",
+        "Optimized the development feedback loop by parallelizing the CI/CD using jenkins pipelines",
+        "Participated in multiple technology migrations SVN->Git, Maven->Gradle, Java7->Java8"
+      ]
     },
     {
       "name": "Nearsoft, Inc",
@@ -79,7 +110,7 @@
       "position": "Software Engineer",
       "startDate": "2011-08-01",
       "endDate": "2017-02-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "summary": "",
       "highlights": []
     },
     {
@@ -90,7 +121,7 @@
       "position": "Software Engineer",
       "startDate": "2011-07-01",
       "endDate": "2017-03-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "summary": "",
       "highlights": []
     },
     {
@@ -101,7 +132,7 @@
       "position": "Software Engineer",
       "startDate": "2011-02-01",
       "endDate": "2010-01-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "summary": "",
       "highlights": []
     }
   ],
