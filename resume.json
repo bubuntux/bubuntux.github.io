@@ -402,7 +402,7 @@
   "projects": [
     {
       "name": "NordVPN container",
-      "description": "Official NordVPN client in a docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch.",
+      "description": "Official NordVPN client in a docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch",
       "startDate": "2018-02-24",
       "roles": [
         "Owner"
@@ -430,7 +430,7 @@
     },
     {
       "name": "Nordlynx container",
-      "description": "NordLynx is a technology built around the WireGuard® VPN protocol; it makes routing traffic through the NordVPN network easy and secure.",
+      "description": "NordLynx is a technology built around the WireGuard® VPN protocol; it makes routing traffic through the NordVPN network easy and secure",
       "startDate": "2021-09-09",
       "roles": [
         "Owner"
@@ -457,6 +457,32 @@
       ]
     },
     {
+      "name": "Boardless Games",
+      "description": "Multiplayer framework to play boardgames on phones",
+      "startDate": "2015-06-02",
+      "endDate": "2021-06-04",
+      "roles": [
+        "Owner"
+      ],
+      "highlights": [
+        "Supported games: Love Letter and The Resistance"
+      ],
+      "type": "Application",
+      "url": "https://github.com/bubuntux/boardless-games-meteor",
+      "keywords": [
+        "Boardgames",
+        "CoffeeScript",
+        "CSS",
+        "HTML",
+        "Jade",
+        "Javascript",
+        "Meteor",
+        "MongoDB",
+        "Nodejs",
+        "Pug"
+      ]
+    },
+    {
       "name": "Protorrent",
       "description": "Proton VPN + qBtittorrent container",
       "startDate": "2023-10-10",
@@ -464,8 +490,8 @@
         "Owner"
       ],
       "highlights": [
-        "5k+ downloads",
-        "20+ stars"
+        "Pre-configured to prevent ip leaks",
+        "5k+ downloads"
       ],
       "type": "Container",
       "url": "https://github.com/bubuntux/protorrent",
@@ -477,7 +503,9 @@
         "Networking",
         "Podman",
         "ProtonVPN",
+        "qBittorrent",
         "s6",
+        "Torrent",
         "VPN",
         "Wireguard"
       ]
