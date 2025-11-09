@@ -462,14 +462,14 @@
       "startDate": "2017-09-24",
       "endDate": "2017-09-27",
       "roles": [
-        "Lead"
+        "Project lead"
       ],
       "highlights": [
         "Designed a system to filter out low quality minerals using machine learning and a tomato-sorting like machine",
         "Trained a convolutional neural network to classify minerals"
       ],
-      "entity": "Unearthed Solutions",
-      "type": "Hackathon",
+      "entity": "Unearthed's Hackathon",
+      "type": "Application",
       "keywords": [
         "Python",
         "Google Cloud ML",
@@ -484,14 +484,14 @@
       "startDate": "2015-09-24",
       "endDate": "2015-09-27",
       "roles": [
-        "Lead"
+        "Project lead"
       ],
       "highlights": [
         "Enabled a travel platform to accept bitcoin payments",
         "Integration with Coinbase and TestNet"
       ],
-      "entity": "Switchfly",
-      "type": "Hackathon",
+      "entity": "Switchfly's Hackathon",
+      "type": "Application",
       "keywords": [
         "Bitcoin",
         "Blockchain",
