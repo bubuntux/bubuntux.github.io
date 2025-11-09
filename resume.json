@@ -183,13 +183,16 @@
       "name": "Block Networks",
       "url": "https://bnext.mx",
       "location": "Monterrey, NL",
-      "description": "",
+      "description": "Contributed to the development and quality assurance of point-of-sale systems.",
       "position": "Software Engineer (Internship)",
       "startDate": "2008-03-01",
       "endDate": "2008-07-01",
       "summary": "",
-      "highlights": [],
-      "skills": []
+      "highlights": [
+        "Resolved critical bugs in point-of-sale applications using C# and .NET, improving system stability and user experience.",
+        "Developed and implemented automated test scripts to ensure software quality and accelerate the testing cycle.",
+        "Gained practical experience in software development lifecycle, debugging, and quality assurance processes."
+      ]
     }
   ],
   "education": [
