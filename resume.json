@@ -133,7 +133,10 @@
       "startDate": "2011-02-01",
       "endDate": "2010-01-01",
       "summary": "",
-      "highlights": []
+      "highlights": [
+        "Established a new business line by building an e-invoice system that integrates with a CMS and regulatory entities",
+        "Implemented a proper branching strategy that consolidated the different client implementations into one platform"
+      ]
     },
     {
       "name": "Playful Interactive",
