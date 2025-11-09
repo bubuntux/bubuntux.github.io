@@ -6,7 +6,7 @@
     "image": "https://bubuntux.github.io/avatar.png",
     "email": "cv.unfold922@passmail.com",
     "url": "https://bubuntux.github.io",
-    "summary": "Summary -- test --",
+    "summary": "Staff Software Engineer with over 10 years of experience in designing and building scalable and reliable systems. Proficient in a wide range of technologies including Java, Python, and AWS. Passionate about mentorship and leveraging AI to solve complex problems.",
     "location": {
       "city": "Austin",
       "countryCode": "US",
@@ -119,8 +119,8 @@
       "location": "Monterrey, NL",
       "description": "",
       "position": "Software Engineer",
-      "startDate": "2011-07-01",
-      "endDate": "2017-03-01",
+      "startDate": "2011-03-01",
+      "endDate": "2011-07-01",
       "summary": "",
       "highlights": []
     },
@@ -312,7 +312,7 @@
         "CNN",
         "vLLM",
         "Triton",
-        "PyTourch"
+        "PyTorch"
       ]
     },
     {
