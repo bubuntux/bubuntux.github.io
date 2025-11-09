@@ -457,6 +457,51 @@
       ]
     },
     {
+      "name": "Rocks",
+      "description": "1st place Unearthed denver 2017 winner",
+      "startDate": "2017-09-24",
+      "endDate": "2017-09-27",
+      "roles": [
+        "Lead"
+      ],
+      "highlights": [
+        "Designed a system to filter out low quality minerals using machine learning and a tomato-sorting like machine",
+        "Trained a convolutional neural network to classify minerals"
+      ],
+      "entity": "Unearthed Solutions",
+      "type": "Hackathon",
+      "keywords": [
+        "Python",
+        "Google Cloud ML",
+        "TensorFlow",
+        "InceptionV3",
+        "CNN"
+      ]
+    },
+    {
+      "name": "Bitcoin Payment Connector",
+      "description": "People choice award winner",
+      "startDate": "2015-09-24",
+      "endDate": "2015-09-27",
+      "roles": [
+        "Lead"
+      ],
+      "highlights": [
+        "Enabled a travel platform to accept bitcoin payments",
+        "Integration with Coinbase and TestNet"
+      ],
+      "entity": "Switchfly",
+      "type": "Hackathon",
+      "keywords": [
+        "Bitcoin",
+        "Blockchain",
+        "Coinbase",
+        "Cryptoccurency",
+        "Java",
+        "TestNet"
+      ]
+    },
+    {
       "name": "Boardless Games",
       "description": "Multiplayer framework to play boardgames on phones",
       "startDate": "2015-06-02",
@@ -478,7 +523,7 @@
         "Javascript",
         "Meteor",
         "MongoDB",
-        "Nodejs",
+        "Node.js",
         "Pug"
       ]
     },
