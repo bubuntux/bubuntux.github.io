@@ -3,9 +3,9 @@
   "basics": {
     "name": "Julio Gutierrez",
     "label": "Software Engineer",
-    "image": "https://julioguti.dev/avatar.png",
+    "image": "https://bubuntux.github.io/avatar.png",
     "email": "cv.unfold922@passmail.com",
-    "url": "https://julioguti.dev",
+    "url": "https://bubuntux.github.io",
     "summary": "Summary -- test --",
     "location": {
       "city": "Austin",
@@ -352,7 +352,7 @@
     }
   ],
   "meta": {
-    "canonical": "https://julioguti.dev/resume.json",
+    "canonical": "https://bubuntux.github.io/resume.json",
     "version": "v0.0.1",
     "lastModified": "2025-11-02T00:00:00"
   }
