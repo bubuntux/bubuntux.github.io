@@ -171,12 +171,16 @@
       "name": "Marcatel International",
       "url": "https://marcatel.com",
       "location": "Monterrey, NL",
-      "description": "",
+      "description": "Designed and implemented an inventory system to manage equipment and maintenance schedules.",
       "position": "Software Engineer (Internship)",
       "startDate": "2008-09-01",
       "endDate": "2009-01-15",
       "summary": "",
-      "highlights": [],
+      "highlights": [
+        "Developed a comprehensive inventory system using .NET C# to track equipment, streamlining maintenance planning and record-keeping.",
+        "Enabled efficient scheduling of preventive maintenance by providing clear visibility into equipment status and service requirements.",
+        "Contributed to improving operational efficiency by ensuring timely maintenance and reducing equipment downtime."
+      ],
       "skills": []
     },
     {
