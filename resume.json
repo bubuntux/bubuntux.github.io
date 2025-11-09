@@ -295,16 +295,6 @@
   ],
   "skills": [
     {
-      "name": "Frontend",
-      "level": "Intermediate",
-      "keywords": [
-        "CSS",
-        "HTML",
-        "Javascript",
-        "React"
-      ]
-    },
-    {
       "name": "Backend",
       "level": "Senior",
       "keywords": [
@@ -334,6 +324,17 @@
       ]
     },
     {
+      "name": "Containerization",
+      "level": "Master",
+      "keywords": [
+        "Bash",
+        "Compose",
+        "Docker",
+        "Podman",
+        "s6"
+      ]
+    },
+    {
       "name": "Version Control",
       "level": "Advanced",
       "keywords": [
@@ -343,14 +344,13 @@
       ]
     },
     {
-      "name": "Containerization",
-      "level": "Master",
+      "name": "Frontend",
+      "level": "Intermediate",
       "keywords": [
-        "Bash",
-        "Compose",
-        "Docker",
-        "Podman",
-        "s6"
+        "CSS",
+        "HTML",
+        "Javascript",
+        "React"
       ]
     }
   ],
@@ -403,37 +403,82 @@
     {
       "name": "NordVPN container",
       "description": "Official NordVPN client in a docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch.",
-      "startDate": "2021-03-16",
+      "startDate": "2018-02-24",
       "roles": [
         "Owner"
       ],
-      "highlights": [],
+      "highlights": [
+        "12M+ downloads",
+        "800+ stars",
+        "200+ forks"
+      ],
       "type": "Container",
       "url": "https://github.com/bubuntux/nordvpn",
       "keywords": [
-        "VPN",
+        "Bash",
         "Container",
         "Docker",
+        "iptables",
+        "Networking",
+        "NordVPN",
+        "OpenVpn",
         "Podman",
-        "s6"
+        "s6",
+        "VPN",
+        "Wireguard"
       ]
     },
     {
       "name": "Nordlynx container",
-      "description": "NordLynx is a technology built around the WireGuard® VPN protocol. It lets you experience WireGuard’s speed benefits without compromising your privacy",
-      "startDate": "2021-03-16",
+      "description": "NordLynx is a technology built around the WireGuard® VPN protocol; it makes routing traffic through the NordVPN network easy and secure.",
+      "startDate": "2021-09-09",
       "roles": [
         "Owner"
       ],
-      "highlights": [],
+      "highlights": [
+        "5M+ downloads",
+        "200+ stars",
+        "50+ forks"
+      ],
       "type": "Container",
       "url": "https://github.com/bubuntux/nordlynx",
       "keywords": [
-        "VPN",
+        "Bash",
         "Container",
         "Docker",
+        "iptables",
+        "Networking",
+        "NordVPN",
+        "Nordlynx",
         "Podman",
         "s6",
+        "VPN",
+        "Wireguard"
+      ]
+    },
+    {
+      "name": "Protorrent",
+      "description": "Proton VPN + qBtittorrent container",
+      "startDate": "2023-10-10",
+      "roles": [
+        "Owner"
+      ],
+      "highlights": [
+        "5k+ downloads",
+        "20+ stars"
+      ],
+      "type": "Container",
+      "url": "https://github.com/bubuntux/protorrent",
+      "keywords": [
+        "Bash",
+        "Container",
+        "Docker",
+        "iptables",
+        "Networking",
+        "Podman",
+        "ProtonVPN",
+        "s6",
+        "VPN",
         "Wireguard"
       ]
     }
