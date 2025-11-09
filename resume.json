@@ -51,7 +51,7 @@
         "Worked collaboratively to create a new interview protocol that enhances efficiency in talent acquisition",
         "Collaborate with leadership the prioritization of initiatives to ensure alignment with business goals while optimizing on resources"
       ],
-      "skills": [
+      "keywords": [
         "AWS",
         "Hadoop",
         "Java",
@@ -74,7 +74,7 @@
       "name": "Natera",
       "url": "https://www.natera.com",
       "location": "(Remote) Austin, TX",
-      "description": "Health | Genetic test",
+      "description": "Healthcare | Genetic test",
       "position": "Senior Software Engineer",
       "startDate": "2020-10-11",
       "endDate": "2021-10-11",
@@ -110,8 +110,7 @@
       "position": "Software Engineer",
       "startDate": "2011-08-01",
       "endDate": "2017-02-01",
-      "summary": "",
-      "highlights": []
+      "summary": ""
     },
     {
       "name": "FEMSA",
@@ -121,8 +120,7 @@
       "position": "Software Engineer",
       "startDate": "2011-03-01",
       "endDate": "2011-07-01",
-      "summary": "",
-      "highlights": []
+      "summary": ""
     },
     {
       "name": "S&C Contsuctores de Sistemas",
@@ -152,7 +150,7 @@
         "Utilized Unity 3D, C#, and JavaScript to build core game mechanics, user interfaces, and interactive elements.",
         "Contributed to a dynamic and engaging gaming experience for mobile users."
       ],
-      "skills": [
+      "keywords": [
         "c#",
         "javascript",
         ".net",
@@ -161,15 +159,14 @@
     },
     {
       "name": "Expert Sistemas Computacionales",
-      "url": "",
+      "url": "www.expert.com.mx",
       "location": "Monterrey, NL",
-      "description": "",
+      "description": "Healthcare | IT Services",
       "position": "Software Engineer (Internship)",
       "startDate": "2009-02-01",
       "endDate": "2009-07-30",
       "summary": "",
-      "highlights": [],
-      "skills": []
+      "highlights": []
     },
     {
       "name": "Marcatel International",
@@ -184,8 +181,7 @@
         "Developed a comprehensive inventory system using .NET C# to track equipment, streamlining maintenance planning and record-keeping.",
         "Enabled efficient scheduling of preventive maintenance by providing clear visibility into equipment status and service requirements.",
         "Contributed to improving operational efficiency by ensuring timely maintenance and reducing equipment downtime."
-      ],
-      "skills": []
+      ]
     },
     {
       "name": "Block Networks",
