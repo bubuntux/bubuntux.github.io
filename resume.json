@@ -128,8 +128,8 @@
       "location": "(Remote) Monterrey, NL",
       "description": "TI | Outosurcing",
       "position": "Software Engineer",
-      "startDate": "2011-02-01",
-      "endDate": "2010-01-01",
+      "startDate": "2010-01-01",
+      "endDate": "2011-02-01",
       "summary": "",
       "highlights": [
         "Established a new business line by building an e-invoice system that integrates with a CMS and regulatory entities",
@@ -164,7 +164,7 @@
       "description": "Healthcare | IT Services",
       "position": "Software Engineer (Internship)",
       "startDate": "2009-02-01",
-      "endDate": "2009-07-30",
+      "endDate": "2009-08-01",
       "summary": "Contributed to a patient and human resource management system, focusing on bug fixes and performance optimization.",
       "highlights": [
         "Fixed critical bugs in a Java-based patient and human resource management system.",
@@ -183,7 +183,7 @@
       "description": "Telecommunications",
       "position": "Software Engineer (Internship)",
       "startDate": "2008-09-01",
-      "endDate": "2009-01-15",
+      "endDate": "2009-02-01",
       "summary": "Designed and implemented an inventory system to manage equipment and maintenance schedules.",
       "highlights": [
         "Developed a comprehensive inventory system using .NET C# to track equipment, streamlining maintenance planning and record-keeping.",
