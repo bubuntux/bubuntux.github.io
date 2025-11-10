@@ -592,9 +592,26 @@
       ]
     },
     {
+      "name": "Easy workflow generator",
+      "description": "jQuery plugin to generate flow charts.",
+      "startDate": "2013-04-12",
+      "endDate": "2013-04-25",
+      "entity": "Nearsoft's Hackathon",
+      "roles": [
+        "Backend Web Developer"
+      ],
+      "type": "Library",
+      "url": "https://github.com/bubuntux/easyworkflowgenerator",
+      "keywords": [
+        "jQuery",
+        "javascript"
+      ]
+    },
+    {
       "name": "Jaturalquimia",
       "description": "Naturalquimia clone for Android",
       "startDate": "2011-08-30",
+      "endDate": "2011-09-15",
       "roles": [
         "Owner"
       ],
