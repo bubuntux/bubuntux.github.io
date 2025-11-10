@@ -490,19 +490,20 @@
         "Google Cloud ML",
         "TensorFlow",
         "InceptionV3",
+        "Hackathon",
         "CNN"
       ]
     },
     {
       "name": "Bitcoin Payment Connector",
-      "description": "People's choice awards winner",
+      "description": "Enabled a travel platform to accept bitcoin payments",
       "startDate": "2015-09-24",
       "endDate": "2015-09-27",
       "roles": [
         "Project lead"
       ],
       "highlights": [
-        "Enabled a travel platform to accept bitcoin payments",
+        "People's choice awards winner",
         "Integration with Coinbase and TestNet"
       ],
       "entity": "Switchfly's Hackathon",
@@ -513,6 +514,7 @@
         "Coinbase",
         "Cryptoccurency",
         "Java",
+        "Hackathon",
         "TestNet"
       ]
     },
@@ -525,8 +527,10 @@
         "Owner"
       ],
       "highlights": [
-        "Supported games: Love Letter and The Resistance"
+        "Supported games: Love Letter and The Resistance",
+        "2nd place winner"
       ],
+      "entity": "Nearsof's Hackathon",
       "type": "Application",
       "url": "https://github.com/bubuntux/boardless-games-meteor",
       "keywords": [
@@ -536,6 +540,7 @@
         "HTML",
         "Jade",
         "Javascript",
+        "Hackathon",
         "Meteor",
         "MongoDB",
         "Node.js",
@@ -610,6 +615,7 @@
         "Facebook",
         "Messenger",
         "Python",
+        "Hackathon",
         "Whatsapp"
       ]
     },
@@ -626,6 +632,7 @@
       "url": "https://github.com/bubuntux/easyworkflowgenerator",
       "keywords": [
         "jQuery",
+        "Hackathon",
         "javascript"
       ]
     },
