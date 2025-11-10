@@ -590,6 +590,24 @@
         "VPN",
         "Wireguard"
       ]
+    },
+    {
+      "name": "Jaturalquimia",
+      "description": "Naturalquimia clone for Android",
+      "startDate": "2011-08-30",
+      "roles": [
+        "Owner"
+      ],
+      "highlights": [],
+      "type": "Mobile Game",
+      "url": "https://code.google.com/archive/p/jaturalquimia",
+      "keywords": [
+        "Android",
+        "Java",
+        "Mobile Game",
+        "Tetris",
+        "Videogame"
+      ]
     }
   ],
   "meta": {
