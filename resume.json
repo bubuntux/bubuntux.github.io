@@ -592,6 +592,28 @@
       ]
     },
     {
+      "name": "Somechat",
+      "description": "Chat program that connects to multiple chat networks",
+      "startDate": "2014-03-29",
+      "endDate": "2014-04-01",
+      "entity": "ITESM's Hackathon",
+      "roles": [
+        "Project lead"
+      ],
+      "highlights": [
+        "Support for Whatsapp and Facebook"
+      ],
+      "type": "Application",
+      "url": "https://github.com/bubuntux/somechat",
+      "keywords": [
+        "Chat",
+        "Facebook",
+        "Messenger",
+        "Python",
+        "Whatsapp"
+      ]
+    },
+    {
       "name": "Easy workflow generator",
       "description": "jQuery plugin to generate flow charts.",
       "startDate": "2013-04-12",
