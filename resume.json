@@ -97,9 +97,7 @@
       "highlights": [
         "Spearheaded a team of 4 developers, guiding their technical skills and project execution",
         "Increased market reach to several countries by connecting with external hotel, car, insurance, and flight systems",
-        "Redesigned the system to accelerate the implementation of new third-party APIs",
-        "Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins",
-        "Participated in multiple technology migrations, including SVN to Git, Maven to Gradle, and Java 7 to Java 8"
+        "Redesigned the system to accelerate the implementation of new third-party APIs"
       ]
     },
     {
@@ -109,7 +107,8 @@
       "description": "IT | Outsourcing",
       "position": "Software Engineer",
       "startDate": "2011-08-01",
-      "summary": "",
+      "endDate": "2017-02-01",
+      "summary": "Contributed to a variety of software development projects, focusing on technology migrations, CI/CD optimization, and platform enhancements",
       "highlights": [
         "Participated in multiple technology migrations including SVN to Git, Maven to Gradle, and Java 7 to Java 8",
         "Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins",
