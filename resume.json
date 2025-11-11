@@ -78,11 +78,11 @@
       "position": "Senior Software Engineer",
       "startDate": "2020-10-11",
       "endDate": "2021-10-11",
-      "summary": "",
+      "summary": "Developed and maintained Java-based invoicing systems and client communication platforms",
       "highlights": [
-        "Designed and implemented a serverless application to opt out patients and clinics from different types of communications",
-        "Optimized application response times through query optimization, pagination, and data caching",
-        "Leveraged migration skills to upgrade Spring Boot, resolving security concerns by transitioning to a more current and secure version"
+        "Engineered a serverless application empowering patients and clinics to manage communication preferences",
+        "Enhanced application performance by implementing query optimization, pagination, and data caching strategies",
+        "Spearheaded the migration to a newer, more secure version of Spring Boot, mitigating security vulnerabilities"
       ]
     },
     {
@@ -95,9 +95,9 @@
       "endDate": "2020-10-01",
       "summary": "",
       "highlights": [
-        "Spearheaded a team of 4 developers, guiding their technical skills and project execution",
-        "Increased market reach to several countries by connecting with external hotel, car, insurance, and flight systems",
-        "Redesigned the system to accelerate the implementation of new third-party APIs"
+        "Led a team of four developers, providing technical guidance and overseeing project execution to success",
+        "Expanded market reach by integrating with external hotel, car, insurance, and flight systems in multiple countries",
+        "Architected and implemented a new system design to accelerate the integration of third-party APIs"
       ]
     },
     {
