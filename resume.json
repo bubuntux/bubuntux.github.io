@@ -106,17 +106,21 @@
       "name": "Nearsoft, Inc",
       "url": "http://nearsoft.com",
       "location": "Hermosillo, SO - (Remote) Monterrey, NL",
-      "description": "",
+      "description": "IT | Outsourcing",
       "position": "Software Engineer",
       "startDate": "2011-08-01",
-      "endDate": "2017-02-01",
-      "summary": ""
+      "summary": "",
+      "highlights": [
+        "Participated in multiple technology migrations including SVN to Git, Maven to Gradle, and Java 7 to Java 8.",
+        "Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins.",
+        "Contributed to the development and enhancement of a travel platform system."
+      ]
     },
     {
       "name": "FEMSA",
       "url": "https://www.femsa.com",
       "location": "Monterrey, NL",
-      "description": "",
+      "description": "Beverage | Retail",
       "position": "Software Engineer",
       "startDate": "2011-03-01",
       "endDate": "2011-07-01",
@@ -131,7 +135,7 @@
       "name": "S&C Contsuctores de Sistemas",
       "url": "https://www.syc.com.mx",
       "location": "(Remote) Monterrey, NL",
-      "description": "TI | Outosurcing",
+      "description": "IT | Outsurcing",
       "position": "Software Engineer",
       "startDate": "2010-01-01",
       "endDate": "2011-02-01",
