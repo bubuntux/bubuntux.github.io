@@ -120,7 +120,12 @@
       "position": "Software Engineer",
       "startDate": "2011-03-01",
       "endDate": "2011-07-01",
-      "summary": ""
+      "summary": "Contributed to the development and migration of Point of Sale (POS) applications for a major retail chain.",
+      "highlights": [
+        "Developed and maintained a Point of Sale (POS) application for OXXO, the biggest chain store in Mexico.",
+        "Participated in the migration of the POS system from Fortran to Java, ensuring seamless transition and improved performance.",
+        "Contributed to the migration of build systems from Ant to Maven, enhancing project management and build automation."
+      ]
     },
     {
       "name": "S&C Contsuctores de Sistemas",
@@ -130,10 +135,11 @@
       "position": "Software Engineer",
       "startDate": "2010-01-01",
       "endDate": "2011-02-01",
-      "summary": "",
+      "summary": "Contributed to IT outsourcing projects, focusing on e-invoice systems and platform consolidation.",
       "highlights": [
         "Established a new business line by building an e-invoice system that integrates with a CMS and regulatory entities",
-        "Implemented a proper branching strategy that consolidated the different client implementations into one platform"
+        "Implemented a proper branching strategy that consolidated the different client implementations into one platform",
+        "Contributed to the development and maintenance of the Content Management System (CMS)."
       ]
     },
     {
