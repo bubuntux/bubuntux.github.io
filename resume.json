@@ -319,62 +319,100 @@
   ],
   "skills": [
     {
-      "name": "Backend",
-      "level": "Senior",
+      "name": "Java",
+      "level": "Expert",
       "keywords": [
-        "Java",
-        "Kotlin"
+        "Java SE",
+        "Java EE",
+        "Spring",
+        "Spring Boot",
+        "Kotlin",
+        "Scala"
       ]
     },
     {
-      "name": "AI Technology",
+      "name": "Python",
+      "level": "Expert",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Senior",
+      "keywords": [
+        "React",
+        "Node.js",
+        "jQuery",
+        "CoffeeScript"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Senior",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Microservices",
+        "REST"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Senior",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "CI/CD",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Senior",
+      "keywords": [
+        "PostgreSQL",
+        "MongoDB",
+        "Hadoop"
+      ]
+    },
+    {
+      "name": "AI/ML",
       "level": "Intermediate",
       "keywords": [
         "SLM",
         "LLM",
-        "DNN",
-        "CNN",
         "vLLM",
         "Triton",
-        "PyTorch"
+        "Generative AI",
+        "CNN",
+        "DNN"
       ]
     },
     {
-      "name": "AI Tools",
-      "keywords": [
-        "Claude",
-        "Gemini",
-        "Windsurf"
-      ]
-    },
-    {
-      "name": "Containerization",
-      "level": "Master",
-      "keywords": [
-        "Bash",
-        "Compose",
-        "Docker",
-        "Podman",
-        "s6"
-      ]
-    },
-    {
-      "name": "Version Control",
-      "level": "Advanced",
-      "keywords": [
-        "Git",
-        "GitHub",
-        "GitLab"
-      ]
-    },
-    {
-      "name": "Frontend",
+      "name": ".NET",
       "level": "Intermediate",
       "keywords": [
-        "CSS",
-        "HTML",
-        "Javascript",
-        "React"
+        "C#"
+      ]
+    },
+    {
+      "name": "Game Development",
+      "level": "Intermediate",
+      "keywords": [
+        "Unity"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "Beginner",
+      "keywords": [
+        "Android"
       ]
     }
   ],
