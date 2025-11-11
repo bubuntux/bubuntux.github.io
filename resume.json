@@ -83,6 +83,18 @@
         "Engineered a serverless application empowering patients and clinics to manage communication preferences",
         "Enhanced application performance by implementing query optimization, pagination, and data caching strategies",
         "Spearheaded the migration to a newer, more secure version of Spring Boot, mitigating security vulnerabilities"
+      ],
+      "keywords": [
+        "Java",
+        "Spring",
+        "Hibernate",
+        "JPA",
+        "MySQL",
+        "Mockito",
+        "AWS",
+        "Lambda",
+        "DynamoDB",
+        "TypeScript"
       ]
     },
     {
@@ -98,6 +110,17 @@
         "Led a team of four developers, providing technical guidance and overseeing project execution to success",
         "Expanded market reach by integrating with external hotel, car, insurance, and flight systems in multiple countries",
         "Architected and implemented a new system design to accelerate the integration of third-party APIs"
+      ],
+      "keywords": [
+        "Java",
+        "Spring",
+        "Hibernate",
+        "Couchbase",
+        "PorstreSQL",
+        "Selenium",
+        "EasyMock",
+        "Ember",
+        "FTL"
       ]
     },
     {
@@ -113,6 +136,17 @@
         "Participated in multiple technology migrations including SVN to Git, Maven to Gradle, and Java 7 to Java 8",
         "Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins",
         "Contributed to the development and enhancement of a travel platform system"
+      ],
+      "keywords": [
+        "Java",
+        "Spring",
+        "Hibernate",
+        "Couchbase",
+        "PorstreSQL",
+        "Selenium",
+        "EasyMock",
+        "Ember",
+        "FTL"
       ]
     },
     {
@@ -128,6 +162,11 @@
         "Developed and maintained a Point of Sale (POS) application for OXXO, the biggest chain store in Mexico",
         "Participated in the migration of the POS system from Fortran to Java, ensuring seamless transition and improved performance",
         "Contributed to the migration of build systems from Ant to Maven, enhancing project management and build automation"
+      ],
+      "keywords": [
+        "Java",
+        "Maven",
+        "Oracle DB"
       ]
     },
     {
@@ -143,6 +182,10 @@
         "Established a new business line by building an e-invoice system that integrated with a CMS and regulatory entities",
         "Implemented a proper branching strategy that consolidated different client implementations into one platform",
         "Contributed to the development and maintenance of a Content Management System (CMS)"
+      ],
+      "keywords": [
+        "Java",
+        "MySQL"
       ]
     },
     {
@@ -332,7 +375,7 @@
     },
     {
       "name": "Python",
-      "level": "Expert",
+      "level": "Senior",
       "keywords": [
         "PyTorch",
         "TensorFlow"
@@ -403,7 +446,7 @@
     },
     {
       "name": "Game Development",
-      "level": "Intermediate",
+      "level": "Beginner",
       "keywords": [
         "Unity"
       ]
@@ -412,7 +455,8 @@
       "name": "Mobile Development",
       "level": "Beginner",
       "keywords": [
-        "Android"
+        "Android",
+        "Java"
       ]
     }
   ],
