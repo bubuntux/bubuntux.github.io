@@ -45,17 +45,17 @@
       "startDate": "2021-10-11",
       "summary": "",
       "highlights": [
-        "Provided mentorship to interns and new team members, guiding their development into successful software engineers",
-        "Led the transition to AWS EMR, leveraging its architecture to achieve greater scalability and stability in data processing tasks",
-        "Design/implementation of a system that downshifts email alerts in order to save resources and reduce costs",
-        "Worked collaboratively to create a new interview protocol that enhances efficiency in talent acquisition",
-        "Collaborate with leadership the prioritization of initiatives to ensure alignment with business goals while optimizing on resources"
+        "Provided mentorship to interns and new team members, guiding their development into successful software engineers.",
+        "Led the transition to AWS EMR, leveraging its architecture to achieve greater scalability and stability in data processing tasks.",
+        "Designed and implemented a system that downshifts email alerts to save resources and reduce costs.",
+        "Worked collaboratively to create a new interview protocol that enhances efficiency in talent acquisition.",
+        "Collaborated with leadership on the prioritization of initiatives to ensure alignment with business goals while optimizing resources."
       ],
       "keywords": [
         "AWS",
         "Hadoop",
         "Java",
-        "Javascript",
+        "JavaScript",
         "Kotlin",
         "Python",
         "Pytorch",
@@ -80,9 +80,9 @@
       "endDate": "2021-10-11",
       "summary": "",
       "highlights": [
-        "Design and implementation of a serverless application to opt out patients and clinics from different types of communications",
-        "Optimized the application response time by doing query optimization, pagination and data caching",
-        "Leveraged migration skills to upgrade Spring Boot, resolving security concerns by transitioning to a more current and secure version"
+        "Designed and implemented a serverless application to opt out patients and clinics from different types of communications.",
+        "Optimized application response times through query optimization, pagination, and data caching.",
+        "Leveraged migration skills to upgrade Spring Boot, resolving security concerns by transitioning to a more current and secure version."
       ]
     },
     {
@@ -95,11 +95,11 @@
       "endDate": "2020-10-01",
       "summary": "",
       "highlights": [
-        "Spearheaded a team of 4 developers, guiding their technical skills and project execution",
-        "Increased market reach to several countries by connecting with external Hotel/Car/Insurance/Flight systems",
-        "Redesigned the system to speed up the implementation of new 3rd party APIs",
-        "Optimized the development feedback loop by parallelizing the CI/CD using jenkins pipelines",
-        "Participated in multiple technology migrations SVN->Git, Maven->Gradle, Java7->Java8"
+        "Spearheaded a team of 4 developers, guiding their technical skills and project execution.",
+        "Increased market reach to several countries by connecting with external hotel, car, insurance, and flight systems.",
+        "Redesigned the system to accelerate the implementation of new third-party APIs.",
+        "Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins.",
+        "Participated in multiple technology migrations, including SVN to Git, Maven to Gradle, and Java 7 to Java 8."
       ]
     },
     {
@@ -132,18 +132,18 @@
       ]
     },
     {
-      "name": "S&C Contsuctores de Sistemas",
+      "name": "S&C Constructores de Sistemas",
       "url": "https://www.syc.com.mx",
       "location": "(Remote) Monterrey, NL",
-      "description": "IT | Outsurcing",
+      "description": "IT | Outsourcing",
       "position": "Software Engineer",
       "startDate": "2010-01-01",
       "endDate": "2011-02-01",
       "summary": "Contributed to IT outsourcing projects, focusing on e-invoice systems and platform consolidation.",
       "highlights": [
-        "Established a new business line by building an e-invoice system that integrates with a CMS and regulatory entities",
-        "Implemented a proper branching strategy that consolidated the different client implementations into one platform",
-        "Contributed to the development and maintenance of the Content Management System (CMS)."
+        "Established a new business line by building an e-invoice system that integrated with a CMS and regulatory entities.",
+        "Implemented a proper branching strategy that consolidated different client implementations into one platform.",
+        "Contributed to the development and maintenance of a Content Management System (CMS)."
       ]
     },
     {
@@ -161,9 +161,9 @@
         "Contributed to a dynamic and engaging gaming experience for mobile users."
       ],
       "keywords": [
-        "c#",
-        "javascript",
-        ".net",
+        "C#",
+        "JavaScript",
+        ".NET",
         "Unity"
       ]
     },
@@ -427,7 +427,7 @@
   "projects": [
     {
       "name": "NordVPN container",
-      "description": "Official NordVPN client in a docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch",
+      "description": "Official NordVPN client in a Docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch",
       "startDate": "2018-02-24",
       "roles": [
         "Owner"
@@ -455,7 +455,7 @@
     },
     {
       "name": "Nordlynx container",
-      "description": "NordLynx is a technology built around the WireGuard® VPN protocol; it makes routing traffic through the NordVPN network easy and secure",
+      "description": "NordLynx is a technology built around the WireGuard® VPN protocol, making routing traffic through the NordVPN network easy and secure",
       "startDate": "2021-09-09",
       "roles": [
         "Owner"
@@ -483,14 +483,14 @@
     },
     {
       "name": "Rocks",
-      "description": "1st place Unearthed denver 2017 winner",
+      "description": "1st place winner at Unearthed Denver 2017.",
       "startDate": "2017-09-24",
       "endDate": "2017-09-27",
       "roles": [
         "Project lead"
       ],
       "highlights": [
-        "Designed a system to filter out low quality minerals using machine learning and a tomato-sorting like machine",
+        "Designed a system to filter out low-quality minerals using machine learning and a tomato-sorting-like machine",
         "Trained a convolutional neural network to classify minerals"
       ],
       "entity": "Unearthed's Hackathon",
@@ -506,14 +506,14 @@
     },
     {
       "name": "Bitcoin Payment Connector",
-      "description": "Enabled a travel platform to accept bitcoin payments",
+      "description": "Enabled a travel platform to accept Bitcoin payments.",
       "startDate": "2015-09-24",
       "endDate": "2015-09-27",
       "roles": [
         "Project lead"
       ],
       "highlights": [
-        "People's choice awards winner",
+        "People's Choice Award winner.",
         "Integration with Coinbase and TestNet"
       ],
       "entity": "Switchfly's Hackathon",
@@ -522,7 +522,7 @@
         "Bitcoin",
         "Blockchain",
         "Coinbase",
-        "Cryptoccurency",
+        "Cryptocurrency",
         "Java",
         "Hackathon",
         "TestNet"
@@ -530,7 +530,7 @@
     },
     {
       "name": "Boardless Games",
-      "description": "Multiplayer framework to play boardgames on phones",
+      "description": "A multiplayer framework to play board games on phones.",
       "startDate": "2013-06-02",
       "endDate": "2021-06-04",
       "roles": [
@@ -540,7 +540,7 @@
         "Supported games: Love Letter and The Resistance",
         "2nd place winner"
       ],
-      "entity": "Nearsof's Hackathon",
+      "entity": "Nearsoft's Hackathon",
       "type": "Application",
       "url": "https://github.com/bubuntux/boardless-games-meteor",
       "keywords": [
@@ -549,7 +549,7 @@
         "CSS",
         "HTML",
         "Jade",
-        "Javascript",
+        "JavaScript",
         "Hackathon",
         "Meteor",
         "MongoDB",
@@ -559,7 +559,7 @@
     },
     {
       "name": "Element-web container",
-      "description": "Element (formerly known as Vector/Riot) is a web client for Matrix an open network for secure, decentralized communication",
+      "description": "Element (formerly Vector/Riot) is a web client for Matrix, an open network for secure, decentralized communication",
       "startDate": "2017-06-28",
       "roles": [
         "Owner"
@@ -580,13 +580,13 @@
     },
     {
       "name": "Protorrent",
-      "description": "Proton VPN + qBtittorrent container",
+      "description": "Proton VPN + qBittorrent container.",
       "startDate": "2023-10-10",
       "roles": [
         "Owner"
       ],
       "highlights": [
-        "Pre-configured to prevent ip leaks",
+        "Pre-configured to prevent IP leaks.",
         "5k+ downloads"
       ],
       "type": "Container",
@@ -608,7 +608,7 @@
     },
     {
       "name": "Somechat",
-      "description": "Chat program that connects to multiple chat networks",
+      "description": "A chat program that connects to multiple chat networks",
       "startDate": "2014-03-29",
       "endDate": "2014-04-01",
       "entity": "ITESM's Hackathon",
@@ -631,7 +631,7 @@
     },
     {
       "name": "Easy workflow generator",
-      "description": "jQuery plugin to generate flow charts.",
+      "description": "A jQuery plugin to generate flow charts.",
       "startDate": "2013-04-12",
       "endDate": "2013-04-25",
       "entity": "Nearsoft's Hackathon",
@@ -643,12 +643,12 @@
       "keywords": [
         "jQuery",
         "Hackathon",
-        "javascript"
+        "JavaScript"
       ]
     },
     {
       "name": "Jaturalquimia",
-      "description": "Naturalquimia clone for Android",
+      "description": "A Naturalquimia clone for Android.",
       "startDate": "2011-08-30",
       "endDate": "2011-09-15",
       "roles": [
