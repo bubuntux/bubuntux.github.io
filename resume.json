@@ -406,12 +406,13 @@
       "level": "Senior",
       "keywords": [
         "AWS",
-        "Docker",
-        "Kubernetes",
-        "Terraform",
-        "Jenkins",
         "CI/CD",
+        "Docker",
         "Git",
+        "Jenkins",
+        "Kubernetes",
+        "Linux",
+        "Terraform",
         "GitHub"
       ]
     },
@@ -745,6 +746,20 @@
         "Tetris",
         "Videogame"
       ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Lisa Tesar, Product Manager at Indeed",
+      "reference": "Julio is a strong leader, fantastic engineer, and wonderful teammate. As a teammate, he is always ready to support his colleagues in their immediate work and overall skill development. In addition, he is thoughtful of the collective experience of the team and is constantly looking for ways to improve processes. He is extremely collaborative, ensuring a synthesis of all related and interdependent elements of a project, especially those owned by other teams. He is thorough in his investigation and thoughtful in his recommendations."
+    },
+    {
+      "name": "Lauren Kleinert, Software Engineer Intern at Indeed",
+      "reference": "Julio is an exceptional engineer and teacher to less experienced developers. He is incredibly knowledgeable about his field and team projects. Julio is responsive to others, reliable and efficient in his work. He often takes the lead in team meetings and shows initiative consistently. He mentors newer engineers in areas like coding best practices, system design, and the importance of seeing their work in the larger context of team and company objectives. I have learned so much from him."
+    },
+    {
+      "name": "Andrew Roth, Software Engineer at Indeed",
+      "reference": "I really appreciate Julio's contributions when it comes to evaluating and establishing new team processes. He's never afraid to speak his mind, even when he disagrees with the proposition being discussed, but he always does so in a way that facilitates conversation rather than hinders it, and as a result, the process always comes out stronger for it. He additionally encourages the team to find ways to measure processes, even if at first glance the process feels more qualitative than quantifiable."
     }
   ],
   "meta": {
