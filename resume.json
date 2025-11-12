@@ -755,9 +755,9 @@
       "position": "Contributor",
       "url": "https://github.com/NixOS",
       "highlights": [
-        "Updated cloudflare-wrap enrollment command [pr](https://github.com/NixOS/nixpkgs/pull/354062)",
-        "Added ivsc-firmware to ipu6 option [pr](https://github.com/NixOS/nixpkgs/pull/296164)",
-        "Added a1_prod symbolic links to fix ipu6 webcams [pr](https://github.com/NixOS/nixpkgs/pull/295508)"
+        "[Updated cloudflare-wrap enrollment command](https://github.com/NixOS/nixpkgs/pull/354062)",
+        "[Added ivsc-firmware to ipu6 option](https://github.com/NixOS/nixpkgs/pull/296164)",
+        "[Added a1_prod symbolic links to fix ipu6 webcams](https://github.com/NixOS/nixpkgs/pull/295508)"
       ]
     },
     {
@@ -766,7 +766,7 @@
       "position": "Contributor",
       "url": "https://github.com/blue-build",
       "highlights": [
-        "Fixed fonts module [pr](https://github.com/blue-build/modules/pull/373)"
+        "[Fixed fonts module](https://github.com/blue-build/modules/pull/373)"
       ]
     },
     {
@@ -775,9 +775,9 @@
       "position": "Contributor",
       "url": "https://github.com/ublue-os",
       "highlights": [
-        "Added arch toolbox [pr](https://github.com/ublue-os/config/pull/73)",
-        "Added clipman for sericea [pr](https://github.com/ublue-os/main/pull/273)",
-        "Removed unecessary workaround [pr](https://github.com/ublue-os/main/pull/271)"
+        "[Added arch toolbox](https://github.com/ublue-os/config/pull/73)",
+        "[Added clipman for sericea](https://github.com/ublue-os/main/pull/273)",
+        "[Removed unecessary workaround](https://github.com/ublue-os/main/pull/271)"
       ]
     },
     {
@@ -786,7 +786,7 @@
       "position": "Contributor",
       "url": "https://github.com/datafaker-net/datafaker",
       "highlights": [
-        "Lazy cache all locale values [pr](https://github.com/datafaker-net/datafaker/pull/82)"
+        "[Lazy cache all locale values](https://github.com/datafaker-net/datafaker/pull/82)"
       ]
     },
     {
@@ -795,7 +795,7 @@
       "position": "Contributor",
       "url": "https://github.com/Antergos/Cnchi",
       "highlights": [
-        "Fixed issues generating fallback entries [pr](https://github.com/Antergos/Cnchi/pull/456)"
+        "[Fixed issues generating fallback entries](https://github.com/Antergos/Cnchi/pull/456)"
       ]
     },
     {
@@ -804,7 +804,7 @@
       "position": "Contributor",
       "url": "https://github.com/threerings/playn",
       "highlights": [
-        "Fixed run-java target [pr](https://github.com/threerings/playn/pull/23)"
+        "[Fixed run-java target](https://github.com/threerings/playn/pull/23)"
       ]
     },
     {
@@ -813,8 +813,8 @@
       "url": "https://github.com/scribejava/scribejava",
       "position": "Contributor",
       "highlights": [
-        "Added support for Ubuntu One [pr](https://github.com/scribejava/scribejava/pull/298)",
-        "Update Dropbox ai [pr](https://github.com/scribejava/scribejava/pull/259)"
+        "[Added support for Ubuntu One](https://github.com/scribejava/scribejava/pull/298)",
+        "[Update Dropbox ai](https://github.com/scribejava/scribejava/pull/259)"
       ]
     },
     {
@@ -823,7 +823,7 @@
       "summary": "TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.",
       "url": "https://github.com/testng-team/testng",
       "highlights": [
-        "Fix an issue with @BeforeTest method in a super class will be called multiple time when alwayRun = true [pr](https://github.com/testng-team/testng/pull/114)"
+        "[Fix an issue with @BeforeTest method in a super class will be called multiple time when alwayRun = true](https://github.com/testng-team/testng/pull/114)"
       ]
     },
     {
@@ -832,8 +832,8 @@
       "url": "https://github.com/emesene/emesene",
       "summary": "Emesene is an instant messenger capable of connecting to various networks.",
       "highlights": [
-        "Added feature to only show notifications when available [pr](https://github.com/emesene/emesene/pull/838)",
-        "Hide close button tab if only has one tab [pr](https://github.com/emesene/emesene/pull/821)"
+        "[Added feature to only show notifications when available](https://github.com/emesene/emesene/pull/838)",
+        "[Hide close button tab if only has one tab](https://github.com/emesene/emesene/pull/821)"
       ],
       "keywords": [
         "Python"
