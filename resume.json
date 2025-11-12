@@ -105,7 +105,7 @@
       "position": "Senior Software Engineer",
       "startDate": "2017-02-01",
       "endDate": "2020-10-01",
-      "summary": "",
+      "summary": "As a Lead Software Engineer on a travel platform, I focused on integrating and optimizing third-party connections to expand market reach and enhance system capabilities.",
       "highlights": [
         "Led a team of four developers, providing technical guidance and overseeing project execution to success",
         "Expanded market reach by integrating with external hotel, car, insurance, and flight systems in multiple countries",
@@ -745,6 +745,98 @@
         "Mobile Game",
         "Tetris",
         "Videogame"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "NixOS",
+      "summary": "Declarative builds and deployments",
+      "position": "Contributor",
+      "url": "https://github.com/NixOS",
+      "highlights": [
+        "Updated cloudflare-wrap enrollment command [pr](https://github.com/NixOS/nixpkgs/pull/354062)",
+        "Added ivsc-firmware to ipu6 option [pr](https://github.com/NixOS/nixpkgs/pull/296164)",
+        "Added a1_prod symbolic links to fix ipu6 webcams [pr](https://github.com/NixOS/nixpkgs/pull/295508)"
+      ]
+    },
+    {
+      "organization": "BlueBuild",
+      "summary": "The BlueBuild project creates accessible tools for you to create, configure & build custom images of atomic Fedora distributions.",
+      "position": "Contributor",
+      "url": "https://github.com/blue-build",
+      "highlights": [
+        "Fixed fonts module [pr](https://github.com/blue-build/modules/pull/373)"
+      ]
+    },
+    {
+      "organization": " Universal Blue ",
+      "summary": "Custom Operating System Images",
+      "position": "Contributor",
+      "url": "https://github.com/ublue-os",
+      "highlights": [
+        "Added arch toolbox [pr](https://github.com/ublue-os/config/pull/73)",
+        "Added clipman for sericea [pr](https://github.com/ublue-os/main/pull/273)",
+        "Removed unecessary workaround [pr](https://github.com/ublue-os/main/pull/271)"
+      ]
+    },
+    {
+      "organization": "Datafaker",
+      "summary": "Library generates fake data",
+      "position": "Contributor",
+      "url": "https://github.com/datafaker-net/datafaker",
+      "highlights": [
+        "Lazy cache all locale values [pr](https://github.com/datafaker-net/datafaker/pull/82)"
+      ]
+    },
+    {
+      "organization": "Angergos/Cnchi",
+      "summary": "Graphical Installer for Antergos Linux",
+      "position": "Contributor",
+      "url": "https://github.com/Antergos/Cnchi",
+      "highlights": [
+        "Fixed issues generating fallback entries [pr](https://github.com/Antergos/Cnchi/pull/456)"
+      ]
+    },
+    {
+      "organization": "PlayN",
+      "summary": "PlayN is a cross-platform Java game development library written in Java",
+      "position": "Contributor",
+      "url": "https://github.com/threerings/playn",
+      "highlights": [
+        "Fixed run-java target [pr](https://github.com/threerings/playn/pull/23)"
+      ]
+    },
+    {
+      "organization": "ScribeJava",
+      "summary": "Simple OAuth client Java lib",
+      "url": "https://github.com/scribejava/scribejava",
+      "position": "Contributor",
+      "highlights": [
+        "Added support for Ubuntu One [pr](https://github.com/scribejava/scribejava/pull/298)",
+        "Update Dropbox ai [pr](https://github.com/scribejava/scribejava/pull/259)"
+      ]
+    },
+    {
+      "organization": "TestNG",
+      "position": "Contributor",
+      "summary": "TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.",
+      "url": "https://github.com/testng-team/testng",
+      "highlights": [
+        "Fix an issue with @BeforeTest method in a super class will be called multiple time when alwayRun = true [pr](https://github.com/testng-team/testng/pull/114)"
+      ]
+    },
+    {
+      "organization": "Emesene",
+      "position": "Contributor",
+      "url": "https://github.com/emesene/emesene",
+      "summary": "Emesene is an instant messenger capable of connecting to various networks.",
+      "highlights": [
+        "Added feature to only show notifications when available [pr](https://github.com/emesene/emesene/pull/838)",
+        "Hide close button tab if only has one tab [pr](https://github.com/emesene/emesene/pull/821)"
+      ],
+      "keywords": [
+        "Python"
       ]
     }
   ],
