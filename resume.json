@@ -45,11 +45,14 @@
       "startDate": "2021-10-11",
       "summary": "",
       "highlights": [
-        "Provided mentorship to interns and new team members, guiding their development into successful software engineers",
-        "Led the transition to AWS EMR, leveraging its architecture to achieve greater scalability and stability in data processing tasks",
-        "Designed and implemented a system that downshifts email alerts to save resources and reduce costs",
-        "Worked collaboratively to create a new interview protocol that enhances efficiency in talent acquisition",
-        "Collaborated with leadership on the prioritization of initiatives to ensure alignment with business goals while optimizing resources"
+        "Spearheaded multiple cost-saving initiatives, resulting in over $1.8M in annual savings through measures such as pausing Feed Alerts ($1.7M), optimizing data builders ($180k), and reducing AWS account costs ($120k/month)",
+        "Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability.",
+        "Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability.",
+        "Demonstrated strong technical leadership by owning and resolving a critical 11-month long incident, ensuring the availability of the Job Alerts functionality.",
+        "Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation.",
+        "Mentored and onboarded numerous junior engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth.",
+        "Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery.",
+        "Improved developer productivity by enabling cache and incremental builds, resulting in a 30% reduction in build times."
       ],
       "keywords": [
         "AWS",
@@ -814,7 +817,7 @@
       "position": "Contributor",
       "highlights": [
         "[Added support for Ubuntu One](https://github.com/scribejava/scribejava/pull/298)",
-        "[Update Dropbox ai](https://github.com/scribejava/scribejava/pull/259)"
+        "[Update Dropbox api](https://github.com/scribejava/scribejava/pull/259)"
       ]
     },
     {
