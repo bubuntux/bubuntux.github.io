@@ -197,8 +197,8 @@
       "location": "Monterrey, NL",
       "description": "Media Design | Game Studio",
       "position": "Game developer",
-      "startDate": "2010-08-01",
-      "endDate": "2010-11-01",
+      "startDate": "2010-08",
+      "endDate": "2010-11",
       "summary": "Main developer for a mobile platforming game",
       "highlights": [
         "Led the development of a mobile platforming game, overseeing all technical aspects from conception to implementation",
@@ -218,8 +218,8 @@
       "location": "Monterrey, NL",
       "description": "Healthcare | IT Services",
       "position": "Software Engineer (Internship)",
-      "startDate": "2009-02-01",
-      "endDate": "2009-08-01",
+      "startDate": "2009-02",
+      "endDate": "2009-07",
       "summary": "Contributed to a patient and human resource management system, focusing on bug fixes and performance optimization",
       "highlights": [
         "Fixed critical bugs in a Java-based patient and human resource management system",
@@ -237,8 +237,8 @@
       "location": "Monterrey, NL",
       "description": "Telecommunications",
       "position": "Software Engineer (Internship)",
-      "startDate": "2008-09-01",
-      "endDate": "2009-02-01",
+      "startDate": "2008-08",
+      "endDate": "2009-01",
       "summary": "Designed and implemented an inventory system to manage equipment and maintenance schedules",
       "highlights": [
         "Developed a comprehensive inventory system using .NET C# to track equipment, streamlining maintenance planning and record-keeping",
@@ -252,8 +252,8 @@
       "location": "Monterrey, NL",
       "description": "IT Services | IT Consulting",
       "position": "Software Engineer (Internship)",
-      "startDate": "2008-03-01",
-      "endDate": "2008-07-01",
+      "startDate": "2008-05",
+      "endDate": "2008-07",
       "summary": "Contributed to the development and quality assurance of point-of-sale systems",
       "highlights": [
         "Resolved critical bugs in point-of-sale applications using C# and .NET, improving system stability and user experience",
@@ -265,9 +265,10 @@
   "education": [
     {
       "institution": "Facultad de Ciencias Físico Matemáticas, UANL",
+      "location": "San Nicolás de los Garza, NL",
       "url": "https://www.fcfm.uanl.mx",
       "area": "Computer Science",
-      "studyType": "Bachelor",
+      "studyType": "Bachelor of Science",
       "startDate": "2005-03-01",
       "endDate": "2009-12-01",
       "courses": [
