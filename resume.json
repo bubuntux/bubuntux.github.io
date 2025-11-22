@@ -859,8 +859,7 @@
     }
   ],
   "meta": {
-    "canonical": "https://bubuntux.github.io/resume.json",
-    "version": "v0.0.1",
-    "lastModified": "2025-11-02T00:00:00"
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
   }
 }
