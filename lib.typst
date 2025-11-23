@@ -1,29 +1,23 @@
 #import "@preview/scienceicons:0.1.0": orcid-icon
 
 #let resume(
-  author: "",
-  author-position: left,
-  personal-info-position: left,
-  pronouns: "",
-  location: "",
-  email: "",
-  github: "",
-  linkedin: "",
-  phone: "",
-  personal-site: "",
-  orcid: "",
-  accent-color: "#000000",
-  font: "New Computer Modern",
-  paper: "us-letter",
-  author-font-size: 20pt,
-  font-size: 10pt,
-  lang: "en",
   body,
 ) = {
+  // Main body.
+  set par(justify: true)
 
-  // Sets document metadata
-  set document(author: author, title: author)
+  body
+}
 
+#let setup-page(
+  font: "New Computer Modern",
+  font-size: 10pt,
+  lang: "en",
+  paper: "us-letter",
+  margin: (0.5in),
+  accent-color: "#000000",
+  body
+) = {
   // Document-wide formatting, including font and margins
   set text(
     // LaTeX style font
@@ -36,13 +30,12 @@
 
   // Reccomended to have 0.5in margin on all sides
   set page(
-    margin: (0.5in),
+    margin: margin,
     paper: paper,
   )
 
   // Link styles
   show link: underline
-
 
   // Small caps for section titles
   show heading.where(level: 2): it => [
@@ -60,51 +53,15 @@
   )
 
   // Name will be aligned left, bold and big
-  show heading.where(level: 1): it => [
-    #set align(author-position)
-    #set text(
-      weight: 700,
-      size: author-font-size,
-    )
-    #pad(it.body)
-  ]
+  // show heading.where(level: 1): it => [
+  //   #set align(author-position)
+  //   #set text(
+  //     weight: 700,
+  //     size: author-font-size,
+  //   )
+  //   #pad(it.body)
+  // ]
 
-  // Level 1 Heading
-  [= #(author)]
-
-  // Personal Info Helper
-  let contact-item(value, prefix: "", link-type: "") = {
-    if value != "" {
-      if link-type != "" {
-        link(link-type + value)[#(prefix + value)]
-      } else {
-        value
-      }
-    }
-  }
-
-  // Personal Info
-  pad(
-    top: 0.25em,
-    align(personal-info-position)[
-      #{
-        let items = (
-          contact-item(pronouns),
-          contact-item(phone),
-          contact-item(location),
-          contact-item(email, link-type: "mailto:"),
-          contact-item(github, link-type: "https://"),
-          contact-item(linkedin, link-type: "https://"),
-          contact-item(personal-site, link-type: "https://"),
-          contact-item(orcid, prefix: [#orcid-icon(color: rgb("#AECD54"))orcid.org/], link-type: "https://orcid.org/"),
-        )
-        items.filter(x => x != none).join("  |  ")
-      }
-    ],
-  )
-
-  // Main body.
-  set par(justify: true)
 
   body
 }
@@ -148,7 +105,7 @@
   gpa: "",
   location: "",
   // Makes dates on upper right like rest of components
-  consistent: false,
+  consistent: true,
 ) = {
   if consistent {
     // edu-constant style (dates top-right, location bottom-right)
