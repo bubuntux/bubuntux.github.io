@@ -1,8 +1,8 @@
+#import "@preview/nerd-icons:0.2.0": *
 #import "./lib.typst": *
 
 #let json = json("resume.json")
 
-#let name = "Stephe"
 #let location = "San Diego, CA"
 #let email = "stxu@hmc.edu"
 #let github = "github.com/stuxf"
@@ -51,10 +51,8 @@ align(left)[
 #set par(justify: true)
 
 == Work Experience
-
-#let work_n_limit = 4 
-
-#for w in (json.work.slice(0, work_n_limit)) [
+#let max_work = 4 
+#for w in (json.work.slice(0, max_work)) [
   #work(
     title: w.position,
     location: w.location,
@@ -64,15 +62,48 @@ align(left)[
   )
 ]
 
+== Projects
+#let max_proj = 3
+#for proj in json.projects.slice(0, calc.min(max_proj, json.projects.len())) {
+    generic-one-by-two(
+      left: {
+        if "url" in proj && proj.url != "" [
+          #link(proj.url)[*#proj.name*], #proj.roles
+        ] else [
+          
+        ]  
+      },
+      right: {
+        
+      }
+    )
+    proj.description
+    if proj.highlights != () {
+      list(
+        tight: true,
+        ..proj.highlights
+      )
+    }
+}
+
+== Certificates
+#let max_cert =  3
+#for cert in json.certificates.slice(0, calc.min(max_cert, json.certificates.len())) {
+  if cert.url != "" [
+       #link(cert.url)[*#cert.name*], #cert.issuer
+  ] else [
+      *#cert.name*, #cert.issuer 
+  ]
+  [ #h(1fr) #cert.date \ ]
+}
 
 == Education
-
-#for e in json.education [
-  #edu(
-    consistent: true,
-    institution: e.institution,
-    location: e.location,
-    dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-    degree: e.studyType + " - " + e.area ,
+#let max_edu = 3
+#for edu in json.education.slice(0, calc.min(max_edu, json.education.len())) {
+  generic-two-by-two(
+    top-left: strong(edu.institution),
+    top-right: "test",
+    bottom-left: emph(edu.studyType + " - " + edu.area),
+    bottom-right: emph(edu.location),
   )
-]
+}
