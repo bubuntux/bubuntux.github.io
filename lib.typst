@@ -1,14 +1,3 @@
-#import "@preview/scienceicons:0.1.0": orcid-icon
-
-#let resume(
-  body,
-) = {
-  // Main body.
-  set par(justify: true)
-
-  body
-}
-
 #let setup-page(
   font: "New Computer Modern",
   font-size: 10pt,
@@ -16,6 +5,8 @@
   paper: "us-letter",
   margin: (0.5in),
   accent-color: "#000000",
+  header1-position: left,
+  header1-font-size: 20pt,
   body
 ) = {
   // Document-wide formatting, including font and margins
@@ -52,19 +43,29 @@
     fill: rgb(accent-color),
   )
 
-  // Name will be aligned left, bold and big
-  // show heading.where(level: 1): it => [
-  //   #set align(author-position)
-  //   #set text(
-  //     weight: 700,
-  //     size: author-font-size,
-  //   )
-  //   #pad(it.body)
-  // ]
-
+  show heading.where(level: 1): it => [
+    #set align(header1-position)
+    #set text(
+      weight: 700,
+      size: header1-font-size,
+    )
+    #pad(it.body)
+  ]
 
   body
 }
+
+// Personal Info Helper
+#let contact-item(value, prefix: "", link-type: "") = {
+  if value != "" {
+    if link-type != "" {
+      link(link-type + value)[#(prefix + value)]
+    } else {
+      value
+    }
+  }
+}
+
 
 // Generic two by two component for resume
 #let generic-two-by-two(
@@ -131,13 +132,20 @@
   dates: "",
   company: "",
   location: "",
+  highlights: (),
 ) = {
-  generic-two-by-two(
-    top-left: strong(title),
-    top-right: dates,
-    bottom-left: company,
-    bottom-right: emph(location),
-  )
+    generic-two-by-two(
+      top-left: strong(title),
+      top-right: dates,
+      bottom-left: company,
+      bottom-right: emph(location),
+    )
+    if highlights != () {
+      list(
+        tight: true,
+        ..highlights
+      )
+    }
 }
 
 #let project(

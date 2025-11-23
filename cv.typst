@@ -1,7 +1,7 @@
-
 #import "./lib.typst": *
 
-// Put your personal information here, replacing mine
+#let json = json("resume.json")
+
 #let name = "Stephe"
 #let location = "San Diego, CA"
 #let email = "stxu@hmc.edu"
@@ -9,11 +9,10 @@
 #let linkedin = "linkedin.com/in/stuxf"
 #let phone = "+1 (xxx) xxx-xxxx"
 #let personal-site = "stuxf.dev"
-#let author-position = left
-#let pronouns = ""
-#let orcid = ""
 #let accent-color = "#26428b"
-#let author-font-size = 20pt
+
+#let basics = json.basics
+#set document(author: basics.name, title: basics.name + "'s Curriculum Vitae")
 
 #show: setup-page.with(
   font: "New Computer Modern",
@@ -22,31 +21,13 @@
   paper: "us-letter",
   margin: (0.5in),
   accent-color: accent-color,
+  header1-position: left,
+  header1-font-size: 20pt,
 )
-
-// Name will be aligned left, bold and big
-#show heading.where(level: 1): it => [
-#set align(author-position)
-#set text(
-  weight: 700,
-  size: author-font-size,
-)
-#pad(it.body)
-]
 
 // Level 1 Heading
-= #(name)
+= #(basics.name)
 
-// Personal Info Helper
-#let contact-item(value, prefix: "", link-type: "") = {
-if value != "" {
-  if link-type != "" {
-    link(link-type + value)[#(prefix + value)]
-  } else {
-    value
-  }
-}
-}
 
 // Personal Info
 #pad(
@@ -54,53 +35,44 @@ top: 0.25em,
 align(left)[
   #{
     let items = (
-      contact-item(pronouns),
       contact-item(phone),
       contact-item(location),
       contact-item(email, link-type: "mailto:"),
       contact-item(github, link-type: "https://"),
       contact-item(linkedin, link-type: "https://"),
       contact-item(personal-site, link-type: "https://"),
-      contact-item(orcid, prefix: [#orcid-icon(color: rgb("#AECD54"))orcid.org/], link-type: "https://orcid.org/"),
     )
     items.filter(x => x != none).join("  |  ")
   }
 ],
 )
 
-#resume([
-    /*
-    * Lines that start with == are formatted into section headings
-    * You can use the specific formatting functions if needed
-    * The following formatting functions are listed below
-    * #edu(dates: "", degree: "", gpa: "", institution: "", location: "")
-    * #work(company: "", dates: "", location: "", title: "")
-    * #project(dates: "", name: "", role: "", url: "")
-    * #extracurriculars(activity: "", dates: "")
-    * There are also the following generic functions that don't apply any formatting
-    * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-    * #generic-one-by-two(left: "", right: "")
-    */
-    == Education
 
-    #edu(
-      consistent: true,
-      institution: "Harvey Mudd College",
-      location: "Claremont, CA",
-      dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-      degree: "Bachelor's of Science, Computer Science and Mathematics",
-    )
-    - Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
-    - Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
+#set par(justify: true)
 
-    == Work Experience
+== Work Experience
 
-    #work(
-      title: "Subatomic Shepherd and Caffeine Connoisseur",
-      location: "Atomville, CA",
-      company: "Microscopic Circus, Schrodinger's University",
-      dates: dates-helper(start-date: "May 2024", end-date: "Present"),
-    )
-    - more bullet points go here
-  ]
-)
+#let work_n_limit = 4 
+
+#for w in (json.work.slice(0, work_n_limit)) [
+  #work(
+    title: w.position,
+    location: w.location,
+    company: w.name,
+    dates: dates-helper(start-date: "May 2024", end-date: "Present"),
+    highlights: w.highlights,
+  )
+]
+
+
+== Education
+
+#for e in json.education [
+  #edu(
+    consistent: true,
+    institution: e.institution,
+    location: e.location,
+    dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
+    degree: e.studyType + " - " + e.area ,
+  )
+]
