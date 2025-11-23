@@ -67,15 +67,15 @@ align(left)[
 #for proj in json.projects.slice(0, calc.min(max_proj, json.projects.len())) {
     generic-one-by-two(
       left: {
-        if "url" in proj && proj.url != "" [
+        if "url" in proj and proj.url != "" [
           #link(proj.url)[*#proj.name*], #proj.roles
         ] else [
-          
+          *#proj.name*
         ]  
       },
       right: {
-        
-      }
+          [  xxxxx date \ ]
+        }
     )
     proj.description
     if proj.highlights != () {
