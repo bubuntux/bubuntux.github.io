@@ -27,11 +27,6 @@
         "network": "Docker",
         "username": "bubuntux",
         "url": "https://hub.docker.com/u/bubuntux"
-      },
-      {
-        "network": "LeetCode",
-        "username": "lccjulio",
-        "url": "https://leetcode.com/u/lccjulio"
       }
     ]
   },

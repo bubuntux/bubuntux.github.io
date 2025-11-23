@@ -19,7 +19,7 @@
   font-size: 10pt,
   lang: "en",
   paper: "us-letter",
-  margin: (0.5in),
+  margin: 0.5in,
   accent-color: accent-color,
   header1-position: left,
   header1-font-size: 20pt,
@@ -30,9 +30,7 @@
 
 
 // Personal Info
-#pad(
-top: 0.25em,
-align(left)[
+#pad(top: 0.25em, align(left)[
   #{
     let items = (
       contact-item(phone),
@@ -44,55 +42,58 @@ align(left)[
     )
     items.filter(x => x != none).join("  |  ")
   }
-],
-)
+])
 
 
 #set par(justify: true)
 
 == Work Experience
-#let max_work = 4 
-#for w in (json.work.slice(0, max_work)) [
-  #work(
-    title: w.position,
-    location: w.location,
-    company: w.name,
-    dates: dates-helper(start-date: "May 2024", end-date: "Present"),
-    highlights: w.highlights,
+#let max_work = 4
+#for work in (json.work.slice(0, max_work)) {
+  generic-two-by-two(
+    top-left: strong(work.position),
+    top-right: "test",
+    bottom-left: work.name,
+    bottom-right: emph(work.location),
   )
-]
+  [ \ ]
+  work.summary
+  if work.highlights != () {
+    list(tight: true, ..work.highlights)
+  }
+}
 
 == Projects
 #let max_proj = 3
 #for proj in json.projects.slice(0, calc.min(max_proj, json.projects.len())) {
-    generic-one-by-two(
-      left: {
-        if "url" in proj and proj.url != "" [
-          #link(proj.url)[*#proj.name*], #proj.roles
-        ] else [
-          *#proj.name*
-        ]  
-      },
-      right: {
-          [  xxxxx date \ ]
-        }
-    )
-    proj.description
-    if proj.highlights != () {
-      list(
-        tight: true,
-        ..proj.highlights
-      )
-    }
+  generic-one-by-two(
+    left: {
+      if "url" in proj and proj.url != "" [
+        #link(proj.url)[*#proj.name*]
+      ] else [
+        *#proj.name*
+      ]
+    },
+    right: {
+      [ xxxxx date \ ]
+    },
+  )
+  proj.description
+  if proj.highlights != () {
+    list(tight: true, ..proj.highlights)
+  }
 }
 
 == Certificates
-#let max_cert =  3
-#for cert in json.certificates.slice(0, calc.min(max_cert, json.certificates.len())) {
+#let max_cert = 3
+#for cert in json.certificates.slice(0, calc.min(
+  max_cert,
+  json.certificates.len(),
+)) {
   if cert.url != "" [
-       #link(cert.url)[*#cert.name*], #cert.issuer
+    #link(cert.url)[*#cert.name*], #cert.issuer
   ] else [
-      *#cert.name*, #cert.issuer 
+    *#cert.name*, #cert.issuer
   ]
   [ #h(1fr) #cert.date \ ]
 }
@@ -101,9 +102,9 @@ align(left)[
 #let max_edu = 3
 #for edu in json.education.slice(0, calc.min(max_edu, json.education.len())) {
   generic-two-by-two(
-    top-left: strong(edu.institution),
+    top-left: strong(edu.studyType + " - " + edu.area),
     top-right: "test",
-    bottom-left: emph(edu.studyType + " - " + edu.area),
+    bottom-left: emph(edu.institution),
     bottom-right: emph(edu.location),
   )
 }
