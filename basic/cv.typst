@@ -28,17 +28,24 @@
 // Level 1 Heading
 = #(basics.name)
 
-
+// TODO use profiles
 // Personal Info
 #pad(top: 0.25em, align(left)[
   #{
     let items = (
-      contact-item(phone),
-      contact-item(location),
-      contact-item(email, link-type: "mailto:"),
-      contact-item(github, link-type: "https://"),
-      contact-item(linkedin, link-type: "https://"),
-      contact-item(personal-site, link-type: "https://"),
+      [
+        #nf-icon("email") #h(5pt) #link("mainto:" + basics.email)[#basics.email]
+      ],
+      // contact-item(location),
+      [ #nf-icon("github") #link("https://github.com/bubuntux")[bubuntux] ],
+      [
+        #nf-icon("linkedin") #link(
+          "https://www.linkedin.com/in/julio-guti",
+        )[julio-guti]
+      ],
+      [
+        #nf-icon("docker") #link("https://hub.docker.com/u/bubuntux")[bubuntux]
+      ],
     )
     items.filter(x => x != none).join("  |  ")
   }
@@ -52,7 +59,7 @@
 #for work in (json.work.slice(0, max_work)) {
   generic-two-by-two(
     top-left: strong(work.position),
-    top-right: "test",
+    top-right: "Jun 2011 - Aug 2024",
     bottom-left: work.name,
     bottom-right: emph(work.location),
   )
@@ -61,6 +68,9 @@
   if work.highlights != () {
     list(tight: true, ..work.highlights)
   }
+  // TODO join as highlights?
+  // work.keywords.join(" | ")
+  parbreak()
 }
 
 == Projects
@@ -75,13 +85,15 @@
       ]
     },
     right: {
-      [ xxxxx date \ ]
+      [ Jan 2021 - Feb 2026 ]
     },
   )
+  [ \ ]
   proj.description
   if proj.highlights != () {
     list(tight: true, ..proj.highlights)
   }
+  parbreak()
 }
 
 == Certificates
@@ -103,7 +115,7 @@
 #for edu in json.education.slice(0, calc.min(max_edu, json.education.len())) {
   generic-two-by-two(
     top-left: strong(edu.studyType + " - " + edu.area),
-    top-right: "test",
+    top-right: "2004 - 2009",
     bottom-left: emph(edu.institution),
     bottom-right: emph(edu.location),
   )
