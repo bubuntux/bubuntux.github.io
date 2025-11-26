@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="33"
+   height="35"
+   viewBox="0 0 33 35"
+   fill="none"
+   src=""
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="natera.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.3941176"
+     inkscape:cx="85"
+     inkscape:cy="17.982552"
+     inkscape:window-width="2560"
+     inkscape:window-height="1410"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg20" />
+  <mask
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="0"
+     y="0"
+     width="17"
+     height="18"
+     id="mask7">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M 0,0.461426 H 16.0849 V 17.6369 H 0 Z"
+       fill="#ffffff"
+       id="path7" />
+  </mask>
+  <g
+     id="g8">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 9.47143,14.128 c 1.76137,0 3.40917,0.5268 4.82187,1.4412 -0.6796,-1.4265 -1.0658,-3.0463 -1.0658,-4.7657 0,-2.90144 1.0951,-5.5219 2.8574,-7.40005 C 14.3781,1.58389 12.0453,0.461426 9.47143,0.461426 4.24038,0.461426 0,5.09198 0,10.8035 c 0,2.62 0.893989,5.0107 2.36488,6.8335 1.73528,-2.1504 4.27474,-3.509 7.10655,-3.509 z"
+       fill="#009adc"
+       id="path8" />
+  </g>
+  <mask
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="16"
+     y="0"
+     width="17"
+     height="18"
+     id="mask9">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M 16.0859,0.461426 H 32.1718 V 17.6369 H 16.0859 Z"
+       fill="#ffffff"
+       id="path9" />
+  </mask>
+  <g
+     id="g10">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 17.8776,15.5692 c 1.4127,-0.9144 3.0609,-1.4412 4.8223,-1.4412 2.8313,0 5.3713,1.3582 7.1066,3.509 1.4708,-1.8228 2.3653,-4.2135 2.3653,-6.8335 0,-5.71198 -4.2408,-10.342074 -9.4719,-10.342074 -2.5738,0 -4.9066,1.122464 -6.614,2.942024 1.7628,1.87815 2.858,4.49861 2.858,7.40005 0,1.7194 -0.3863,3.3392 -1.0663,4.7657 z"
+       fill="#9aca3c"
+       id="path10" />
+  </g>
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 14.2943,15.5691 c 0.6521,0.4221 1.2528,0.9264 1.7917,1.5008 0.5389,-0.5744 1.14,-1.0787 1.7916,-1.5008 0.68,-1.4265 1.0663,-3.0463 1.0663,-4.7657 0,-2.90147 -1.0956,-5.52193 -2.8579,-7.40008 -1.7623,1.87815 -2.8575,4.49861 -2.8575,7.40008 0,1.7194 0.3858,3.3392 1.0658,4.7657 z"
+     fill="#005e7f"
+     id="path11" />
+  <mask
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="0"
+     y="17"
+     width="17"
+     height="18"
+     id="mask12">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M 0,17.6362 H 16.0853 V 34.8119 H 0 Z"
+       fill="#ffffff"
+       id="path12" />
+  </mask>
+  <g
+     id="g13">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 14.2937,19.704 c -1.4126,0.9144 -3.0609,1.4412 -4.82181,1.4412 -2.83181,0 -5.37127,-1.3582 -7.10701,-3.509 C 0.893989,19.459 0,21.8497 0,24.4697 c 0,5.712 4.24083,10.3425 9.47189,10.3425 2.57381,0 4.90621,-1.1229 6.61351,-2.9429 -1.7623,-1.8772 -2.8575,-4.4981 -2.8575,-7.3996 0,-1.7194 0.3858,-3.3392 1.0658,-4.7657 z"
+       fill="#9aca3c"
+       id="path13" />
+  </g>
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 9.47178,21.1455 c 1.76142,0 3.40912,-0.5269 4.82182,-1.4412 0.3565,-0.7474 0.7937,-1.4413 1.2991,-2.0678 -0.5054,-0.6265 -0.9426,-1.3199 -1.2991,-2.0673 -1.4127,-0.9149 -3.0604,-1.4413 -4.82182,-1.4413 -2.8318,0 -5.37126,1.3582 -7.10655,3.5086 1.73529,2.1503 4.27475,3.509 7.10655,3.509 z"
+     fill="#005e7f"
+     id="path14" />
+  <mask
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="16"
+     y="17"
+     width="17"
+     height="18"
+     id="mask15">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M 16.0859,17.6365 H 32.1713 V 34.8119 H 16.0859 Z"
+       fill="#ffffff"
+       id="path15" />
+  </mask>
+  <g
+     id="g16">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 22.6999,21.1455 c -1.7614,0 -3.4096,-0.5269 -4.8223,-1.4413 0.68,1.4265 1.0663,3.0463 1.0663,4.7658 0,2.9014 -1.0956,5.5223 -2.858,7.3995 1.7074,1.8201 4.0402,2.9425 6.614,2.9425 5.2311,0 9.4714,-4.6301 9.4714,-10.342 0,-2.62 -0.894,-5.0107 -2.3648,-6.8335 -1.7358,2.1503 -4.2753,3.509 -7.1066,3.509 z"
+       fill="#009adc"
+       id="path16" />
+  </g>
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 22.701,14.1279 c -1.7614,0 -3.4096,0.5269 -4.8223,1.4413 -0.3561,0.7474 -0.7932,1.4412 -1.2986,2.0677 0.5054,0.6266 0.9425,1.32 1.2986,2.0673 1.4127,0.9149 3.0609,1.4413 4.8223,1.4413 2.8313,0 5.3708,-1.3582 7.1065,-3.5086 -1.7357,-2.1503 -4.2752,-3.509 -7.1065,-3.509 z"
+     fill="#005e7f"
+     id="path17" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 17.8776,19.7041 c -0.6516,-0.4216 -1.2528,-0.9264 -1.7916,-1.5007 -0.5389,0.5743 -1.1396,1.0791 -1.7917,1.5007 -0.6795,1.4265 -1.0658,3.0463 -1.0658,4.7658 0,2.9014 1.0952,5.5223 2.8575,7.3995 1.7628,-1.8772 2.8579,-4.4981 2.8579,-7.3995 0,-1.7195 -0.3863,-3.3393 -1.0663,-4.7658 z"
+     fill="#005e7f"
+     id="path18" />
+</svg>

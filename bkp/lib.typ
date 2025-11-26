@@ -1,5 +1,3 @@
-#import "@preview/nerd-icons:0.2.0": *
-
 #let setup-page(
   font: "New Computer Modern",
   font-size: 10pt,
@@ -70,6 +68,52 @@
     #top-left #h(1fr) #top-right \
     #bottom-left #h(1fr) #bottom-right
   ]
+}
+
+#let entry(
+  img: "",
+  top-left: "",
+  top-right: "",
+  bottom-left: "",
+  bottom-right: "",
+  table_stroke: 0pt,
+) = {
+  table(
+    columns: (if img != "" { (auto,) } else { () }) + (auto,),
+    stroke: table_stroke,
+    ..if img != "" {
+      ([ #image(height: 2em, img, fit: "contain") ],)
+    } else {
+      ()
+    },
+    [
+      #top-left #h(1fr) #top-right \
+      #bottom-left #h(1fr) #bottom-right
+    ]
+  )
+}
+
+#let work-entry(
+  work,
+  table_stroke: 0pt,
+) = {
+  entry(
+    img: work.at("logo", default: ""),
+    top-left: strong(work.position),
+    top-right: "Jun 2011 - Aug 2024",
+    bottom-left: work.name,
+    bottom-right: emph(work.location),
+    table_stroke: table_stroke,
+  )
+  v(0.2em, weak: true) // TODO par.leading?
+  // [ \ ]
+  // work.summary
+  if work.highlights != () {
+    list(tight: true, ..work.highlights)
+  }
+  // TODO join as highlights?
+  // work.keywords.join(" | ")
+  // parbreak()
 }
 
 // Generic one by two component for resume

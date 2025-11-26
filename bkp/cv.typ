@@ -1,5 +1,5 @@
 #import "@preview/nerd-icons:0.2.0": *
-#import "./lib.typst": *
+#import "./lib.typ": *
 
 #let json = json("resume.json")
 
@@ -14,8 +14,9 @@
 #let basics = json.basics
 #set document(author: basics.name, title: basics.name + "'s Curriculum Vitae")
 
+
 #show: setup-page.with(
-  font: "New Computer Modern",
+  font: "Source Sans Pro",
   font-size: 10pt,
   lang: "en",
   paper: "us-letter",
@@ -52,7 +53,15 @@
 ])
 
 
+
 #set par(justify: true)
+
+== Work Experience
+#let max_work = 4
+#for work in (json.work.slice(0, max_work)) {
+  work-entry(work, table_stroke: 0pt)
+}
+
 
 == Work Experience
 #let max_work = 4
