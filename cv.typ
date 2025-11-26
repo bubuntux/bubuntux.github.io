@@ -74,7 +74,7 @@
   society: [Switchfly],
   logo: image("img/logos/switchfly.svg"),
   date: [2017 - 2020],
-  location: [San Francisco, CA - Denver, CO],
+  location: [SF, CA - Denver, CO],
   description: list(
     "Led a team of four developers, providing technical guidance and overseeing project execution to success",
     "Expanded market reach by integrating with external hotel, car, insurance, and flight systems in multiple countries",
@@ -112,7 +112,38 @@
   ),
 )
 
+#cvEntry(
+  title: [Software Engineer],
+  society: [S&C Constructores de Sistemas],
+  // logo: image("img/logos/nearsoft.png"),
+  date: [2011 - 2009],
+  location: [ Monterrey, NL #hBar() Remote ],
+  description: list(
+    "Established a new business line by building an e-invoice system that integrated with a CMS and regulatory entities",
+    "Implemented a proper branching strategy that consolidated different client implementations into one platform",
+    "Contributed to the development and maintenance of a Content Management System (CMS)",
+  ),
+  tags: (
+    "Java",
+    "Spring",
+  ),
+)
 
+#cvSection("Education")
+#cvEntry(
+  title: [ Bachelor of Science - Computer Science ],
+  society: [ Facultad de Ciencias Físico Matemáticas, UANL ],
+  date: [2005 - 2009],
+  location: [Nuevo León, MX],
+  logo: image("img/logos/fcfm.png"),
+  description: (
+    "Courses: Software Engineering"
+      + hBar()
+      + "Design Patterns"
+      + hBar()
+      + "Database Systems"
+  ),
+)
 
 #pagebreak()
 
@@ -138,6 +169,27 @@
     "Wireguard",
     "OpenVPN",
     "s6",
+  ),
+)
+#cvEntry(
+  title: link(
+    "https://github.com/bubuntux/whatsapp_to_dupr",
+  )[Whatsapp to DUPR exporter],
+  society: [Personal Project],
+  logo: image("img/logos/pickleball.png"),
+  date: [2024],
+  location: [Remote],
+  description: list(
+    "Implemented a Whatsapp bot that scan messages in group chats, parse matches and export them to DUPR",
+  ),
+  tags: (
+    "Rust",
+    "Whatsapp",
+    "Pickleball",
+    "DUPR",
+    "Regex",
+    "Serde",
+    "Json",
   ),
 )
 #cvEntry(
@@ -209,109 +261,111 @@
   ),
 )
 
+
+
+#cvSection("Open Source Contributions")
 #cvEntry(
-  title: [Open Source contributions],
-  society: "GitHub",
-  logo: image("img/logos/opensource.svg"),
-  date: [2011 - Present],
+  title: link("https://github.com/NixOS")[NixOS],
+  society: "Declarative Linux distribution ",
+  logo: image("img/logos/NixOS.svg"),
+  // date: [],
   location: [Remote],
-  description: list(
-    {
-      link("https://github.com/NixOS")[NixOS - ]
-      link(
-        "https://github.com/NixOS/nixpkgs/pull/354062",
-      )[Update cloudflare-wrap enrollment]
-      hBar()
-      link(
-        "https://github.com/NixOS/nixpkgs/pull/296164",
-      )[Add ivsc-firmware to ipu6 option]
-      hBar()
-      link(
-        "https://github.com/NixOS/nixpkgs/pull/295508",
-      )[Add a1_prod symbolic links to fix ipu6 webcams]
-    },
-    {
-      link("https://github.com/ublue-os/")[Universal Blue - ]
-      link("https://github.com/blue-build/modules/pull/373")[Fix fonts module]
-      hBar()
-      link("https://github.com/ublue-os/config/pull/73")[Add arch toolbox]
-      hBar()
-      link("https://github.com/ublue-os/main/pull/273")[Add clipman for sericea]
-      hBar()
-      link(
-        "https://github.com/ublue-os/config/pull/271",
-      )[Remove unecessary workaround]
-    },
-    {
-      link("https://github.com/datafaker-net/datafaker")[Datafaker - ]
-      link(
-        "https://github.com/datafaker-net/datafaker/pull/82",
-      )[Lazy cache all locale values]
-      h(1fr)
-      link("https://github.com/Antergos/Cnchi")[Angergos/Cnchi - ]
-      link(
-        "https://github.com/Antergos/Cnchi/pull/456",
-      )[Fix issues generating fallback entries]
-      h(1fr)
-      link("https://github.com/threerings/playn")[PlayN - ]
-      link("https://github.com/threerings/playn/pull/23")[Fixed run-java target]
-    },
-    {
-      link("https://github.com/testng-team/testng")[TestNG - ]
-      link(
-        "https://github.com/testng-team/testng/pull/114",
-      )[Fix an issue with \@BeforeTest method]
-      h(1fr)
-      link("https://github.com/scribejava/scribejava")[ScripeJava - ]
-      link(
-        "https://github.com/scribejava/scribejava/pull/298",
-      )[Add support for Ubuntu One]
-      hBar()
-      link(
-        "https://github.com/scribejava/scribejava/pull/259 ",
-      )[Update Dropbox api]
-    },
-    {
-      link("https://github.com/emesene/emesene")[Emesene - ]
-      link(
-        "https://github.com/emesene/emesene/pull/838",
-      )[Add feature to only show notifications when available]
-      hBar()
-      link(
-        "https://github.com/emesene/emesene/pull/821",
-      )[Hide close button tab if only has one tab]
-    },
-  ),
-  // tags: (
-  //   "Hackathon",
-  //   "Boardgames",
-  //   "CoffeeScript",
-  //   "CSS",
-  //   "HTML",
-  //   "Jade",
-  //   "JavaScript",
-  //   "Meteor",
-  //   "MongoDB",
-  //   "Node.js",
-  //   "Pug",
-  // ),
+  description: list({
+    link(
+      "https://github.com/NixOS/nixpkgs/pull/354062",
+    )[Update cloudflare-wrap enrollment]
+    hBar()
+    link(
+      "https://github.com/NixOS/nixpkgs/pull/296164",
+    )[Add ivsc-firmware to ipu6 option]
+    hBar()
+    link(
+      "https://github.com/NixOS/nixpkgs/pull/295508",
+    )[Add a1_prod symbolic links to fix ipu6 webcams]
+  }),
+)
+#cvEntry(
+  title: link("https://github.com/ublue-os/")[Universal Blue],
+  society: "Community built operating system images",
+  logo: image("img/logos/universal blue.png"),
+  // date: [],
+  location: [Remote],
+  description: list({
+    link("https://github.com/blue-build/modules/pull/373")[Fix fonts module]
+    hBar()
+    link("https://github.com/ublue-os/config/pull/73")[Add arch toolbox]
+    hBar()
+    link("https://github.com/ublue-os/main/pull/273")[Add clipman for sericea]
+    hBar()
+    link(
+      "https://github.com/ublue-os/config/pull/271",
+    )[Remove unecessary workaround]
+  }),
+)
+#cvEntry(
+  title: link("https://github.com/datafaker-net/datafaker")[Datafaker],
+  society: "Library to generate fake data",
+  logo: image("img/logos/datafaker.jpg"),
+  // date: [],
+  location: [Remote],
+  description: list({
+    link(
+      "https://github.com/datafaker-net/datafaker/pull/82",
+    )[Lazy cache all locale values]
+  }),
+  // tags: ("Java",),
+)
+#cvEntry(
+  title: link("https://github.com/emesene/emesene")[Emesene],
+  society: "instant messenger",
+  logo: image("img/logos/emesene.png"),
+  // date: [],
+  location: [Remote],
+  description: list({
+    link(
+      "https://github.com/emesene/emesene/pull/838",
+    )[Add feature to only show notifications when available]
+    hBar()
+    link(
+      "https://github.com/emesene/emesene/pull/821",
+    )[Hide close button tab if only has one tab]
+  }),
+  // tags: ("Python",),
 )
 
-#cvSection("Education")
-#cvEntry(
-  title: [ Bachelor of Science - Computer Science ],
-  society: [ Facultad de Ciencias Físico Matemáticas, UANL ],
-  date: [2005 - 2009],
-  location: [Nuevo León, MX],
-  logo: image("img/logos/fcfm.png"),
-  description: (
-    "Courses: Software Engineering"
-      + hBar()
-      + "Design Patterns"
-      + hBar()
-      + "Database Systems"
-  ),
-)
+// #cvEntry(
+//   title: [Open Source contributions],
+//   society: "GitHub",
+//   logo: image("img/logos/opensource.svg"),
+//   date: [2011 - Present],
+//   location: [Remote],
+//   description: list(
+//     {
+//       h(1fr)
+//       link("https://github.com/Antergos/Cnchi")[Angergos/Cnchi - ]
+//       link(
+//         "https://github.com/Antergos/Cnchi/pull/456",
+//       )[Fix issues generating fallback entries]
+//     },
+//     {
+//       link("https://github.com/testng-team/testng")[TestNG - ]
+//       link(
+//         "https://github.com/testng-team/testng/pull/114",
+//       )[Fix an issue with \@BeforeTest method]
+//       h(1fr)
+//       link("https://github.com/scribejava/scribejava")[ScripeJava - ]
+//       link(
+//         "https://github.com/scribejava/scribejava/pull/298",
+//       )[Add support for Ubuntu One]
+//       hBar()
+//       link(
+//         "https://github.com/scribejava/scribejava/pull/259 ",
+//       )[Update Dropbox api]
+//     },
+//     { },
+//   ),
+// )
+
 
 #cvSection("Certificates")
 #cvHonor(
