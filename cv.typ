@@ -155,7 +155,7 @@
   date: [2020 - 2025],
   location: [Remote],
   description: list(
-    "Containers that makes routing traffic through the NordVPN/ProtonVPN network easy and secure with an integrated iptables kill switch",
+    "Containers that make routing traffic through the NordVPN/ProtonVPN network easy and secure with an integrated iptables kill switch",
     [ 17M+ downloads #hBar() 1K+ stars #hBar() 250+ forks ],
   ),
   tags: (
@@ -180,7 +180,7 @@
   date: [2024],
   location: [Remote],
   description: list(
-    "Implemented a Whatsapp bot that scan messages in group chats, parse matches and export them to DUPR",
+    "Implemented a Whatsapp bot that scans messages in group chats, parses matches and exports them to DUPR",
   ),
   tags: (
     "Rust",
@@ -221,7 +221,7 @@
   location: [San Francisco, CA],
   description: list(
     "Enabled a travel platform to accept Bitcoin payments",
-    "Integration with Coinbase and TestNet",
+    "Integrated with Coinbase and TestNet to process transactions",
   ),
   tags: (
     "Hackathon",
@@ -316,7 +316,7 @@
   // tags: ("Java",),
 )
 #cvEntry(
-  title: link("https://github.com/Antergos/Cnchi")[Angergos/Cnchi],
+  title: link("https://github.com/Antergos/Cnchi")[Antergos/Cnchi],
   society: "Graphical Installer for Antergos Linux",
   logo: image("img/logos/cnchi.png"),
   date: [2015],
@@ -420,7 +420,7 @@
 )
 #cvSkill(
   type: [Personal Interests],
-  info: [Boardgames #hBar() Pickleball #hBar() Self-host #hBar() Linux],
+  info: [Boardgames #hBar() Pickleball #hBar() Self-hosting #hBar() Linux],
 )
 #cvSkill(
   type: [Tech Stacks],
