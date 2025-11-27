@@ -11,7 +11,7 @@
   metadata.personal.first_name + " " + metadata.personal.last_name
 )
 #set document(author: full_name, title: full_name + "'s Curriculum Vitae")
-
+#show link: underline
 
 #cvSection("Professional Experience")
 #cvEntry(
@@ -268,7 +268,7 @@
   title: link("https://github.com/NixOS")[NixOS],
   society: "Declarative Linux distribution ",
   logo: image("img/logos/NixOS.svg"),
-  // date: [],
+  date: [2024],
   location: [Remote],
   description: list({
     link(
@@ -288,7 +288,7 @@
   title: link("https://github.com/ublue-os/")[Universal Blue],
   society: "Community built operating system images",
   logo: image("img/logos/universal blue.png"),
-  // date: [],
+  date: [2023],
   location: [Remote],
   description: list({
     link("https://github.com/blue-build/modules/pull/373")[Fix fonts module]
@@ -298,7 +298,7 @@
     link("https://github.com/ublue-os/main/pull/273")[Add clipman for sericea]
     hBar()
     link(
-      "https://github.com/ublue-os/config/pull/271",
+      "https://github.com/ublue-os/main/pull/271",
     )[Remove unecessary workaround]
   }),
 )
@@ -306,12 +306,12 @@
   title: link("https://github.com/datafaker-net/datafaker")[Datafaker],
   society: "Library to generate fake data",
   logo: image("img/logos/datafaker.jpg"),
-  // date: [],
+  date: [2022],
   location: [Remote],
   description: list({
     link(
       "https://github.com/datafaker-net/datafaker/pull/82",
-    )[Lazy cache all locale values]
+    )[Implement a lazy cache on all locales, speeding up to 50% tests using multiple languages ]
   }),
   // tags: ("Java",),
 )
@@ -319,12 +319,12 @@
   title: link("https://github.com/Antergos/Cnchi")[Angergos/Cnchi],
   society: "Graphical Installer for Antergos Linux",
   logo: image("img/logos/cnchi.png"),
-  // date: [],
+  date: [2015],
   location: [Remote],
   description: list({
     link(
       "https://github.com/Antergos/Cnchi/pull/456",
-    )[Fix issues generating fallback entries]
+    )[Fix bash script that generates GRUB fallback menu entries and prioritize non-LTS kernels]
   }),
   // tags: ("Java",),
 )
@@ -333,12 +333,12 @@
   title: link("https://github.com/testng-team/testng")[TestNG],
   society: "Java testing framework",
   logo: image("img/logos/testng.png"),
-  // date: [],
+  date: [2011],
   location: [Remote],
   description: list({
     link(
       "https://github.com/testng-team/testng/pull/114",
-    )[Fix an issue with \@BeforeTest method]
+    )[Fix issue \#92 - \@BeforeTest method in a super class will be called multiple time when alwayRun = true]
   }),
   // tags: ("Java",),
 )
@@ -390,29 +390,39 @@
 
 
 #cvSection("Certificates")
+//TODO: linkedin cert?
 #cvHonor(
   date: [2013],
-  title: [Oracle Certified Professional, Java EE 5 Web Component Developer],
+  title: link(
+    "https://www.credly.com/badges/7a58ac90-8119-485d-bd8a-83f0d3e6c69f",
+  )[Oracle Certified Professional, Java EE 5 Web Component Developer],
   issuer: [Oracle],
 )
 #cvHonor(
   date: [2011],
-  title: [ Oracle Certified Professional, Java SE 6 Programmer ],
+  title: link(
+    "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
+  )[ Oracle Certified Professional, Java SE 6 Programmer ],
   issuer: [Oracle],
 )
 #cvHonor(
   date: [2019],
-  title: [ Certified SAFe® 4 Agile Software Engineer ],
+  title: link(
+    "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
+  )[ Certified SAFe® 4 Agile Software Engineer ],
   issuer: [SAFe by Scaled Agile, Inc],
 )
 
 #cvSection("Skills")
-#cvSkill(type: [Languages], info: [English #hBar() Spanish])
+#cvSkill(
+  type: [Languages],
+  info: [English (Full Professional) #hBar() Spanish (Native)],
+)
 #cvSkill(
   type: [Personal Interests],
   info: [Boardgames #hBar() Pickleball #hBar() Self-host #hBar() Linux],
 )
 #cvSkill(
   type: [Tech Stacks],
-  info: [Java #hBar() Spring #hBar() Containerization #hBar() AWS ],
+  info: [Java #hBar() Spring #hBar() Containerization #hBar() AWS #hBar() Bash #hBar() SQL #hBar() Python #hBar() TypeScript #hBar() JavaScript],
 )
