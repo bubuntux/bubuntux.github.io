@@ -115,8 +115,8 @@
 #cvEntry(
   title: [Software Engineer],
   society: [S&C Constructores de Sistemas],
-  // logo: image("img/logos/nearsoft.png"),
-  date: [2011 - 2009],
+  logo: image("img/logos/sc.jpg"),
+  date: [2009 - 2011],
   location: [ Monterrey, NL #hBar() Remote ],
   description: list(
     "Established a new business line by building an e-invoice system that integrated with a CMS and regulatory entities",
@@ -316,22 +316,50 @@
   // tags: ("Java",),
 )
 #cvEntry(
-  title: link("https://github.com/emesene/emesene")[Emesene],
-  society: "instant messenger",
-  logo: image("img/logos/emesene.png"),
+  title: link("https://github.com/Antergos/Cnchi")[Angergos/Cnchi],
+  society: "Graphical Installer for Antergos Linux",
+  logo: image("img/logos/cnchi.png"),
   // date: [],
   location: [Remote],
   description: list({
     link(
-      "https://github.com/emesene/emesene/pull/838",
-    )[Add feature to only show notifications when available]
-    hBar()
-    link(
-      "https://github.com/emesene/emesene/pull/821",
-    )[Hide close button tab if only has one tab]
+      "https://github.com/Antergos/Cnchi/pull/456",
+    )[Fix issues generating fallback entries]
   }),
-  // tags: ("Python",),
+  // tags: ("Java",),
 )
+
+#cvEntry(
+  title: link("https://github.com/testng-team/testng")[TestNG],
+  society: "Java testing framework",
+  logo: image("img/logos/testng.png"),
+  // date: [],
+  location: [Remote],
+  description: list({
+    link(
+      "https://github.com/testng-team/testng/pull/114",
+    )[Fix an issue with \@BeforeTest method]
+  }),
+  // tags: ("Java",),
+)
+
+// #cvEntry(
+//   title: link("https://github.com/emesene/emesene")[Emesene],
+//   society: "instant messenger",
+//   logo: image("img/logos/emesene.png"),
+//   // date: [],
+//   location: [Remote],
+//   description: list({
+//     link(
+//       "https://github.com/emesene/emesene/pull/838",
+//     )[Add feature to only show notifications when available]
+//     hBar()
+//     link(
+//       "https://github.com/emesene/emesene/pull/821",
+//     )[Hide close button tab if only has one tab]
+//   }),
+//   // tags: ("Python",),
+// )
 
 // #cvEntry(
 //   title: [Open Source contributions],
@@ -343,15 +371,9 @@
 //     {
 //       h(1fr)
 //       link("https://github.com/Antergos/Cnchi")[Angergos/Cnchi - ]
-//       link(
-//         "https://github.com/Antergos/Cnchi/pull/456",
-//       )[Fix issues generating fallback entries]
 //     },
 //     {
 //       link("https://github.com/testng-team/testng")[TestNG - ]
-//       link(
-//         "https://github.com/testng-team/testng/pull/114",
-//       )[Fix an issue with \@BeforeTest method]
 //       h(1fr)
 //       link("https://github.com/scribejava/scribejava")[ScripeJava - ]
 //       link(
