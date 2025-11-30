@@ -62,7 +62,7 @@ jobs:
 
           #resumed export --theme jsonresume-theme-even -o public/resume.pdf
           cp resume.json public/resume.json
-          cp avatar.png public/avatar.png
+          cp img/avatar.png public/avatar.png
          
       - name: Setup Pages
         uses: actions/configure-pages@v5

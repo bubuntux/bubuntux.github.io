@@ -10,7 +10,22 @@
 #let full_name = (
   metadata.personal.first_name + " " + metadata.personal.last_name
 )
-#set document(author: full_name, title: full_name + "'s Curriculum Vitae")
+#set document(
+  author: full_name,
+  title: full_name + "'s Curriculum Vitae",
+  description: "Staff Software Engineer with over 15 years of experience in designing and building scalable and reliable systems. Proficient in a wide range of technologies including Java, Python, and AWS. Passionate about mentorship and leveraging AI to solve complex problems. When not at the keyboard, I am a proud father of three, a board game enthusiast, and an avid self-hoster.",
+  keywords: (
+    "Java",
+    "Spring",
+    "Linux",
+    "Docker",
+    "Containers",
+    "Rust",
+    "Go",
+    "AI",
+    "Machine Learning",
+  ),
+)
 #show link: underline
 
 #cvSection("Professional Experience")
@@ -21,15 +36,14 @@
   date: [2021 - Present],
   location: [Austin, TX #hBar() Remote],
   description: list(
-    [
-      Spearheaded multiple cost-saving initiatives, resulting in over \$1.8M in annual savings through measures such as pausing Feed Alerts (\$1.7M), optimizing data builders (\$180k), and reducing AWS account costs (\$120k/month)
-    ],
-    [ Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability.],
-    [Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability.],
-    [Demonstrated strong technical leadership by owning and resolving a critical 11-month long incident, ensuring the availability of the Job Alerts functionality.],
-    [Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation.],
-    [Mentored and onboarded numerous junior engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth.],
-    [Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery.],
+    [Spearheaded multiple cost-saving initiatives, resulting in over \$1.8M in annual savings through measures such as pausing Feed Alerts, optimizing data builders, and reducing AWS account costs],
+    [Deployed a cost-effective vLLM inference architecture leveraging fine-tuned SLMs to significantly decrease latency compared to standard LLM implementations],
+    [Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability],
+    [Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability],
+    [Owned and resolved a critical 11-month long incident, ensuring the availability of critical systems],
+    [Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation],
+    [Mentored and onboarded numerous junior engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth],
+    [Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery],
   ),
   tags: (
     "Java",
@@ -155,7 +169,13 @@
   date: [2020 - 2025],
   location: [Remote],
   description: list(
-    "Containers that make routing traffic through the NordVPN/ProtonVPN network easy and secure with an integrated iptables kill switch",
+    "Containers that make routing traffic through the "
+      + link("https://github.com/bubuntux/nordvpn")[NordVPN]
+      + ", "
+      + link("https://github.com/bubuntux/nordlynx")[NordLynx]
+      + " and"
+      + link("https://github.com/bubuntux/protorrent")[ProtonVPN]
+      + " network easy and secure",
     [ 17M+ downloads #hBar() 1K+ stars #hBar() 250+ forks ],
   ),
   tags: (
@@ -172,10 +192,8 @@
   ),
 )
 #cvEntry(
-  title: link(
-    "https://github.com/bubuntux/whatsapp_to_dupr",
-  )[Whatsapp to DUPR exporter],
-  society: [Personal Project],
+  title: [JUPR],
+  society: [Universal Rating Platform],
   logo: image("img/logos/pickleball.png"),
   date: [2024],
   location: [Remote],
@@ -184,12 +202,12 @@
   ),
   tags: (
     "Rust",
+    "Regex",
+    "PostgreSQL",
+    "SeaORM",
     "Whatsapp",
     "Pickleball",
     "DUPR",
-    "Regex",
-    "Serde",
-    "Json",
   ),
 )
 #cvEntry(
@@ -243,7 +261,7 @@
   date: [2013],
   location: [Hermosillo, SO],
   description: list(
-    "A multiplayer framework to play board games on phones",
+    "A multiplayer platform to play board games on phones",
     "Supported games: Love Letter and The Resistance",
   ),
   tags: (
