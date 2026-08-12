@@ -41,12 +41,15 @@
       "startDate": "2021-10-11",
       "summary": "",
       "highlights": [
+        "Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, OpenAI-compatible API, LoRA adapter serving, KEDA autoscaling, and full observability, at 3-4x lower latency than external LLM providers.",
+        "Onboarded the first production ranking use case onto the platform, ramping a fine-tuned model to 100% of traffic and cutting serving costs from $120K to $8K per month (~$1.34M annualized).",
         "Spearheaded multiple cost-saving initiatives, resulting in over $1.8M in annual savings through measures such as pausing Feed Alerts ($1.7M), optimizing data builders ($180k), and reducing AWS account costs ($120k/month)",
+        "Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company and drove the fix with the cloud economics and observability teams.",
         "Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability.",
         "Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability.",
         "Demonstrated strong technical leadership by owning and resolving a critical 11-month long incident, ensuring the availability of the Job Alerts functionality.",
         "Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation.",
-        "Mentored and onboarded numerous junior engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth.",
+        "Stepped up as interim team lead, mentored and onboarded numerous engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth.",
         "Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery.",
         "Improved developer productivity by enabling cache and incremental builds, resulting in a 30% reduction in build times."
       ],
@@ -65,6 +68,9 @@
         "Spring",
         "Triton",
         "vLLM",
+        "LoRA",
+        "KEDA",
+        "Kubernetes",
         "DataDog",
         "Claude"
       ]
@@ -414,6 +420,7 @@
         "Git",
         "Jenkins",
         "Kubernetes",
+        "KEDA",
         "Linux",
         "Terraform",
         "GitHub"
@@ -435,6 +442,7 @@
         "SLM",
         "LLM",
         "vLLM",
+        "LoRA",
         "Triton",
         "Generative AI",
         "CNN",
@@ -752,6 +760,15 @@
     }
   ],
   "volunteer": [
+    {
+      "organization": "genai-bench",
+      "summary": "Benchmarking tool for LLM serving",
+      "position": "Contributor",
+      "url": "https://github.com/sgl-project/genai-bench",
+      "highlights": [
+        "[Fixed SSE parser to handle optional/variable whitespace after 'data:'](https://github.com/sgl-project/genai-bench/pull/163)"
+      ]
+    },
     {
       "organization": "NixOS",
       "summary": "Declarative builds and deployments",

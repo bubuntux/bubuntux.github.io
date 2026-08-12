@@ -5,12 +5,12 @@
 
 #show: letter.with(
   metadata,
-  myAddress: "Your Address Here",
+  myAddress: "Experienced Remote Software Engineer looking for a full time job",
   recipientName: "Company Name Here",
   recipientAddress: "Company Address Here",
   date: datetime.today().display(),
-  subject: "Subject: Hey!",
-  signature: image("src/signature.png"),
+  subject: "Senior Software Engineer, Java position",
+  // signature: image("src/signature.png"),
 )
 
 Dear Hiring Manager,

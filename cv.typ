@@ -24,6 +24,9 @@
     "Go",
     "AI",
     "Machine Learning",
+    "LLM Inference",
+    "vLLM",
+    "Kubernetes",
   ),
 )
 #show link: underline
@@ -36,13 +39,15 @@
   date: [2021 - Present],
   location: [Austin, TX #hBar() Remote],
   description: list(
+    [Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, OpenAI-compatible API, LoRA adapter serving, KEDA autoscaling, and full observability, at 3-4x lower latency than external LLM providers],
+    [Onboarded the first production ranking use case onto the platform, ramping a fine-tuned model to 100% of traffic and cutting serving costs from \$120K to \$8K per month (\~\$1.34M annualized)],
     [Spearheaded multiple cost-saving initiatives, resulting in over \$1.8M in annual savings through measures such as pausing Feed Alerts, optimizing data builders, and reducing AWS account costs],
-    [Deployed a cost-effective vLLM inference architecture leveraging fine-tuned SLMs to significantly decrease latency compared to standard LLM implementations],
+    [Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company and drove the fix with the cloud economics and observability teams],
     [Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability],
     [Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability],
     [Owned and resolved a critical 11-month long incident, ensuring the availability of critical systems],
     [Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation],
-    [Mentored and onboarded numerous junior engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth],
+    [Stepped up as interim team lead, mentored and onboarded numerous engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth],
     [Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery],
   ),
   tags: (
@@ -58,6 +63,9 @@
     "Kubernetes",
     "vLLM",
     "SLM",
+    "LoRA",
+    "KEDA",
+    "GPU",
   ),
 )
 #cvEntry(
@@ -143,6 +151,8 @@
   ),
 )
 
+#pagebreak()
+
 #cvSection("Education")
 #cvEntry(
   title: [ Bachelor of Science - Computer Science ],
@@ -158,8 +168,6 @@
       + "Database Systems"
   ),
 )
-
-#pagebreak()
 
 #cvSection("Projects")
 #cvEntry(
@@ -281,7 +289,21 @@
 
 
 
+#pagebreak()
+
 #cvSection("Open Source Contributions")
+#cvEntry(
+  title: link("https://github.com/sgl-project/genai-bench")[genai-bench],
+  society: "Benchmarking tool for LLM serving",
+  logo: image("img/logos/genai-bench.png"),
+  date: [2026],
+  location: [Remote],
+  description: list({
+    link(
+      "https://github.com/sgl-project/genai-bench/pull/163",
+    )[Fix SSE parser to handle optional/variable whitespace after "data:"]
+  }),
+)
 #cvEntry(
   title: link("https://github.com/NixOS")[NixOS],
   society: "Declarative Linux distribution ",
