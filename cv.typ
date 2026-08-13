@@ -39,16 +39,15 @@
   date: [2021 - Present],
   location: [Austin, TX #hBar() Remote],
   description: list(
-    [Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, OpenAI-compatible API, LoRA adapter serving, KEDA autoscaling, and full observability, at 3-4x lower latency than external LLM providers],
-    [Onboarded the first production ranking use case onto the platform, ramping a fine-tuned model to 100% of traffic and cutting serving costs from \$120K to \$8K per month (\~\$1.34M annualized)],
-    [Spearheaded multiple cost-saving initiatives, resulting in over \$1.8M in annual savings through measures such as pausing Feed Alerts, optimizing data builders, and reducing AWS account costs],
-    [Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company and drove the fix with the cloud economics and observability teams],
-    [Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability],
-    [Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability],
-    [Owned and resolved a critical 11-month long incident, ensuring the availability of critical systems],
-    [Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation],
-    [Stepped up as interim team lead, mentored and onboarded numerous engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth],
-    [Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery],
+    [Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, drop-in OpenAI Chat Completions API, LoRA adapter serving, FP8 quantization, schema-constrained structured outputs, per-use-case isolation, KEDA autoscaling, and end-to-end observability],
+    [Migrated production workloads off external LLM vendors onto the platform, saving over \$7M annually, including an 87% reduction (\~\$5.8M/year) on a 60M request/day generation workload and a 93% reduction (\~\$1.34M/year) on a fine-tuned ranking model],
+    [Delivered inline query embeddings on the live job-search path at \~20ms p95, a latency budget third-party embedding APIs (\~500ms p90) could not meet],
+    [Delivered a fine-tuned SLM reranker improving NDCG\@10 by 44% and cutting bad results by 63% at flat online latency],
+    [Spearheaded cost-saving initiatives delivering over \$3.3M in annual savings, including pausing Feed Alerts (\$1.7M/year), cutting the team's AWS account costs (\$1.4M/year), and removing unused data builders (\$180K/year)],
+    [Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company, engaging the cloud economics and observability teams and proposing the fix],
+    [Led the migration of bidding models to the Inference Server as the single point of contact for the initiative, establishing SLO monitoring and shadow testing for safe rollout, and consolidated bidding onto a global cluster, simplifying deployments and improving CPU utilization],
+    [Owned and resolved an 11-month availability failure in the Job Alerts index builders, coordinating 3 engineers and an intern across 5 partner teams, migrating 3 critical indexes to AWS, and restoring the model refresh cadence to daily],
+    [Stepped up as team lead, mentored and onboarded numerous engineers and an intern, co-created a new pair programming interview, and fostered a culture of knowledge sharing and growth],
   ),
   tags: (
     "Java",
@@ -348,11 +347,14 @@
   logo: image("img/logos/datafaker.jpg"),
   date: [2022],
   location: [Remote],
-  description: list({
-    link(
-      "https://github.com/datafaker-net/datafaker/pull/82",
-    )[Implement a lazy cache on all locales, speeding up to 50% tests using multiple languages ]
-  }),
+  description: list(
+    {
+      link(
+        "https://github.com/datafaker-net/datafaker/pull/82",
+      )[Implement a lazy cache on all locales, speeding up to 50% tests using multiple languages ]
+    },
+    [Drove an org-wide migration off the abandoned JavaFaker library, recognized by Indeed's Open Source Team for its first captured contribution to an open source dependency],
+  ),
   // tags: ("Java",),
 )
 #cvEntry(
@@ -428,6 +430,18 @@
 //   ),
 // )
 
+
+#cvSection("Talks")
+#cvHonor(
+  date: [2026],
+  title: [SLM infra at Indeed],
+  issuer: [Indeed #hBar() Austin, TX],
+)
+#cvHonor(
+  date: [2025],
+  title: [SLM at Indeed],
+  issuer: [SciCon #hBar() Indeed's internal science conference],
+)
 
 #cvSection("Certificates")
 //TODO: linkedin cert?

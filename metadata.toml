@@ -61,7 +61,7 @@ language = "en"
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
     [personal.info]
-        homepage = "julioguti.dev"
+        # homepage = "julioguti.dev" # re-enable once Cloudflare/Pages TLS is fixed
         email = "cv@julioguti.dev"
         linkedin = "julio-guti"
         github = "bubuntux"
@@ -80,6 +80,6 @@ language = "en"
 # each section must contains the following fields
 
 [lang.en]
-    header_quote = "Experienced Remote Software Engineer looking for a full time job"
+    header_quote = "Staff Software Engineer · LLM inference platforms · 15+ years · Remote"
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"

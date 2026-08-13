@@ -41,17 +41,30 @@
       "startDate": "2021-10-11",
       "summary": "",
       "highlights": [
-        "Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, OpenAI-compatible API, LoRA adapter serving, KEDA autoscaling, and full observability, at 3-4x lower latency than external LLM providers.",
-        "Onboarded the first production ranking use case onto the platform, ramping a fine-tuned model to 100% of traffic and cutting serving costs from $120K to $8K per month (~$1.34M annualized).",
-        "Spearheaded multiple cost-saving initiatives, resulting in over $1.8M in annual savings through measures such as pausing Feed Alerts ($1.7M), optimizing data builders ($180k), and reducing AWS account costs ($120k/month)",
-        "Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company and drove the fix with the cloud economics and observability teams.",
-        "Led the successful migration of bidding models to the Inference Server and migrated 3 critical indexes to AWS, improving deployment simplicity, CPU utilization, and overall system stability.",
+        "Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, drop-in OpenAI Chat Completions API, LoRA adapter serving, FP8 quantization, schema-constrained structured outputs, per-use-case isolation, and KEDA autoscaling.",
+        "Migrated production workloads off external LLM vendors onto the platform, saving over $7M annually, including an 87% reduction (~$5.8M/year) on a 60M request/day generation workload and a 93% reduction (~$1.34M/year) on a fine-tuned ranking model ramped to 100% of traffic.",
+        "Delivered inline query embeddings on the live job-search path at ~20ms p95, a latency budget third-party embedding APIs (~500ms p90) could not meet.",
+        "Delivered a fine-tuned SLM reranker improving NDCG@10 by 44% and cutting bad results by 63% at flat online latency.",
+        "Led the platform's full lifecycle from an accepted architecture design review through production deployment, standing up 2 new repositories, SSAK service authentication, and 3 Production Readiness Reviews that standardized onboarding for new use cases.",
+        "Adopted genai-bench for inference benchmarking and contributed a bug fix back to the open source project.",
+        "Kept the ranking rollout healthy through A/B testing, resolving production issues in real time, implementing warmup orchestration to cut cold-start latency, and tuning KEDA downscaling to absorb cron-driven traffic spikes.",
+        "Contributed key design input to the LLM proxy integration, shaping the routing layer through which client teams consume the inference platform.",
+        "Spearheaded cost-saving initiatives delivering over $3.3M in annual savings, including pausing Feed Alerts (~$1.7M/year), cutting the team's AWS account costs (~$1.44M/year), and removing unused data builders (~$180k/year).",
+        "Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company, engaging the cloud economics and observability teams and proposing the fix.",
+        "Led the migration of bidding models to the Inference Server as the single point of contact for the initiative, establishing SLO monitoring and shadow testing for safe rollout, and consolidated bidding onto a global cluster, simplifying deployments and improving CPU utilization.",
         "Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability.",
-        "Demonstrated strong technical leadership by owning and resolving a critical 11-month long incident, ensuring the availability of the Job Alerts functionality.",
-        "Pioneered research into Java 21 adoption and led the migration of an unmaintained library to a modern, supported alternative, demonstrating a commitment to technical innovation.",
-        "Stepped up as interim team lead, mentored and onboarded numerous engineers and interns, created and scaled a new pair programming interview, and fostered a culture of knowledge sharing and growth.",
+        "Owned and resolved an 11-month availability failure in the Job Alerts index builders, coordinating 3 engineers and an intern across 5 partner teams, migrating 3 critical indexes to AWS, and restoring the model refresh cadence to daily.",
+        "Built the data-comparison tooling that validated those AWS index migrations within a 1% deviation, adopted by every team performing the migration.",
+        "Led the migration of SERP second-phase scoring off the index service onto the Inference Server, from design through implementation, across three partner teams.",
+        "Led the handover of the Job Alerts product area to a new team, writing the transition documentation, running knowledge-sharing sessions, and onboarding their engineers into the on-call rotation.",
+        "Identified and drove company-wide storage savings, including disabling versioning on outbox S3 buckets (2.2PB reclaimed, ~$29k/month) and applying lifecycle policies to analytics buckets.",
+        "Pioneered research into Java 21 with Generational ZGC, documenting the findings and a benchmarking plan for adoption across the platform's services.",
+        "Stepped up as team lead, mentored and onboarded numerous engineers and an intern, and supported the growth of 4+ engineers through regular 1:1s.",
+        "Co-created a new pair programming interview, building the questions and defining the scoring signals, removing 2 interviews from each candidate's loop.",
+        "Corrected the team's testing strategy: wrote the proposal that became a team objective and guided a QA engineer in raising unit test coverage on a core service from under 10% to over 90%.",
+        "Presented the team's technical direction and business impact to senior engineering leadership, led AI tooling demos, and authored the runbooks, load-testing tools, and wiki documentation the team onboards from.",
         "Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery.",
-        "Improved developer productivity by enabling cache and incremental builds, resulting in a 30% reduction in build times."
+        "Improved developer productivity by enabling caching and incremental builds on a Gradle task used in every Java build company-wide, cutting time spent on it by 30%."
       ],
       "keywords": [
         "AWS",
@@ -367,6 +380,20 @@
       "date": "2020-02-14",
       "url": "https://www.linkedin.com/learning/certificates/3eb5ab3ce0a933c265bfbe45c2a4e1a0c5bdd4bfbac5e3e0e1128ce68869c494",
       "issuer": "LinkedIn"
+    }
+  ],
+  "publications": [
+    {
+      "name": "SLM infra at Indeed (talk)",
+      "publisher": "Indeed, Austin",
+      "releaseDate": "2026-07",
+      "summary": "Presented the serving side of Indeed's small language model stack: platform capabilities, production cost and latency case studies, and guidance on when fine-tuning and self-hosting pay off over a third-party API."
+    },
+    {
+      "name": "SLM at Indeed (talk)",
+      "publisher": "SciCon, Indeed's internal science conference",
+      "releaseDate": "2025-12",
+      "summary": "Introduced self-hosted small language model inference at Indeed and the first production use cases running on it."
     }
   ],
   "skills": [
@@ -806,7 +833,9 @@
       "position": "Contributor",
       "url": "https://github.com/datafaker-net/datafaker",
       "highlights": [
-        "[Lazy cache all locale values](https://github.com/datafaker-net/datafaker/pull/82)"
+        "[Lazy cache all locale values](https://github.com/datafaker-net/datafaker/pull/82)",
+        "Drove Indeed's org-wide migration off the abandoned JavaFaker library onto Datafaker through a Sourcegraph campaign, reaching ~40% adoption",
+        "Recognized by Indeed's Open Source Team for the company's first captured contribution to an open source project it depends on"
       ]
     },
     {
