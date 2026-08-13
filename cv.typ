@@ -51,7 +51,7 @@
   date: [2021 - Present],
   location: [Austin, TX #hBar() Remote],
   description: list(
-    [Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, drop-in OpenAI Chat Completions API, LoRA adapter serving, FP8 quantization, schema-constrained structured outputs, per-use-case isolation, KEDA autoscaling, and end-to-end observability],
+    [Designed and delivered the company's first self-hosted SLM inference platform, taking it from architecture review to serving multiple production use cases: vLLM behind a drop-in OpenAI Chat Completions API, with LoRA adapters, FP8 quantization, per-use-case isolation, KEDA autoscaling, and end-to-end observability],
     [Migrated production workloads off external LLM vendors onto the platform, saving over \$7M annually, including an 87% reduction (\~\$5.8M/year) on a 60M request/day generation workload and a 93% reduction (\~\$1.34M/year) on a fine-tuned ranking model],
     [Delivered inline query embeddings on the live job-search path at \~20ms p95, a latency budget third-party embedding APIs (\~500ms p90) could not meet],
     [Delivered a fine-tuned SLM reranker improving NDCG\@10 by 44% and cutting bad results by 63% at flat online latency],

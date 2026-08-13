@@ -51,7 +51,7 @@ language = "en"
     inject_ai_prompt = false
 
     # Decide if you want to inject keywords or not
-    inject_keywords = true
+    inject_keywords = false
     injected_keywords_list = ["Data Analyst", "GCP", "Python", "SQL", "Tableau"]
 
 [personal]
@@ -80,6 +80,6 @@ language = "en"
 # each section must contains the following fields
 
 [lang.en]
-    header_quote = "Staff Software Engineer · LLM inference platforms · 15+ years · Remote"
+    header_quote = "Staff Software Engineer · LLM inference platforms · 15+ years · 17M+ OSS downloads · Remote"
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"
