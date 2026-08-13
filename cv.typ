@@ -7,6 +7,18 @@
 #let cvHonor = cvHonor.with(metadata: metadata)
 #show: cv.with(metadata, profilePhoto: image("img/avatar.png"))
 
+// Narrower date gutter for entries rendered inside a two-column block.
+#let compactMetadata = metadata + (
+  layout: metadata.layout + (date_width: "2cm"),
+)
+#let cvEntryCompact = cvEntry.with(metadata: compactMetadata)
+
+// Keeps an entry from being split across the column boundary.
+#let unbroken(body) = block(breakable: false, width: 100%, body)
+
+// One entry, sized for a half-width grid cell.
+#let colEntry(..args) = unbroken(cvEntryCompact(..args))
+
 #let full_name = (
   metadata.personal.first_name + " " + metadata.personal.last_name
 )
@@ -152,24 +164,31 @@
 
 #pagebreak()
 
-#cvSection("Education")
-#cvEntry(
-  title: [ Bachelor of Science - Computer Science ],
-  society: [ Facultad de Ciencias Físico Matemáticas, UANL ],
-  date: [2005 - 2009],
-  location: [Nuevo León, MX],
-  logo: image("img/logos/fcfm.png"),
-  description: (
-    "Courses: Software Engineering"
-      + hBar()
-      + "Design Patterns"
-      + hBar()
-      + "Database Systems"
-  ),
-)
-
 #cvSection("Projects")
-#cvEntry(
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 20pt,
+  row-gutter: 16pt,
+  colEntry(
+  title: link("https://github.com/bubuntux/den")[den],
+  society: [Multi-host NixOS Configuration],
+  logo: image("img/logos/NixOS.svg"),
+  date: [2025 - Present],
+  location: [Remote],
+  description: list(
+    "Declarative config for a dev laptop, a family machine and a NAS: Home Manager, encrypted secrets, CI-checked builds",
+    "Assembles every host from auto-discovered flake-parts modules using the dendritic pattern",
+  ),
+  tags: (
+    "Nix",
+    "NixOS",
+    "Flakes",
+    "flake-parts",
+    "Home Manager",
+    "sops",
+  ),
+),
+  colEntry(
   title: [VPN Containers],
   society: [Personal Project],
   logo: image("img/logos/wireguard.svg"),
@@ -197,8 +216,8 @@
     "OpenVPN",
     "s6",
   ),
-)
-#cvEntry(
+),
+  colEntry(
   title: [JUPR],
   society: [Universal Rating Platform],
   logo: image("img/logos/pickleball.png"),
@@ -216,8 +235,8 @@
     "Pickleball",
     "DUPR",
   ),
-)
-#cvEntry(
+),
+  colEntry(
   title: [Rocks],
   society: [1st place winner at Unearthed Denver 2017],
   logo: image("img/logos/unearthed.svg"),
@@ -237,13 +256,13 @@
     "ML",
     "CNN",
   ),
-)
-#cvEntry(
+),
+  colEntry(
   title: [Bitcoin Payment Connector],
   society: "People's Choice Award winner",
   logo: image("img/logos/bitcoin.svg"),
   date: [2015],
-  location: [San Francisco, CA],
+  location: [SF, CA],
   description: list(
     "Enabled a travel platform to accept Bitcoin payments",
     "Integrated with Coinbase and TestNet to process transactions",
@@ -258,8 +277,8 @@
     "Cryptocurrency",
     "TestNet",
   ),
-)
-#cvEntry(
+),
+  colEntry(
   title: link(
     "https://github.com/bubuntux/boardless-games-meteor",
   )[Boardless Games],
@@ -284,14 +303,15 @@
     "Node.js",
     "Pug",
   ),
+),
 )
 
-
-
-#pagebreak()
-
 #cvSection("Open Source Contributions")
-#cvEntry(
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 20pt,
+  row-gutter: 16pt,
+  colEntry(
   title: link("https://github.com/sgl-project/genai-bench")[genai-bench],
   society: "Benchmarking tool for LLM serving",
   logo: image("img/logos/genai-bench.png"),
@@ -302,8 +322,8 @@
       "https://github.com/sgl-project/genai-bench/pull/163",
     )[Fix SSE parser to handle optional/variable whitespace after "data:"]
   }),
-)
-#cvEntry(
+),
+  colEntry(
   title: link("https://github.com/NixOS")[NixOS],
   society: "Declarative Linux distribution ",
   logo: image("img/logos/NixOS.svg"),
@@ -322,8 +342,8 @@
       "https://github.com/NixOS/nixpkgs/pull/295508",
     )[Add a1_prod symbolic links to fix ipu6 webcams]
   }),
-)
-#cvEntry(
+),
+  colEntry(
   title: link("https://github.com/ublue-os/")[Universal Blue],
   society: "Community built operating system images",
   logo: image("img/logos/universal blue.png"),
@@ -340,24 +360,21 @@
       "https://github.com/ublue-os/main/pull/271",
     )[Remove unecessary workaround]
   }),
-)
-#cvEntry(
+),
+  colEntry(
   title: link("https://github.com/datafaker-net/datafaker")[Datafaker],
   society: "Library to generate fake data",
   logo: image("img/logos/datafaker.jpg"),
   date: [2022],
   location: [Remote],
-  description: list(
-    {
-      link(
-        "https://github.com/datafaker-net/datafaker/pull/82",
-      )[Implement a lazy cache on all locales, speeding up to 50% tests using multiple languages ]
-    },
-    [Drove an org-wide migration off the abandoned JavaFaker library, recognized by Indeed's Open Source Team for its first captured contribution to an open source dependency],
-  ),
+  description: list({
+    link(
+      "https://github.com/datafaker-net/datafaker/pull/82",
+    )[Implement a lazy cache on all locales, speeding up to 50% tests using multiple languages ]
+  }),
   // tags: ("Java",),
-)
-#cvEntry(
+),
+  colEntry(
   title: link("https://github.com/Antergos/Cnchi")[Antergos/Cnchi],
   society: "Graphical Installer for Antergos Linux",
   logo: image("img/logos/cnchi.png"),
@@ -369,9 +386,8 @@
     )[Fix bash script that generates GRUB fallback menu entries and prioritize non-LTS kernels]
   }),
   // tags: ("Java",),
-)
-
-#cvEntry(
+),
+  colEntry(
   title: link("https://github.com/testng-team/testng")[TestNG],
   society: "Java testing framework",
   logo: image("img/logos/testng.png"),
@@ -383,6 +399,7 @@
     )[Fix issue \#92 - \@BeforeTest method in a super class will be called multiple time when alwayRun = true]
   }),
   // tags: ("Java",),
+),
 )
 
 // #cvEntry(
@@ -431,18 +448,6 @@
 // )
 
 
-#cvSection("Talks")
-#cvHonor(
-  date: [2026],
-  title: [SLM infra at Indeed],
-  issuer: [Indeed #hBar() Austin, TX],
-)
-#cvHonor(
-  date: [2025],
-  title: [SLM at Indeed],
-  issuer: [SciCon #hBar() Indeed's internal science conference],
-)
-
 #cvSection("Certificates")
 //TODO: linkedin cert?
 #cvHonor(
@@ -456,15 +461,31 @@
   date: [2011],
   title: link(
     "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
-  )[ Oracle Certified Professional, Java SE 6 Programmer ],
+  )[Oracle Certified Professional, Java SE 6 Programmer],
   issuer: [Oracle],
 )
 #cvHonor(
   date: [2019],
   title: link(
     "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
-  )[ Certified SAFe® 4 Agile Software Engineer ],
+  )[Certified SAFe® 4 Agile Software Engineer],
   issuer: [SAFe by Scaled Agile, Inc],
+)
+
+#cvSection("Education")
+#cvEntry(
+  title: [ Bachelor of Science - Computer Science ],
+  society: [ Facultad de Ciencias Físico Matemáticas, UANL ],
+  date: [2005 - 2009],
+  location: [Nuevo León, MX],
+  logo: image("img/logos/fcfm.png"),
+  description: (
+    "Courses: Software Engineering"
+      + hBar()
+      + "Design Patterns"
+      + hBar()
+      + "Database Systems"
+  ),
 )
 
 #cvSection("Skills")
@@ -477,6 +498,10 @@
   info: [Boardgames #hBar() Pickleball #hBar() Self-hosting #hBar() Linux],
 )
 #cvSkill(
+  type: [AI / Inference],
+  info: [vLLM #hBar() SLM #hBar() LoRA #hBar() FP8 Quantization #hBar() KEDA #hBar() GPU Serving],
+)
+#cvSkill(
   type: [Tech Stacks],
-  info: [Java #hBar() Spring #hBar() Containerization #hBar() AWS #hBar() Bash #hBar() SQL #hBar() Python #hBar() TypeScript #hBar() JavaScript],
+  info: [Java #hBar() Spring #hBar() Python #hBar() Kubernetes #hBar() AWS #hBar() Terraform #hBar() Datadog #hBar() SQL #hBar() Bash #hBar() Kotlin #hBar() Rust #hBar() TypeScript],
 )
