@@ -54,12 +54,13 @@
     [Designed and delivered the company's first self-hosted SLM inference platform, taking it from architecture review to serving multiple production use cases: vLLM behind a drop-in OpenAI Chat Completions API, with LoRA adapters, FP8 quantization, per-use-case isolation, KEDA autoscaling, and end-to-end observability],
     [Migrated production workloads off external LLM vendors onto the platform, saving over \$7M annually, including an 87% reduction (\~\$5.8M/year) on a 60M request/day generation workload and a 93% reduction (\~\$1.34M/year) on a fine-tuned ranking model],
     [Delivered inline query embeddings on the live job-search path at \~20ms p95, a latency budget third-party embedding APIs (\~500ms p90) could not meet],
-    [Delivered a fine-tuned SLM reranker improving NDCG\@10 by 44% and cutting bad results by 63% at flat online latency],
-    [Spearheaded cost-saving initiatives delivering over \$3.3M in annual savings, including pausing Feed Alerts (\$1.7M/year), cutting the team's AWS account costs (\$1.4M/year), and removing unused data builders (\$180K/year)],
-    [Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company, engaging the cloud economics and observability teams and proposing the fix],
-    [Led the migration of bidding models to the Inference Server as the single point of contact for the initiative, establishing SLO monitoring and shadow testing for safe rollout, and consolidated bidding onto a global cluster, simplifying deployments and improving CPU utilization],
-    [Owned and resolved an 11-month availability failure in the Job Alerts index builders, coordinating 3 engineers and an intern across 5 partner teams, migrating 3 critical indexes to AWS, and restoring the model refresh cadence to daily],
+    [Productionized a fine-tuned SLM reranker at flat online latency, making a 44% NDCG\@10 gain and 63% fewer bad results shippable],
+    [Spearheaded cost-saving initiatives delivering over \$3.3M in annual savings, including sunsetting a legacy email alerts product (\$1.7M/year), cutting the team's AWS account costs (\$1.4M/year), and removing unused data builders (\$180K/year)],
+    [Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company, driving the cross-team investigation and proposing the fix],
+    [Led the bidding model migration onto the shared model-serving platform as single point of contact, using shadow tests for safe rollout and consolidating bidding onto a global cluster that simplified deployments and improved CPU utilization],
+    [Owned and resolved an 11-month availability failure in a business-critical data pipeline, coordinating 3 engineers and an intern across 5 partner teams, migrating 3 of its indexes to AWS, and restoring the model refresh cadence to daily],
     [Stepped up as team lead, mentored and onboarded numerous engineers and an intern, co-created a new pair programming interview, and fostered a culture of knowledge sharing and growth],
+    [Set the team's AI-assisted engineering practice, running demos and knowledge-sharing sessions on a spec-driven, agent-assisted workflow that other engineers adopted as their own],
   ),
   tags: (
     "Java",
@@ -190,7 +191,7 @@
 ),
   colEntry(
   title: [VPN Containers],
-  society: [Personal Project],
+  society: [Open Source Container Images],
   logo: image("img/logos/wireguard.svg"),
   date: [2020 - 2025],
   location: [Remote],
@@ -500,6 +501,10 @@
 #cvSkill(
   type: [AI / Inference],
   info: [vLLM #hBar() SLM #hBar() LoRA #hBar() FP8 Quantization #hBar() KEDA #hBar() GPU Serving],
+)
+#cvSkill(
+  type: [AI Tooling],
+  info: [Claude Code #hBar() Gemini #hBar() Agentic Coding Workflows #hBar() Spec-Driven Development #hBar() MCP],
 )
 #cvSkill(
   type: [Tech Stacks],
