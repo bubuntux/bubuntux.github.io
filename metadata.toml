@@ -80,6 +80,6 @@ language = "en"
 # each section must contains the following fields
 
 [lang.en]
-    header_quote = "Staff Software Engineer · LLM inference platforms · 15+ years · 17M+ OSS downloads · Remote"
+    header_quote = "Staff Software Engineer · LLM inference platforms · 15+ years · 22M+ OSS downloads · Remote"
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"

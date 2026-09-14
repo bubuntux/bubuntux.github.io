@@ -193,7 +193,7 @@
   title: [VPN Containers],
   society: [Open Source Container Images],
   logo: image("img/logos/wireguard.svg"),
-  date: [2020 - 2025],
+  date: [2018 - 2025],
   location: [Remote],
   description: list(
     "Containers that make routing traffic through the "
@@ -203,7 +203,7 @@
       + " and"
       + link("https://github.com/bubuntux/protorrent")[ProtonVPN]
       + " network easy and secure",
-    [ 17M+ downloads #hBar() 1K+ stars #hBar() 250+ forks ],
+    [ 18M+ downloads #hBar() 1K+ stars #hBar() 250+ forks ],
   ),
   tags: (
     "Containerization",
@@ -345,21 +345,39 @@
   }),
 ),
   colEntry(
-  title: link("https://github.com/ublue-os/")[Universal Blue],
-  society: "Community built operating system images",
-  logo: image("img/logos/universal blue.png"),
+  title: link("https://github.com/89luca89/distrobox")[Distrobox],
+  society: "Any Linux distribution inside your terminal",
+  logo: image("img/logos/distrobox.svg"),
   date: [2023],
   location: [Remote],
   description: list({
-    link("https://github.com/blue-build/modules/pull/373")[Fix fonts module]
-    hBar()
-    link("https://github.com/ublue-os/config/pull/73")[Add arch toolbox]
-    hBar()
-    link("https://github.com/ublue-os/main/pull/273")[Add clipman for sericea]
+    link(
+      "https://github.com/89luca89/distrobox/pull/823",
+    )[Upgrade only running instances]
     hBar()
     link(
-      "https://github.com/ublue-os/main/pull/271",
-    )[Remove unecessary workaround]
+      "https://github.com/89luca89/distrobox/pull/766",
+    )[Ignore net files when unsharing nets]
+    hBar()
+    [7 merged PRs #hBar() 13K+ stars]
+  }),
+),
+  colEntry(
+  title: link("https://github.com/qdm12/gluetun")[Gluetun],
+  society: "VPN client container for multiple providers",
+  logo: image("img/logos/gluetun.png"),
+  date: [2023],
+  location: [Remote],
+  description: list({
+    link(
+      "https://github.com/qdm12/gluetun/pull/1380",
+    )[Add NordVPN API endpoint and WireGuard support]
+    hBar()
+    link(
+      "https://github.com/qdm12/gluetun/pull/1427",
+    )[Add generics to some methods]
+    hBar()
+    [15K+ stars]
   }),
 ),
   colEntry(
@@ -372,19 +390,6 @@
     link(
       "https://github.com/datafaker-net/datafaker/pull/82",
     )[Implement a lazy cache on all locales, speeding up to 50% tests using multiple languages ]
-  }),
-  // tags: ("Java",),
-),
-  colEntry(
-  title: link("https://github.com/Antergos/Cnchi")[Antergos/Cnchi],
-  society: "Graphical Installer for Antergos Linux",
-  logo: image("img/logos/cnchi.png"),
-  date: [2015],
-  location: [Remote],
-  description: list({
-    link(
-      "https://github.com/Antergos/Cnchi/pull/456",
-    )[Fix bash script that generates GRUB fallback menu entries and prioritize non-LTS kernels]
   }),
   // tags: ("Java",),
 ),
