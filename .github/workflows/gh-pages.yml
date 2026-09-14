@@ -65,7 +65,12 @@ jobs:
           cp img/avatar.png public/avatar.png
 
       - name: Add CNAME
-        run: echo "julioguti.dev" > public/CNAME
+        run: |
+          # Custom domain lives in the repo so it is reviewable and version-controlled.
+          # A Pages artifact without CNAME makes GitHub drop the custom domain and
+          # destroy its TLS certificate, so fail loudly rather than deploy without it.
+          test -s CNAME || { echo "::error::CNAME missing or empty; refusing to deploy"; exit 1; }
+          cp CNAME public/CNAME
          
       - name: Setup Pages
         uses: actions/configure-pages@v5
