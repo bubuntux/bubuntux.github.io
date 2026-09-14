@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Julio Gutierrez",
-    "label": "Software Engineer",
-    "image": "https://bubuntux.github.io/avatar.png",
+    "label": "Staff Software Engineer",
+    "image": "https://julioguti.dev/avatar.png",
     "email": "cv@julioguti.dev",
-    "url": "https://bubuntux.github.io",
+    "url": "https://julioguti.dev",
     "summary": "Staff Software Engineer with over 15 years of experience in designing and building scalable and reliable systems. Proficient in a wide range of technologies including Java, Python, and AWS. Passionate about mentorship and leveraging AI to solve complex problems. When not at the keyboard, I am a proud father of three, a board game enthusiast, and an avid self-hoster.",
     "location": {
       "city": "Austin",
@@ -33,13 +33,13 @@
   "work": [
     {
       "name": "Indeed",
-      "logo": "./img/indeed.svg",
+      "logo": "./img/logos/indeed.svg",
       "url": "https://www.indeed.com",
       "location": "(Remote) Austin, TX",
       "description": "Hiring platform",
       "position": "Staff Software Engineer",
       "startDate": "2021-10-11",
-      "summary": "",
+      "summary": "Staff engineer on a model-serving platform team, building and operating the self-hosted small language model inference stack and leading cost, reliability, and migration initiatives across partner teams.",
       "highlights": [
         "Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, drop-in OpenAI Chat Completions API, LoRA adapter serving, FP8 quantization, schema-constrained structured outputs, per-use-case isolation, and KEDA autoscaling.",
         "Migrated production workloads off external LLM vendors onto the platform, saving over $7M annually, including an 87% reduction (~$5.8M/year) on a 60M request/day generation workload and a 93% reduction (~$1.34M/year) on a fine-tuned ranking model ramped to 100% of traffic.",
@@ -86,12 +86,15 @@
         "KEDA",
         "Kubernetes",
         "DataDog",
-        "Claude"
+        "Claude",
+        "FP8",
+        "GPU",
+        "Terraform"
       ]
     },
     {
       "name": "Natera",
-      "logo": "./img/natera.svg",
+      "logo": "./img/logos/natera.svg",
       "url": "https://www.natera.com",
       "location": "(Remote) Austin, TX",
       "description": "Healthcare | Genetic test",
@@ -119,7 +122,7 @@
     },
     {
       "name": "Switchfly",
-      "logo": "./img/switchfly.svg",
+      "logo": "./img/logos/switchfly.svg",
       "url": "https://www.switchfly.com",
       "location": "San Francisco, CA - Denver, CO - (Remote) Austin, TX",
       "description": "Travel platform",
@@ -146,7 +149,7 @@
     },
     {
       "name": "Nearsoft",
-      "logo": "./img/bitcoin.svg",
+      "logo": "./img/logos/nearsoft.png",
       "url": "http://nearsoft.com",
       "location": "Hermosillo, SO - (Remote) Monterrey, NL",
       "description": "IT | Outsourcing",
@@ -164,7 +167,7 @@
         "Spring",
         "Hibernate",
         "Couchbase",
-        "PorstreSQL",
+        "PostgreSQL",
         "Selenium",
         "EasyMock",
         "Ember",
@@ -207,6 +210,7 @@
       ],
       "keywords": [
         "Java",
+        "Spring",
         "MySQL"
       ]
     },
@@ -419,13 +423,24 @@
       ]
     },
     {
+      "name": "Rust",
+      "level": "Intermediate",
+      "keywords": [
+        "actix-web",
+        "SeaORM",
+        "serde",
+        "Tokio"
+      ]
+    },
+    {
       "name": "JavaScript",
       "level": "Senior",
       "keywords": [
         "React",
         "Node.js",
         "jQuery",
-        "CoffeeScript"
+        "CoffeeScript",
+        "TypeScript"
       ]
     },
     {
@@ -451,14 +466,20 @@
         "KEDA",
         "Linux",
         "Terraform",
-        "GitHub"
+        "GitHub",
+        "Bash",
+        "Datadog"
       ]
     },
     {
       "name": "Databases",
       "level": "Senior",
       "keywords": [
+        "SQL",
         "PostgreSQL",
+        "MySQL",
+        "DynamoDB",
+        "Couchbase",
         "MongoDB",
         "Hadoop"
       ]
@@ -474,7 +495,11 @@
         "Triton",
         "Generative AI",
         "CNN",
-        "DNN"
+        "DNN",
+        "FP8 Quantization",
+        "GPU Serving",
+        "Fine-tuning",
+        "Embeddings"
       ]
     },
     {
@@ -509,12 +534,23 @@
         "Android",
         "Java"
       ]
+    },
+    {
+      "name": "Nix",
+      "level": "Intermediate",
+      "keywords": [
+        "NixOS",
+        "Flakes",
+        "flake-parts",
+        "Home Manager",
+        "sops"
+      ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Full Professional"
     },
     {
       "language": "Spanish",
@@ -557,6 +593,30 @@
     }
   ],
   "projects": [
+    {
+      "name": "den",
+      "description": "Personal multi-host NixOS configuration managed as a Nix flake",
+      "startDate": "2026-01-28",
+      "roles": [
+        "Owner"
+      ],
+      "highlights": [
+        "Declarative config for a dev laptop, a family machine and a NAS: Home Manager, encrypted secrets, CI-checked builds",
+        "Assembles every host from auto-discovered flake-parts modules using the dendritic pattern"
+      ],
+      "type": "Configuration",
+      "url": "https://github.com/bubuntux/den",
+      "keywords": [
+        "Flakes",
+        "flake-parts",
+        "GitHub Actions",
+        "Home Manager",
+        "Linux",
+        "Nix",
+        "NixOS",
+        "sops"
+      ]
+    },
     {
       "name": "NordVPN container",
       "description": "Official NordVPN client in a Docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch",
@@ -614,6 +674,28 @@
       ]
     },
     {
+      "name": "JUPR",
+      "description": "A WhatsApp bot that scans group chats, parses pickleball match results and exports them to DUPR, the universal pickleball rating platform",
+      "startDate": "2024-12-28",
+      "roles": [
+        "Owner"
+      ],
+      "highlights": [
+        "Implemented a WhatsApp bot that scans messages in group chats, parses matches and exports them to DUPR"
+      ],
+      "type": "Application",
+      "keywords": [
+        "actix-web",
+        "DUPR",
+        "Pickleball",
+        "PostgreSQL",
+        "Regex",
+        "Rust",
+        "SeaORM",
+        "WhatsApp"
+      ]
+    },
+    {
       "name": "Rocks",
       "description": "1st place winner at Unearthed Denver 2017",
       "startDate": "2017-09-24",
@@ -664,7 +746,7 @@
       "name": "Boardless Games",
       "description": "A multiplayer framework to play board games on phones",
       "startDate": "2013-06-02",
-      "endDate": "2021-06-04",
+      "endDate": "2013-06-04",
       "roles": [
         "Owner"
       ],
@@ -806,7 +888,20 @@
       "url": "https://github.com/sgl-project/genai-bench",
       "highlights": [
         "[Fixed SSE parser to handle optional/variable whitespace after 'data:'](https://github.com/sgl-project/genai-bench/pull/163)"
-      ]
+      ],
+      "startDate": "2026-01-31",
+      "endDate": "2026-02-13"
+    },
+    {
+      "organization": "BlueBuild",
+      "summary": "The BlueBuild project creates accessible tools for you to create, configure & build custom images of atomic Fedora distributions.",
+      "position": "Contributor",
+      "url": "https://github.com/blue-build",
+      "highlights": [
+        "[Fixed fonts module](https://github.com/blue-build/modules/pull/373)"
+      ],
+      "startDate": "2024-12-04",
+      "endDate": "2024-12-04"
     },
     {
       "organization": "NixOS",
@@ -817,19 +912,12 @@
         "[Updated cloudflare-wrap enrollment command](https://github.com/NixOS/nixpkgs/pull/354062)",
         "[Added ivsc-firmware to ipu6 option](https://github.com/NixOS/nixpkgs/pull/296164)",
         "[Added a1_prod symbolic links to fix ipu6 webcams](https://github.com/NixOS/nixpkgs/pull/295508)"
-      ]
+      ],
+      "startDate": "2024-03-13",
+      "endDate": "2024-11-07"
     },
     {
-      "organization": "BlueBuild",
-      "summary": "The BlueBuild project creates accessible tools for you to create, configure & build custom images of atomic Fedora distributions.",
-      "position": "Contributor",
-      "url": "https://github.com/blue-build",
-      "highlights": [
-        "[Fixed fonts module](https://github.com/blue-build/modules/pull/373)"
-      ]
-    },
-    {
-      "organization": " Universal Blue ",
+      "organization": "Universal Blue",
       "summary": "Custom Operating System Images",
       "position": "Contributor",
       "url": "https://github.com/ublue-os",
@@ -837,7 +925,9 @@
         "[Added arch toolbox](https://github.com/ublue-os/config/pull/73)",
         "[Added clipman for sericea](https://github.com/ublue-os/main/pull/273)",
         "[Removed unecessary workaround](https://github.com/ublue-os/main/pull/271)"
-      ]
+      ],
+      "startDate": "2023-07-07",
+      "endDate": "2023-07-15"
     },
     {
       "organization": "Datafaker",
@@ -848,16 +938,20 @@
         "[Lazy cache all locale values](https://github.com/datafaker-net/datafaker/pull/82)",
         "Drove Indeed's org-wide migration off the abandoned JavaFaker library onto Datafaker through a Sourcegraph campaign, reaching ~40% adoption",
         "Recognized by Indeed's Open Source Team for the company's first captured contribution to an open source project it depends on"
-      ]
+      ],
+      "startDate": "2022-03-10",
+      "endDate": "2022-03-10"
     },
     {
-      "organization": "Angergos/Cnchi",
+      "organization": "Antergos/Cnchi",
       "summary": "Graphical Installer for Antergos Linux",
       "position": "Contributor",
       "url": "https://github.com/Antergos/Cnchi",
       "highlights": [
         "[Fixed issues generating fallback entries](https://github.com/Antergos/Cnchi/pull/456)"
-      ]
+      ],
+      "startDate": "2015-10-31",
+      "endDate": "2015-10-31"
     },
     {
       "organization": "PlayN",
@@ -866,7 +960,9 @@
       "url": "https://github.com/threerings/playn",
       "highlights": [
         "[Fixed run-java target](https://github.com/threerings/playn/pull/23)"
-      ]
+      ],
+      "startDate": "2013-06-08",
+      "endDate": "2013-06-08"
     },
     {
       "organization": "ScribeJava",
@@ -876,7 +972,9 @@
       "highlights": [
         "[Added support for Ubuntu One](https://github.com/scribejava/scribejava/pull/298)",
         "[Update Dropbox api](https://github.com/scribejava/scribejava/pull/259)"
-      ]
+      ],
+      "startDate": "2012-04-29",
+      "endDate": "2012-09-13"
     },
     {
       "organization": "TestNG",
@@ -885,7 +983,9 @@
       "url": "https://github.com/testng-team/testng",
       "highlights": [
         "[Fix an issue with @BeforeTest method in a super class will be called multiple time when alwayRun = true](https://github.com/testng-team/testng/pull/114)"
-      ]
+      ],
+      "startDate": "2011-10-25",
+      "endDate": "2011-10-28"
     },
     {
       "organization": "Emesene",
@@ -894,11 +994,13 @@
       "summary": "Emesene is an instant messenger capable of connecting to various networks.",
       "highlights": [
         "[Added feature to only show notifications when available](https://github.com/emesene/emesene/pull/838)",
-        "[Hide close button tab if only has one tab](https://github.com/emesene/emesene/pull/821)"
+        "[Hide close button tab if only has one tab](https://github.com/emesene/emesene/issues/821)"
       ],
       "keywords": [
         "Python"
-      ]
+      ],
+      "startDate": "2011-09-04",
+      "endDate": "2011-09-08"
     }
   ],
   "references": [
@@ -917,6 +1019,7 @@
   ],
   "meta": {
     "version": "v1.0.0",
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    "canonical": "https://julioguti.dev/resume.json",
+    "lastModified": "2026-09-14T00:00:00"
   }
 }
