@@ -10,7 +10,7 @@
   recipientAddress: "Company Address Here",
   date: datetime.today().display(),
   subject: "Senior Software Engineer, Java position",
-  // signature: image("src/signature.png"),
+  // signature: image("/static/img/signature.png"),
 )
 
 Dear Hiring Manager,

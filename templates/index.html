@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="intro">
+  <img class="avatar" src="{{ get_url(path='img/avatar.png') }}" alt="{{ config.title }}">
+  {{ section.content | safe }}
+</section>
+
+{% set blog = get_section(path="posts/_index.md") %}
+{% if blog.pages %}
+<h2>Latest posts</h2>
+{{<posts.list pages={blog.pages[:5]} />}}
+<p><a href="{{ blog.permalink }}">All posts →</a></p>
+{% endif %}
+{% endblock %}

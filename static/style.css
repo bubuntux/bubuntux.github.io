@@ -1,0 +1,155 @@
+:root {
+  --text: #1f2328;
+  --muted: #656d76;
+  --accent: #1e8449;
+  --on-accent: #ffffff;
+  --border: #d0d7de;
+  --surface: #f6f8fa;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6edf3;
+    --muted: #8d96a0;
+    --accent: #3fb950;
+    --on-accent: #0d1117;
+    --border: #30363d;
+    --surface: #161b22;
+  }
+}
+
+body {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  font: 1.0625rem/1.65 system-ui, sans-serif;
+  color: var(--text);
+}
+
+a { color: var(--accent); }
+img { max-width: 100%; }
+pre, code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+pre { overflow-x: auto; padding: 1rem; background: var(--surface); border-radius: 6px; }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.monogram {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  color: var(--on-accent);
+  background: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.site-domain { font-family: ui-monospace, monospace; font-weight: 600; }
+
+/* Phones: the nav needs the room, so keep just the monogram. */
+@media (max-width: 30rem) {
+  .site-domain { display: none; }
+}
+.site-header nav a { margin-left: 1rem; }
+.site-header nav .social { color: var(--muted); }
+.site-header nav .social:hover { color: var(--accent); }
+.icon { width: 1.2em; height: 1.2em; vertical-align: -0.2em; }
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.meta, time { color: var(--muted); font-size: 0.9rem; }
+.avatar { width: 6rem; height: 6rem; border-radius: 25%; object-fit: cover; }
+.intro { display: flex; gap: 1.5rem; align-items: center; margin: 2rem 0; }
+
+.post-list { list-style: none; padding: 0; }
+.post-list li { padding: 0.25rem 0; }
+.post-heading { display: flex; gap: 1rem; }
+.post-list .tags { margin: 0.3rem 0 0.5rem; }
+.post-summary { margin: 0.25rem 0 1rem; padding-left: 1rem; border-left: 3px solid var(--border); }
+.post-summary > :first-child { margin-top: 0; }
+.post-summary > :last-child { margin-bottom: 0; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.tags span,
+.tags a {
+  padding: 0.05rem 0.5rem;
+  font-size: 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.tags a { color: var(--text); text-decoration: none; }
+.tags a:hover { border-color: var(--accent); color: var(--accent); }
+
+.cv-header { display: flex; gap: 1.5rem; align-items: center; }
+.cv-header h1 { margin: 0; }
+.cv-header .label { margin: 0; font-size: 1.15rem; }
+.cv h2 { margin-top: 2.5rem; border-bottom: 2px solid var(--accent); }
+.entry { display: flex; gap: 1rem; margin: 1.5rem 0; }
+.entry h3 { margin: 0; font-size: 1.05rem; }
+.entry .meta { margin: 0.1rem 0 0.5rem; }
+.logo { width: 2.5rem; height: 2.5rem; object-fit: contain; flex-shrink: 0; }
+.skills dt { font-weight: 600; margin-top: 0.5rem; }
+.skills dd { margin-left: 0; }
+blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--border); }
+blockquote footer { color: var(--muted); font-size: 0.9rem; }
+
+.pagination { display: flex; justify-content: space-between; }
+
+.pdf-ribbon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+.pdf-ribbon a {
+  position: absolute;
+  top: 2.2rem;
+  right: -3.3rem;
+  width: 13rem;
+  padding: 0.45rem 0;
+  transform: rotate(45deg);
+  color: var(--on-accent);
+  background: var(--accent);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 25%);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+/* Below this width the top-right corner overlaps the nav, so use the bottom-right one. */
+@media (max-width: 60rem) {
+  .pdf-ribbon { top: auto; bottom: 0; }
+  .pdf-ribbon a { top: auto; bottom: 2.2rem; transform: rotate(-45deg); }
+}
+
+@media print {
+  .pdf-ribbon { display: none; }
+}

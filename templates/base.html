@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+  <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg', trailing_slash=false) }}">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ config.base_url }}" aria-label="{{ config.title }}, home">
+      <span class="monogram" aria-hidden="true">JG</span>
+      <span class="site-domain">{{ config.extra.domain }}</span>
+    </a>
+    <nav>
+      {% for item in config.extra.nav %}
+      <a href="{{ get_url(path=item.path) }}">{{ item.name }}</a>
+      {% endfor %}
+      {% for profile in config.extra.social %}
+      <a class="social" href="{{ profile.url }}"{% if profile.url is starting_with(pat="http") %} target="_blank" rel="noopener"{% endif %} aria-label="{{ profile.name }}" title="{{ profile.name }}">{{<icon name={profile.icon} />}}</a>
+      {% endfor %}
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <a href="{{ get_url(path='atom.xml', trailing_slash=false) }}" target="_blank" rel="noopener">Feed</a> ·
+    <a href="{{ get_url(path='resume.json', trailing_slash=false) }}" download="{{ config.title | replace(from=' ', to='-') }}-resume.json" title="Full CV in JSON Resume format (jsonresume.org)">JSON Resume</a>
+  </footer>
+</body>
+</html>

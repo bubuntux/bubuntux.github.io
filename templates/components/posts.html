@@ -1,0 +1,22 @@
+{# With summaries on, posts that have a <!-- more --> marker show the text before it; tags adds tag chips. #}
+{% component posts.list(pages, summaries = false, tags = false) %}
+<ul class="post-list">
+  {% for page in pages %}
+  <li>
+    <div class="post-heading">
+      <time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
+    </div>
+    {% if tags and page.taxonomies.tags %}
+    <p class="tags">{% for tag in page.taxonomies.tags %}<a href="{{ get_taxonomy_url(kind='tags', term=tag) }}">#{{ tag }}</a>{% endfor %}</p>
+    {% endif %}
+    {% if summaries and page.summary %}
+    <div class="post-summary">
+      {{ page.summary | safe }}
+      <p><a href="{{ page.permalink }}#continue-reading">Read more →</a></p>
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endcomponent posts.list %}

@@ -5,7 +5,7 @@
 #let cvEntryStart = cvEntryStart.with(metadata: metadata)
 #let cvEntryContinued = cvEntryContinued.with(metadata: metadata)
 #let cvHonor = cvHonor.with(metadata: metadata)
-#show: cv.with(metadata, profilePhoto: image("img/avatar.png"))
+#show: cv.with(metadata, profilePhoto: image("/static/img/avatar.png"))
 
 // Narrower date gutter for entries rendered inside a two-column block.
 #let compactMetadata = metadata + (
@@ -47,7 +47,7 @@
 #cvEntry(
   title: [Staff Software Engineer],
   society: [Indeed],
-  logo: image("img/logos/indeed.svg"),
+  logo: image("/static/img/logos/indeed.svg"),
   date: [2021 - Present],
   location: [Austin, TX #hBar() Remote],
   description: list(
@@ -83,7 +83,7 @@
 #cvEntry(
   title: [Senior Software Engineer],
   society: [Natera],
-  logo: image("img/logos/natera.svg"),
+  logo: image("/static/img/logos/natera.svg"),
   date: [2020 - 2021],
   location: [Austin, TX #hBar() Remote],
   description: list(
@@ -106,7 +106,7 @@
 #cvEntry(
   title: [Lead Software Engineer],
   society: [Switchfly],
-  logo: image("img/logos/switchfly.svg"),
+  logo: image("/static/img/logos/switchfly.svg"),
   date: [2017 - 2020],
   location: [SF, CA - Denver, CO],
   description: list(
@@ -127,7 +127,7 @@
 #cvEntry(
   title: [Software Engineer],
   society: [Nearsoft],
-  logo: image("img/logos/nearsoft.png"),
+  logo: image("/static/img/logos/nearsoft.png"),
   date: [2011 - 2017],
   location: [ Monterrey, NL #hBar() Remote ],
   description: list(
@@ -149,7 +149,7 @@
 #cvEntry(
   title: [Software Engineer],
   society: [S&C Constructores de Sistemas],
-  logo: image("img/logos/sc.jpg"),
+  logo: image("/static/img/logos/sc.jpg"),
   date: [2009 - 2011],
   location: [ Monterrey, NL #hBar() Remote ],
   description: list(
@@ -173,7 +173,7 @@
   colEntry(
   title: link("https://github.com/bubuntux/den")[den],
   society: [Multi-host NixOS Configuration],
-  logo: image("img/logos/NixOS.svg"),
+  logo: image("/static/img/logos/NixOS.svg"),
   date: [2025 - Present],
   location: [Remote],
   description: list(
@@ -192,7 +192,7 @@
   colEntry(
   title: [VPN Containers],
   society: [Open Source Container Images],
-  logo: image("img/logos/wireguard.svg"),
+  logo: image("/static/img/logos/wireguard.svg"),
   date: [2018 - 2025],
   location: [Remote],
   description: list(
@@ -221,7 +221,7 @@
   colEntry(
   title: [JUPR],
   society: [Universal Rating Platform],
-  logo: image("img/logos/pickleball.png"),
+  logo: image("/static/img/logos/pickleball.png"),
   date: [2024],
   location: [Remote],
   description: list(
@@ -240,7 +240,7 @@
   colEntry(
   title: [Rocks],
   society: [1st place winner at Unearthed Denver 2017],
-  logo: image("img/logos/unearthed.svg"),
+  logo: image("/static/img/logos/unearthed.svg"),
   date: [2017],
   location: [Denver, CO],
   description: list(
@@ -261,7 +261,7 @@
   colEntry(
   title: [Bitcoin Payment Connector],
   society: "People's Choice Award winner",
-  logo: image("img/logos/bitcoin.svg"),
+  logo: image("/static/img/logos/bitcoin.svg"),
   date: [2015],
   location: [SF, CA],
   description: list(
@@ -284,7 +284,7 @@
     "https://github.com/bubuntux/boardless-games-meteor",
   )[Boardless Games],
   society: "2nd place winner at Nearsoft",
-  logo: image("img/logos/board-games.svg"),
+  logo: image("/static/img/logos/board-games.svg"),
   date: [2013],
   location: [Hermosillo, SO],
   description: list(
@@ -315,7 +315,7 @@
   colEntry(
   title: link("https://github.com/sgl-project/genai-bench")[genai-bench],
   society: "Benchmarking tool for LLM serving",
-  logo: image("img/logos/genai-bench.png"),
+  logo: image("/static/img/logos/genai-bench.png"),
   date: [2026],
   location: [Remote],
   description: list({
@@ -327,7 +327,7 @@
   colEntry(
   title: link("https://github.com/NixOS")[NixOS],
   society: "Declarative Linux distribution ",
-  logo: image("img/logos/NixOS.svg"),
+  logo: image("/static/img/logos/NixOS.svg"),
   date: [2024],
   location: [Remote],
   description: list({
@@ -347,7 +347,7 @@
   colEntry(
   title: link("https://github.com/89luca89/distrobox")[Distrobox],
   society: "Any Linux distribution inside your terminal",
-  logo: image("img/logos/distrobox.svg"),
+  logo: image("/static/img/logos/distrobox.svg"),
   date: [2023],
   location: [Remote],
   description: list({
@@ -365,7 +365,7 @@
   colEntry(
   title: link("https://github.com/qdm12/gluetun")[Gluetun],
   society: "VPN client container for multiple providers",
-  logo: image("img/logos/gluetun.png"),
+  logo: image("/static/img/logos/gluetun.png"),
   date: [2023],
   location: [Remote],
   description: list({
@@ -383,7 +383,7 @@
   colEntry(
   title: link("https://github.com/datafaker-net/datafaker")[Datafaker],
   society: "Library to generate fake data",
-  logo: image("img/logos/datafaker.jpg"),
+  logo: image("/static/img/logos/datafaker.jpg"),
   date: [2022],
   location: [Remote],
   description: list({
@@ -396,7 +396,7 @@
   colEntry(
   title: link("https://github.com/testng-team/testng")[TestNG],
   society: "Java testing framework",
-  logo: image("img/logos/testng.png"),
+  logo: image("/static/img/logos/testng.png"),
   date: [2011],
   location: [Remote],
   description: list({
@@ -411,7 +411,7 @@
 // #cvEntry(
 //   title: link("https://github.com/emesene/emesene")[Emesene],
 //   society: "instant messenger",
-//   logo: image("img/logos/emesene.png"),
+//   logo: image("/static/img/logos/emesene.png"),
 //   // date: [],
 //   location: [Remote],
 //   description: list({
@@ -429,7 +429,7 @@
 // #cvEntry(
 //   title: [Open Source contributions],
 //   society: "GitHub",
-//   logo: image("img/logos/opensource.svg"),
+//   logo: image("/static/img/logos/opensource.svg"),
 //   date: [2011 - Present],
 //   location: [Remote],
 //   description: list(
@@ -484,7 +484,7 @@
   society: [ Facultad de Ciencias Físico Matemáticas, UANL ],
   date: [2005 - 2009],
   location: [Nuevo León, MX],
-  logo: image("img/logos/fcfm.png"),
+  logo: image("/static/img/logos/fcfm.png"),
   description: (
     "Courses: Software Engineering"
       + hBar()

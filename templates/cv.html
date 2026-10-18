@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}CV · {{ config.title }}{% endblock %}
+{% block description %}{% set resume = load_data(path="static/resume.json") %}{{ resume.basics.label }}: {{ resume.basics.summary | truncate(length=150) }}{% endblock %}
+{% block head %}<link rel="alternate" type="application/json" title="JSON Resume" href="{{ get_url(path='resume.json', trailing_slash=false) }}">{% endblock %}
+
+{% block content %}
+{% set resume = load_data(path="static/resume.json") %}
+{% set basics = resume.basics %}
+{# cv.pdf comes from cv-build (cv/cv.typ -> static/cv.pdf); plain `zola serve` without it 404s. #}
+<div class="pdf-ribbon"><a href="{{ get_url(path='cv.pdf', trailing_slash=false) }}" download="{{ basics.name | replace(from=' ', to='-') }}-CV.pdf" title="Condensed 2-page version; this page has the full CV">2-page PDF</a></div>
+<article class="cv">
+  <header class="cv-header">
+    <img class="avatar" src="{{ get_url(path='img/avatar.png') }}" alt="{{ basics.name }}">
+    <div>
+      <h1>{{ basics.name }}</h1>
+      <p class="label">{{ basics.label }}</p>
+      <p class="meta">
+        {{ basics.location.city }}, {{ basics.location.region }} ·
+        <a href="mailto:{{ basics.email }}">{{ basics.email }}</a>
+        {# Skip profiles the site header already links, plus any hidden on purpose. #}
+        {% set skipped_networks = [...[link.name for link in config.extra.social], ...config.extra.cv_hidden_profiles] %}
+        {% for profile in basics.profiles %}{% if profile.network not in skipped_networks %} · <a href="{{ profile.url }}">{{ profile.network }}</a>{% endif %}{% endfor %}
+      </p>
+    </div>
+  </header>
+
+  <p>{{ basics.summary }}</p>
+
+  <h2>Experience</h2>
+  {% for job in resume.work %}
+  <section class="entry">
+    {{<cv.logo path={job.logo or ""} />}}
+    <div>
+      <h3>{{ job.position }} · {% if job.url %}<a href="{{ job.url }}">{{ job.name }}</a>{% else %}{{ job.name }}{% endif %}</h3>
+      <p class="meta">{{<cv.range start={job.startDate or ""} end={job.endDate or ""} />}}{% if job.location %} · {{ job.location }}{% endif %}</p>
+      {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
+      {{<cv.highlights items={job.highlights or []} />}}
+      {{<cv.keywords items={job.keywords or []} />}}
+    </div>
+  </section>
+  {% endfor %}
+
+  <h2>Open source contributions</h2>
+  {% for contribution in resume.volunteer %}
+  <section class="entry">
+    <div>
+      <h3><a href="{{ contribution.url }}">{{ contribution.organization }}</a></h3>
+      <p class="meta">{{ contribution.position }} · {{<cv.range start={contribution.startDate or ""} end={contribution.endDate or ""} />}}</p>
+      <p>{{ contribution.summary }}</p>
+      {{<cv.highlights items={contribution.highlights or []} />}}
+    </div>
+  </section>
+  {% endfor %}
+
+  <h2>Projects</h2>
+  {% for project in resume.projects %}
+  <section class="entry">
+    <div>
+      <h3>{% if project.url %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
+      <p class="meta">{{ project.type }} · {{<cv.range start={project.startDate or ""} end={project.endDate or ""} />}}</p>
+      <p>{{ project.description }}</p>
+      {{<cv.highlights items={project.highlights or []} />}}
+      {{<cv.keywords items={project.keywords or []} />}}
+    </div>
+  </section>
+  {% endfor %}
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    {% for skill in resume.skills %}
+    <dt>{{ skill.name }}{% if skill.level %} <small>({{ skill.level }})</small>{% endif %}</dt>
+    <dd>{{ skill.keywords | join(sep=", ") }}</dd>
+    {% endfor %}
+  </dl>
+
+  <h2>Education</h2>
+  {% for school in resume.education %}
+  <section class="entry">
+    <div>
+      <h3>{{ school.studyType }}, {{ school.area }}</h3>
+      <p class="meta"><a href="{{ school.url }}">{{ school.institution }}</a> · {{<cv.range start={school.startDate or ""} end={school.endDate or ""} />}}</p>
+    </div>
+  </section>
+  {% endfor %}
+
+  <h2>Publications &amp; talks</h2>
+  {% for publication in resume.publications %}
+  <section class="entry">
+    <div>
+      <h3>{{ publication.name }}</h3>
+      <p class="meta">{{ publication.publisher }} · {{<cv.date value={publication.releaseDate} />}}</p>
+      <p>{{ publication.summary }}</p>
+    </div>
+  </section>
+  {% endfor %}
+
+  <h2>Certificates</h2>
+  <ul>
+    {% for certificate in resume.certificates %}
+    <li>{% if certificate.url %}<a href="{{ certificate.url }}">{{ certificate.name }}</a>{% else %}{{ certificate.name }}{% endif %} · {{ certificate.issuer }}, {{<cv.date value={certificate.date} />}}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Languages</h2>
+  <ul>
+    {% for language in resume.languages %}<li>{{ language.language }}: {{ language.fluency }}</li>{% endfor %}
+  </ul>
+
+  <h2>Interests</h2>
+  <ul>
+    {% for interest in resume.interests %}<li>{{ interest.name }}: {{ interest.keywords | join(sep=", ") }}</li>{% endfor %}
+  </ul>
+
+  <h2>References</h2>
+  {% for reference in resume.references %}
+  <blockquote>
+    <p>{{ reference.reference }}</p>
+    <footer>{{ reference.name }}</footer>
+  </blockquote>
+  {% endfor %}
+</article>
+{% endblock %}

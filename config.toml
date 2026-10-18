@@ -1,0 +1,29 @@
+base_url = "https://julioguti.dev"
+title = "Julio Gutierrez"
+description = "Staff Software Engineer. Notes on LLM inference, NixOS, self-hosting and open source."
+
+compile_sass = false
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [
+  { name = "tags", feed = true },
+]
+
+[markdown]
+smart_punctuation = true
+
+[extra]
+domain = "julioguti.dev" # shown next to the JG monogram in the header
+nav = [
+  { name = "Blog", path = "@/posts/_index.md" },
+  { name = "CV", path = "@/cv.md" },
+]
+social = [
+  { name = "GitHub", icon = "github", url = "https://github.com/bubuntux" },
+  { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/julio-guti" },
+  { name = "hello@julioguti.dev", icon = "envelope", url = "mailto:hello@julioguti.dev" },
+]
+# resume.json profiles left off the CV page (they stay in the JSON and PDF).
+cv_hidden_profiles = ["Docker"]

@@ -1,0 +1,22 @@
+{# JSON Resume dates are "YYYY-MM-DD" or "YYYY-MM"; the date filter only parses full dates. #}
+{% component cv.date(value) %}
+{%- set full_date = value ~ "-01" if value | length == 7 else value -%}
+{{ full_date | date(format="%b %Y") }}
+{%- endcomponent cv.date %}
+
+{% component cv.range(start = "", end = "") %}
+{%- if start %}{{<cv.date value={start} />}} – {% if end %}{{<cv.date value={end} />}}{% else %}Present{% endif %}{% endif -%}
+{%- endcomponent cv.range %}
+
+{% component cv.logo(path = "") %}
+{%- if path %}<img class="logo" src="{{ get_url(path=path | trim_start(pat='./')) }}" alt="">{% endif -%}
+{%- endcomponent cv.logo %}
+
+{% component cv.keywords(items = []) %}
+{%- if items %}<p class="tags">{% for keyword in items %}<span>{{ keyword }}</span>{% endfor %}</p>{% endif -%}
+{%- endcomponent cv.keywords %}
+
+{# Highlights may hold Markdown links; "~" is escaped so "~$5M ... ~$1M" is not struck through. #}
+{% component cv.highlights(items = []) %}
+{%- if items %}<ul>{% for highlight in items %}<li>{{ highlight | replace(from="~", to="\\~") | markdown(inline=true) | safe }}</li>{% endfor %}</ul>{% endif -%}
+{%- endcomponent cv.highlights %}
