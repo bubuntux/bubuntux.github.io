@@ -27,3 +27,5 @@ social = [
 ]
 # resume.json profiles left off the CV page (they stay in the JSON and PDF).
 cv_hidden_profiles = ["Docker"]
+# Cloudflare Web Analytics (JS snippet; the site is DNS-only, not proxied). Public, it ships in every page.
+cloudflare_analytics_token = "ed216390b15d489194e4f8381f55211a"

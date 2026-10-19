@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
   <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
   {% block head %}{% endblock %}
+  {# Production builds only, so `zola serve` previews are not counted as visits. #}
+  {% if config.mode == "build" and config.extra.cloudflare_analytics_token %}
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ config.extra.cloudflare_analytics_token }}"}'></script>
+  {% endif %}
 </head>
 <body>
   <header class="site-header">
