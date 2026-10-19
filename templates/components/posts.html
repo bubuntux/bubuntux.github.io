@@ -5,7 +5,7 @@
   <li>
     <div class="post-heading">
       <time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
-      <a href="{{ page.permalink }}">{{ page.title }}</a>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>{% if page.draft %} <span class="draft-badge">Draft</span>{% endif %}
     </div>
     {% if tags and page.taxonomies.tags %}
     <p class="tags">{% for tag in page.taxonomies.tags %}<a href="{{ get_taxonomy_url(kind='tags', term=tag) }}">#{{ tag }}</a>{% endfor %}</p>

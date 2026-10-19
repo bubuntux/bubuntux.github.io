@@ -153,3 +153,17 @@ blockquote footer { color: var(--muted); font-size: 0.9rem; }
 @media print {
   .pdf-ribbon { display: none; }
 }
+
+/* Drafts only render under `zola serve --drafts` (site-serve); never in production. */
+.draft-badge {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border: 1px dashed #b7791f;
+  border-radius: 999px;
+  color: #b7791f;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
