@@ -144,10 +144,24 @@ blockquote footer { color: var(--muted); font-size: 0.9rem; }
   pointer-events: auto;
 }
 
-/* Below this width the top-right corner overlaps the nav, so use the bottom-right one. */
+/* Below this width a corner ribbon would cover the nav, so it becomes a floating pill. */
 @media (max-width: 60rem) {
-  .pdf-ribbon { top: auto; bottom: 0; }
-  .pdf-ribbon a { top: auto; bottom: 2.2rem; transform: rotate(-45deg); }
+  .pdf-ribbon {
+    top: auto;
+    right: 1rem;
+    bottom: 1rem;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .pdf-ribbon a {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 0.55rem 1.1rem;
+    transform: none;
+    border-radius: 999px;
+  }
 }
 
 @media print {
