@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="intro">
-  <img class="avatar" src="{{ get_url(path='img/avatar.png') }}" alt="{{ config.title }}">
-  {{ section.content | safe }}
-</section>
-
-{% set blog = get_section(path="posts/_index.md") %}
-{% if blog.pages %}
-<h2>Latest posts</h2>
-{{<posts.list pages={blog.pages[:5]} />}}
-<p><a href="{{ blog.permalink }}">All posts →</a></p>
+{% if paginator.pages %}
+<h2>Posts</h2>
+{{<posts.list pages={paginator.pages} summaries={true} tags={true} />}}
+{% else %}
+<p>No posts yet.</p>
+{% endif %}
+{% if paginator.previous or paginator.next %}
+<nav class="pagination">
+  {% if paginator.previous %}<a href="{{ paginator.previous }}">← Newer</a>{% endif %}
+  {% if paginator.next %}<a href="{{ paginator.next }}">Older →</a>{% endif %}
+</nav>
+{% endif %}
+{# required=false: with no tagged posts yet the taxonomy has no terms. #}
+{% set tags = get_taxonomy(kind="tags", required=false) %}
+{% if tags and tags.items %}
+<h2>Topics</h2>
+<p class="tags">{% for term in tags.items | sort(attribute="page_count") | reverse %}<a href="{{ term.permalink }}">#{{ term.name }} ({{ term.page_count }})</a>{% endfor %}</p>
 {% endif %}
 {% endblock %}

@@ -6,7 +6,7 @@ Personal site: blog and CV. Built with [Zola](https://www.getzola.org/), the PDF
 
 | Path | What |
 |---|---|
-| `content/` | Markdown you write: `posts/`, homepage blurb |
+| `content/` | Markdown you write: `posts/` (listed on the home page) |
 | `templates/` | Zola templates; `cv.html` renders `static/resume.json` |
 | `static/` | Published as-is: `resume.json`, `img/`, `style.css`, `CNAME` |
 | `cv/` | Typst sources: `cv.typ` (PDF CV), `letter.typ`, `metadata.toml` |

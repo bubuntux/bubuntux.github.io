@@ -1,5 +1,7 @@
 +++
 title = "Blog"
 sort_by = "date"
-paginate_by = 10
+# Posts are listed on the home page; their URLs stay /posts/<slug>/.
+transparent = true
+redirect_to = "/"
 +++

@@ -18,12 +18,11 @@ smart_punctuation = true
 domain = "julioguti.dev" # shown next to the JG monogram in the header
 source_url = "https://github.com/bubuntux/bubuntux.github.io" # footer "Source" link
 nav = [
-  { name = "Blog", path = "@/posts/_index.md" },
-  { name = "CV", path = "@/cv.md" },
+  { name = "Curriculum Vitae", path = "@/cv/_index.md", icon = "file-cv" },
 ]
 social = [
   { name = "GitHub", icon = "github", url = "https://github.com/bubuntux" },
-  { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/julio-guti" },
+  { name = "LinkedIn", icon = "linkedin", url = "https://linkedin.com/in/julio-guti" },
   { name = "hello@julioguti.dev", icon = "envelope", url = "mailto:hello@julioguti.dev" },
 ]
 # resume.json profiles left off the CV page (they stay in the JSON and PDF).

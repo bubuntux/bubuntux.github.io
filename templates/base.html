@@ -22,10 +22,14 @@
     </a>
     <nav>
       {% for item in config.extra.nav %}
+      {% if item.icon %}
+      <a class="icon-link" href="{{ get_url(path=item.path) }}" aria-label="{{ item.name }}" title="{{ item.name }}">{{<icon name={item.icon} />}}</a>
+      {% else %}
       <a href="{{ get_url(path=item.path) }}">{{ item.name }}</a>
+      {% endif %}
       {% endfor %}
       {% for profile in config.extra.social %}
-      <a class="social" href="{{ profile.url }}"{% if profile.url is starting_with(pat="http") %} target="_blank" rel="noopener"{% endif %} aria-label="{{ profile.name }}" title="{{ profile.name }}">{{<icon name={profile.icon} />}}</a>
+      <a class="icon-link" href="{{ profile.url }}"{% if profile.url is starting_with(pat="http") %} target="_blank" rel="noopener"{% endif %} aria-label="{{ profile.name }}" title="{{ profile.name }}">{{<icon name={profile.icon} />}}</a>
       {% endfor %}
     </nav>
   </header>

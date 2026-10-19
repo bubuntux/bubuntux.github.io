@@ -67,8 +67,8 @@ pre { overflow-x: auto; padding: 1rem; background: var(--surface); border-radius
   .site-domain { display: none; }
 }
 .site-header nav a { margin-left: 1rem; }
-.site-header nav .social { color: var(--muted); }
-.site-header nav .social:hover { color: var(--accent); }
+.site-header nav .icon-link { color: var(--muted); }
+.site-header nav .icon-link:hover { color: var(--accent); }
 .icon { width: 1.2em; height: 1.2em; vertical-align: -0.2em; }
 .site-footer {
   display: flex;
@@ -84,7 +84,6 @@ pre { overflow-x: auto; padding: 1rem; background: var(--surface); border-radius
 
 .meta, time { color: var(--muted); font-size: 0.9rem; }
 .avatar { width: 6rem; height: 6rem; border-radius: 25%; object-fit: cover; }
-.intro { display: flex; gap: 1.5rem; align-items: center; margin: 2rem 0; }
 
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: 0.25rem 0; }
