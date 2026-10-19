@@ -8,7 +8,7 @@
 {% set resume = load_data(path="static/resume.json") %}
 {% set basics = resume.basics %}
 {# cv.pdf comes from cv-build (cv/cv.typ -> static/cv.pdf); plain `zola serve` without it 404s. #}
-<div class="pdf-ribbon"><a href="{{ get_url(path='cv.pdf', trailing_slash=false) }}" download="{{ basics.name | replace(from=' ', to='-') }}-CV.pdf" title="Condensed 2-page version; this page has the full CV">2-page PDF</a></div>
+<div class="pdf-ribbon"><a href="{{ get_url(path='cv.pdf', trailing_slash=false) }}" target="_blank" rel="noopener" title="Condensed 2-page version; this page has the full CV">2-page PDF</a></div>
 <article class="cv">
   <header class="cv-header">
     <img class="avatar" src="{{ get_url(path='img/avatar.png') }}" alt="{{ basics.name }}">
