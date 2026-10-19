@@ -1,4 +1,4 @@
-# julioguti.dev
+# [julioguti.dev](https://julioguti.dev)
 
 Personal site: blog and CV. Built with [Zola](https://www.getzola.org/), the PDF CV with [Typst](https://typst.app/).
 
