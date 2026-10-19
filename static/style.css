@@ -71,6 +71,10 @@ pre { overflow-x: auto; padding: 1rem; background: var(--surface); border-radius
 .site-header nav .social:hover { color: var(--accent); }
 .icon { width: 1.2em; height: 1.2em; vertical-align: -0.2em; }
 .site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border);

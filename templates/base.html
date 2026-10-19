@@ -33,8 +33,15 @@
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <a href="{{ get_url(path='atom.xml', trailing_slash=false) }}" target="_blank" rel="noopener" title="Atom feed">RSS</a> ·
-    <a href="{{ get_url(path='resume.json', trailing_slash=false) }}" target="_blank" rel="noopener" title="Full CV as JSON">JSON</a>
+    {# Build date, so any deploy bumps it. #}
+    <span>
+      Updated <time datetime="{{ now() | date(format="%Y-%m-%d") }}">{{ now() | date(format="%b %Y") }}</time> ·
+      <a href="{{ config.extra.source_url }}" target="_blank" rel="noopener">Source</a>
+    </span>
+    <span>
+      <a href="{{ get_url(path='atom.xml', trailing_slash=false) }}" target="_blank" rel="noopener" title="Atom feed">RSS</a> ·
+      <a href="{{ get_url(path='resume.json', trailing_slash=false) }}" target="_blank" rel="noopener" title="Full CV as JSON">JSON</a>
+    </span>
   </footer>
 </body>
 </html>
