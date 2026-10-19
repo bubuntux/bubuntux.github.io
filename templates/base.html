@@ -6,7 +6,7 @@
   <title>{% block title %}{{ config.title }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
   <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg', trailing_slash=false) }}">
-  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
   <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
   {% block head %}{% endblock %}
   {# Production builds only, so `zola serve` previews are not counted as visits. #}
