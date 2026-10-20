@@ -1,6 +1,7 @@
 +++
 title = "Hello, world"
 date = 2026-10-18
+updated = 2026-10-20T10:00:00-05:00
 description = "Example post; delete or replace it."
 draft = true
 

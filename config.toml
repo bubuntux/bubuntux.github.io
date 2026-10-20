@@ -1,15 +1,14 @@
 base_url = "https://julioguti.dev"
-title = "Julio Gutierrez"
-description = "Staff Software Engineer. Notes on LLM inference, NixOS, self-hosting and open source."
+title = "Julio Gutierrez's blog"
+description = "Thoughts on whatever I find interesting."
+author = "Julio Gutierrez"
 
 compile_sass = false
 build_search_index = false
 generate_feeds = true
 feed_filenames = ["atom.xml"]
 
-taxonomies = [
-  { name = "tags", feed = true },
-]
+taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 smart_punctuation = true
@@ -17,9 +16,7 @@ smart_punctuation = true
 [extra]
 domain = "julioguti.dev" # shown next to the JG monogram in the header
 source_url = "https://github.com/bubuntux/bubuntux.github.io" # footer "Source" link
-nav = [
-  { name = "Curriculum Vitae", path = "@/cv/_index.md", icon = "file-cv" },
-]
+nav = [{ name = "Curriculum Vitae", path = "@/cv/_index.md", icon = "file-cv" }]
 social = [
   { name = "GitHub", icon = "github", url = "https://github.com/bubuntux" },
   { name = "LinkedIn", icon = "linkedin", url = "https://linkedin.com/in/julio-guti" },
