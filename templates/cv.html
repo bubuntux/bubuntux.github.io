@@ -1,7 +1,17 @@
 {% extends "base.html" %}
 
 {% block title %}CV · {{ config.title }}{% endblock %}
-{% block description %}{% set resume = load_data(path="static/resume.json") %}{{ resume.basics.label }}: {{ resume.basics.summary | truncate(length=150) }}{% endblock %}
+{% block meta %}
+{%- set resume = load_data(path="static/resume.json") -%}
+{{<meta.tags
+  title={resume.basics.name ~ ", CV"}
+  description={resume.basics.label ~ ": " ~ resume.basics.summary | truncate(length=150)}
+  site_name={config.title}
+  image={get_url(path="img/avatar.png")}
+  url={current_url}
+  type="profile"
+/>}}
+{% endblock %}
 {% block head %}<link rel="alternate" type="application/json" title="JSON Resume" href="{{ get_url(path='resume.json', trailing_slash=false) }}">{% endblock %}
 
 {% block content %}

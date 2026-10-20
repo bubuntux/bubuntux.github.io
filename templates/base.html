@@ -4,7 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ config.title }}{% endblock %}</title>
-  <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+  {# Pages and sections fill these from front matter; templates with nothing to say, like tags and 404, get the site defaults. #}
+  {% block meta %}
+  {%- if page is defined -%}
+  {# A post sets its preview image with `image = "img/..."` (a path under static/) in [extra]; otherwise it has none. #}
+  {{<meta.tags
+    title={page.title}
+    description={page.description or config.description}
+    site_name={config.title}
+    url={current_url}
+    type="article"
+    image={get_url(path=page.extra.image) if page.extra.image is defined else ""}
+    published={page.date or ""}
+    modified={page.updated or ""}
+    authors={page.authors or [config.author]}
+    tags={page.taxonomies.tags if page.taxonomies.tags is defined else []}
+  />}}
+  {%- else -%}
+  {%- set item = section if section is defined else {} -%}
+  {{<meta.tags
+    title={item.title or config.title}
+    description={item.description or config.description}
+    site_name={config.title}
+    url={current_url if current_url is defined else ""}
+  />}}
+  {%- endif %}
+  {% endblock %}
   <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg', trailing_slash=false) }}">
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
   <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">

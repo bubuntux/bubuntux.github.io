@@ -1,0 +1,31 @@
+{# Description plus link-preview tags: Open Graph (https://ogp.me/) is what LinkedIn, Slack, iMessage and the like read; twitter:card covers X. #}
+{# url is empty on the 404 page, which should not claim a canonical address. The rest are optional and skipped when empty; the article ones only apply to type "article". #}
+{% component meta.tags(title, description, site_name, url = "", type = "website", image = "", published = "", modified = "", authors = [], tags = []) %}
+<meta name="description" content="{{ description }}">
+{%- if url %}
+<link rel="canonical" href="{{ url }}">
+<meta property="og:url" content="{{ url }}">
+{%- endif %}
+<meta property="og:type" content="{{ type }}">
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+{%- if image %}
+<meta property="og:image" content="{{ image }}">
+{%- endif %}
+{%- if type == "article" %}
+{%- if published %}
+<meta property="article:published_time" content="{{ published }}">
+{%- endif %}
+{%- if modified %}
+<meta property="article:modified_time" content="{{ modified }}">
+{%- endif %}
+{%- for author in authors %}
+<meta property="article:author" content="{{ author }}">
+{%- endfor %}
+{%- for tag in tags %}
+<meta property="article:tag" content="{{ tag }}">
+{%- endfor %}
+{%- endif %}
+<meta name="twitter:card" content="summary">
+{%- endcomponent meta.tags %}
