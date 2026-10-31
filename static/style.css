@@ -116,7 +116,9 @@ pre { overflow-x: auto; padding: 1rem; background: var(--surface); border-radius
 .skills dt { font-weight: 600; margin-top: 0.5rem; }
 .skills dd { margin-left: 0; }
 blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--border); }
-blockquote footer { color: var(--muted); font-size: 0.9rem; }
+.reference { margin: 1.5rem 0; }
+.reference blockquote { margin: 0.4rem 0 0; }
+.reference blockquote p { margin: 0.4rem 0; }
 
 .pagination { display: flex; justify-content: space-between; }
 

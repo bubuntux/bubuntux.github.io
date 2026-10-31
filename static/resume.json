@@ -1,1116 +1,1000 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "basics": {
-    "name": "Julio Gutierrez",
-    "label": "Staff Software Engineer",
-    "image": "https://julioguti.dev/img/avatar.png",
-    "email": "cv@julioguti.dev",
-    "url": "https://julioguti.dev",
-    "summary": "Staff Software Engineer with over 15 years of experience in designing and building scalable and reliable systems. Proficient in a wide range of technologies including Java, Python, and AWS. Passionate about mentorship and leveraging AI to solve complex problems. When not at the keyboard, I am a proud father of three, a board game enthusiast, and an avid self-hoster.",
-    "location": {
-      "city": "Austin",
-      "countryCode": "US",
-      "region": "Texas"
-    },
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "bubuntux",
-        "url": "https://github.com/bubuntux"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "julio-guti",
-        "url": "https://www.linkedin.com/in/julio-guti"
-      },
-      {
-        "network": "Docker",
-        "username": "bubuntux",
-        "url": "https://hub.docker.com/u/bubuntux"
-      }
-    ]
-  },
-  "work": [
-    {
-      "name": "Indeed",
-      "logo": "./img/logos/indeed.svg",
-      "url": "https://www.indeed.com",
-      "location": "(Remote) Austin, TX",
-      "description": "Hiring platform",
-      "position": "Staff Software Engineer",
-      "startDate": "2021-10-11",
-      "summary": "Staff engineer on a model-serving platform team, building and operating the self-hosted small language model inference stack and leading cost, reliability, and migration initiatives across partner teams.",
-      "highlights": [
-        "Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, drop-in OpenAI Chat Completions API, LoRA adapter serving, FP8 quantization, schema-constrained structured outputs, per-use-case isolation, and KEDA autoscaling.",
-        "Migrated production workloads off external LLM vendors onto the platform, saving over $7M annually, including an 87% reduction (~$5.8M/year) on a 60M request/day generation workload and a 93% reduction (~$1.34M/year) on a fine-tuned ranking model ramped to 100% of traffic.",
-        "Delivered inline query embeddings on the live job-search path at ~20ms p95, a latency budget third-party embedding APIs (~500ms p90) could not meet.",
-        "Productionized a fine-tuned SLM reranker at flat online latency, making a 44% NDCG@10 gain and 63% fewer bad results shippable.",
-        "Led the platform's full lifecycle from an accepted architecture design review through production deployment, standing up 2 new repositories, service-to-service authentication, and 3 Production Readiness Reviews that standardized onboarding for new use cases.",
-        "Adopted genai-bench for inference benchmarking and contributed a bug fix back to the open source project.",
-        "Kept the ranking rollout healthy through A/B testing, resolving production issues in real time, implementing warmup orchestration to cut cold-start latency, and tuning KEDA downscaling to absorb cron-driven traffic spikes.",
-        "Contributed key design input to the LLM proxy integration, shaping the routing layer through which client teams consume the inference platform.",
-        "Spearheaded cost-saving initiatives delivering over $3.3M in annual savings, including sunsetting a legacy email alerts product (~$1.7M/year), cutting the team's AWS account costs (~$1.44M/year), and removing unused data builders (~$180k/year).",
-        "Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company, driving the cross-team investigation and proposing the fix.",
-        "Led the migration of bidding models onto the shared model-serving platform as the single point of contact for the initiative, establishing SLO monitoring and shadow testing for safe rollout, and consolidated bidding onto a global cluster, simplifying deployments and improving CPU utilization.",
-        "Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability.",
-        "Owned and resolved an 11-month availability failure in a business-critical data pipeline, coordinating 3 engineers and an intern across 5 partner teams, migrating 3 of its indexes to AWS, and restoring the model refresh cadence to daily.",
-        "Built the data-comparison tooling that validated those AWS index migrations within a 1% deviation, adopted by every team performing the migration.",
-        "Led the migration of SERP second-phase scoring off the index service onto the shared model-serving platform, from design through implementation, across three partner teams.",
-        "Led the handover of an entire product area to a new team, writing the transition documentation, running knowledge-sharing sessions, and onboarding their engineers into the on-call rotation.",
-        "Identified and drove company-wide storage savings, including disabling versioning on outbox S3 buckets (2.2PB reclaimed, ~$29k/month) and applying lifecycle policies to analytics buckets.",
-        "Pioneered research into Java 21 with Generational ZGC, documenting the findings and a benchmarking plan for adoption across the platform's services.",
-        "Stepped up as team lead, mentored and onboarded numerous engineers and an intern, and supported the growth of 4+ engineers through regular 1:1s.",
-        "Co-created a new pair programming interview, building the questions and defining the scoring signals, removing 2 interviews from each candidate's loop.",
-        "Set the team's AI-assisted engineering practice, running demos and knowledge-sharing sessions on a spec-driven, agent-assisted workflow that other engineers adopted as their own.",
-        "Corrected the team's testing strategy: wrote the proposal that became a team objective and guided a QA engineer in raising unit test coverage on a core service from under 10% to over 90%.",
-        "Presented the team's technical direction and business impact to senior engineering leadership, and authored the runbooks, load-testing tools, and wiki documentation the team onboards from.",
-        "Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery.",
-        "Improved developer productivity by enabling caching and incremental builds on a Gradle task used in every Java build company-wide, cutting time spent on it by 30%."
-      ],
-      "keywords": [
-        "AWS",
-        "Hadoop",
-        "Java",
-        "JavaScript",
-        "Kotlin",
-        "Python",
-        "Pytorch",
-        "React",
-        "Docker",
-        "Scala",
-        "SLM",
-        "Spring",
-        "Triton",
-        "vLLM",
-        "LoRA",
-        "KEDA",
-        "Kubernetes",
-        "DataDog",
-        "Claude",
-        "FP8",
-        "GPU",
-        "Terraform"
-      ]
-    },
-    {
-      "name": "Natera",
-      "logo": "./img/logos/natera.svg",
-      "url": "https://www.natera.com",
-      "location": "(Remote) Austin, TX",
-      "description": "Healthcare | Genetic test",
-      "position": "Senior Software Engineer",
-      "startDate": "2020-10-11",
-      "endDate": "2021-10-11",
-      "summary": "Developed and maintained Java-based invoicing systems and client communication platforms",
-      "highlights": [
-        "Engineered a serverless application empowering patients and clinics to manage communication preferences",
-        "Enhanced application performance by implementing query optimization, pagination, and data caching strategies",
-        "Spearheaded the migration to a newer, more secure version of Spring Boot, mitigating security vulnerabilities"
-      ],
-      "keywords": [
-        "Java",
-        "Spring",
-        "Hibernate",
-        "JPA",
-        "MySQL",
-        "Mockito",
-        "AWS",
-        "Lambda",
-        "DynamoDB",
-        "TypeScript"
-      ]
-    },
-    {
-      "name": "Switchfly",
-      "logo": "./img/logos/switchfly.svg",
-      "url": "https://www.switchfly.com",
-      "location": "San Francisco, CA - Denver, CO - (Remote) Austin, TX",
-      "description": "Travel platform",
-      "position": "Lead Software Engineer",
-      "startDate": "2017-02-01",
-      "endDate": "2020-10-01",
-      "summary": "As a Lead Software Engineer on a travel platform, I focused on integrating and optimizing third-party connections to expand market reach and enhance system capabilities.",
-      "highlights": [
-        "Led a team of four developers, providing technical guidance and overseeing project execution to success",
-        "Expanded market reach by integrating with external hotel, car, insurance, and flight systems in multiple countries",
-        "Architected and implemented a new system design to accelerate the integration of third-party APIs"
-      ],
-      "keywords": [
-        "Java",
-        "Spring",
-        "Hibernate",
-        "Couchbase",
-        "PostgreSQL",
-        "Selenium",
-        "EasyMock",
-        "Ember",
-        "FTL"
-      ]
-    },
-    {
-      "name": "Nearsoft",
-      "logo": "./img/logos/nearsoft.png",
-      "url": "https://nearsoft.com",
-      "location": "Hermosillo, SO - (Remote) Monterrey, NL",
-      "description": "IT | Outsourcing",
-      "position": "Software Engineer",
-      "startDate": "2011-08-01",
-      "endDate": "2017-02-01",
-      "summary": "Contributed to a variety of software development projects, focusing on technology migrations, CI/CD optimization, and platform enhancements",
-      "highlights": [
-        "Participated in multiple technology migrations including SVN to Git, Maven to Gradle, and Java 7 to Java 8",
-        "Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins",
-        "Contributed to the development and enhancement of a travel platform system"
-      ],
-      "keywords": [
-        "Java",
-        "Spring",
-        "Hibernate",
-        "Couchbase",
-        "PostgreSQL",
-        "Selenium",
-        "EasyMock",
-        "Ember",
-        "FTL"
-      ]
-    },
-    {
-      "name": "FEMSA",
-      "url": "https://www.femsa.com",
-      "location": "Monterrey, NL",
-      "description": "Beverage | Retail",
-      "position": "Software Engineer",
-      "startDate": "2011-03-01",
-      "endDate": "2011-07-01",
-      "summary": "Contributed to the development and migration of Point of Sale (POS) applications for a major retail chain",
-      "highlights": [
-        "Developed and maintained a Point of Sale (POS) application for OXXO, the biggest chain store in Mexico",
-        "Participated in the migration of the POS system from Fortran to Java, ensuring seamless transition and improved performance",
-        "Contributed to the migration of build systems from Ant to Maven, enhancing project management and build automation"
-      ],
-      "keywords": [
-        "Java",
-        "Maven",
-        "Oracle DB"
-      ]
-    },
-    {
-      "name": "S&C Constructores de Sistemas",
-      "url": "https://www.syc.com.mx",
-      "location": "(Remote) Monterrey, NL",
-      "description": "IT | Outsourcing",
-      "position": "Software Engineer",
-      "startDate": "2010-01-01",
-      "endDate": "2011-02-01",
-      "summary": "Contributed to IT outsourcing projects, focusing on e-invoice systems and platform consolidation",
-      "highlights": [
-        "Established a new business line by building an e-invoice system that integrated with a CMS and regulatory entities",
-        "Implemented a proper branching strategy that consolidated different client implementations into one platform",
-        "Contributed to the development and maintenance of a Content Management System (CMS)"
-      ],
-      "keywords": [
-        "Java",
-        "Spring",
-        "MySQL"
-      ]
-    },
-    {
-      "name": "Playful Interactive",
-      "url": "https://www.playful.mx/",
-      "location": "Monterrey, NL",
-      "description": "Media Design | Game Studio",
-      "position": "Game developer",
-      "startDate": "2010-08",
-      "endDate": "2010-11",
-      "summary": "Main developer for a mobile platforming game",
-      "highlights": [
-        "Led the development of a mobile platforming game, overseeing all technical aspects from conception to implementation",
-        "Utilized Unity 3D, C#, and JavaScript to build core game mechanics, user interfaces, and interactive elements",
-        "Contributed to a dynamic and engaging gaming experience for mobile users"
-      ],
-      "keywords": [
-        "C#",
-        "JavaScript",
-        ".NET",
-        "Unity"
-      ]
-    },
-    {
-      "name": "Expert Sistemas Computacionales",
-      "url": "https://www.expert.com.mx",
-      "location": "Monterrey, NL",
-      "description": "Healthcare | IT Services",
-      "position": "Software Engineer (Internship)",
-      "startDate": "2009-02",
-      "endDate": "2009-07",
-      "summary": "Contributed to a patient and human resource management system, focusing on bug fixes and performance optimization",
-      "highlights": [
-        "Fixed critical bugs in a Java-based patient and human resource management system",
-        "Optimized PostgreSQL database connections for improved system performance and responsiveness",
-        "Gained experience in enterprise application development, database interaction, and performance tuning"
-      ],
-      "keywords": [
-        "Java",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "name": "Marcatel International",
-      "url": "https://marcatel.com",
-      "location": "Monterrey, NL",
-      "description": "Telecommunications",
-      "position": "Software Engineer (Internship)",
-      "startDate": "2008-08",
-      "endDate": "2009-01",
-      "summary": "Designed and implemented an inventory system to manage equipment and maintenance schedules",
-      "highlights": [
-        "Developed a comprehensive inventory system using .NET C# to track equipment, streamlining maintenance planning and record-keeping",
-        "Enabled efficient scheduling of preventive maintenance by providing clear visibility into equipment status and service requirements",
-        "Contributed to improving operational efficiency by ensuring timely maintenance and reducing equipment downtime"
-      ]
-    },
-    {
-      "name": "Block Networks",
-      "url": "https://bnext.mx",
-      "location": "Monterrey, NL",
-      "description": "IT Services | IT Consulting",
-      "position": "Software Engineer (Internship)",
-      "startDate": "2008-05",
-      "endDate": "2008-07",
-      "summary": "Contributed to the development and quality assurance of point-of-sale systems",
-      "highlights": [
-        "Resolved critical bugs in point-of-sale applications using C# and .NET, improving system stability and user experience",
-        "Developed and implemented automated test scripts to ensure software quality and accelerate the testing cycle",
-        "Gained practical experience in software development lifecycle, debugging, and quality assurance processes"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Facultad de Ciencias Físico Matemáticas, UANL",
-      "location": "San Nicolás de los Garza, NL",
-      "url": "https://www.fcfm.uanl.mx",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science",
-      "startDate": "2005-03-01",
-      "endDate": "2009-12-01",
-      "courses": [
-        "Software Engineering",
-        "Design Patterns",
-        "Database Systems"
-      ]
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Oracle Certified Professional, Java EE 5 Web Component Developer",
-      "date": "2013-11-19",
-      "url": "https://www.credly.com/badges/7a58ac90-8119-485d-bd8a-83f0d3e6c69f",
-      "issuer": "Oracle"
-    },
-    {
-      "name": "Oracle Certified Professional, Java SE 6 Programmer",
-      "date": "2011-03-23",
-      "url": "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
-      "issuer": "Oracle"
-    },
-    {
-      "name": "Certified SAFe® 4 Agile Software Engineer",
-      "date": "2019-10-22",
-      "url": "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
-      "issuer": "SAFe by Scaled Agile, Inc"
-    },
-    {
-      "name": "Spring 5.0 and Spring Boot 2.0 New Features",
-      "date": "2020-03-12",
-      "url": "https://www.linkedin.com/learning/certificates/4e6d727e9810872c4ac81b0afbec96019841248b30afcd76366d3d9ab394260d",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Spring: Design Patterns",
-      "date": "2020-03-02",
-      "url": "https://www.linkedin.com/learning/certificates/06f3e5cf12a330fb5988f790c0a2ceb3acc14602f254064169b45066d199d49f",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Docker for Developers",
-      "date": "2020-02-05",
-      "url": "https://www.linkedin.com/learning/certificates/43d293727d1d3109a1fcdd4ef520e6af17ed854024e40196275c48e6b287ec39",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Docker for Java Developers",
-      "date": "2020-02-06",
-      "url": "https://www.linkedin.com/learning/certificates/bd30b667330a74592e804c7575ea92700e9dd5d184a58bdedcb355a3bdf87db0",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Git Intermediate Techniques",
-      "date": "2020-02-20",
-      "url": "https://www.linkedin.com/learning/certificates/bb6e0b92b61d885c3343d1da3209efe352584d34e9cf34acab51f4ac4f4503a0",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Git for Teams",
-      "date": "2020-02-21",
-      "url": "https://www.linkedin.com/learning/certificates/ce2e4c08aedc48fc7e91846627281d6b74aeb909a22a17e7bbd3a6b1119d520c",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Kubernetes: Microservices",
-      "date": "2020-02-25",
-      "url": "https://www.linkedin.com/learning/certificates/7e39d5ffd6fc570855515664df23ec24e7b18a88081e8bdb26fd924da356a6d6",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Learning Terraform",
-      "date": "2020-02-15",
-      "url": "https://www.linkedin.com/learning/certificates/600cd18c5f54d29ba89fbf279d300107cea6440f6bcf80a2207dcd2defb5a89d",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Microservices Foundations",
-      "date": "2020-02-04",
-      "url": "https://www.linkedin.com/learning/certificates/87d8ee2ef7b4a38a99988f8b52a41f7345c59f5645ba69822e18c5252bcb7776",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Spring Boot Essential Training",
-      "date": "2020-02-26",
-      "url": "https://www.linkedin.com/learning/certificates/c62fc3f52e481b3244ea3fb8cd856c6e596192bda0aec395ba28ab8599776f40",
-      "issuer": "LinkedIn"
-    },
-    {
-      "name": "Succeeding in DevOps",
-      "date": "2020-02-14",
-      "url": "https://www.linkedin.com/learning/certificates/3eb5ab3ce0a933c265bfbe45c2a4e1a0c5bdd4bfbac5e3e0e1128ce68869c494",
-      "issuer": "LinkedIn"
-    }
-  ],
-  "publications": [
-    {
-      "name": "SLM infra at Indeed (talk)",
-      "publisher": "Indeed, Austin",
-      "releaseDate": "2026-07",
-      "summary": "Presented the serving side of Indeed's small language model stack: platform capabilities, production cost and latency case studies, and guidance on when fine-tuning and self-hosting pay off over a third-party API."
-    },
-    {
-      "name": "SLM at Indeed (talk)",
-      "publisher": "SciCon, Indeed's internal science conference",
-      "releaseDate": "2025-12",
-      "summary": "Introduced self-hosted small language model inference at Indeed and the first production use cases running on it."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Java",
-      "level": "Expert",
-      "keywords": [
-        "Java SE",
-        "Java EE",
-        "Spring",
-        "Spring Boot",
-        "Kotlin",
-        "Scala"
-      ]
-    },
-    {
-      "name": "Python",
-      "level": "Senior",
-      "keywords": [
-        "PyTorch",
-        "TensorFlow"
-      ]
-    },
-    {
-      "name": "Rust",
-      "level": "Intermediate",
-      "keywords": [
-        "actix-web",
-        "SeaORM",
-        "serde",
-        "Tokio"
-      ]
-    },
-    {
-      "name": "Go",
-      "level": "Beginner",
-      "keywords": [
-        "Generics",
-        "Containers"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Senior",
-      "keywords": [
-        "React",
-        "Node.js",
-        "jQuery",
-        "CoffeeScript",
-        "TypeScript"
-      ]
-    },
-    {
-      "name": "Web Development",
-      "level": "Senior",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Microservices",
-        "REST"
-      ]
-    },
-    {
-      "name": "Cloud & DevOps",
-      "level": "Senior",
-      "keywords": [
-        "AWS",
-        "CI/CD",
-        "Docker",
-        "Git",
-        "Jenkins",
-        "Kubernetes",
-        "KEDA",
-        "Linux",
-        "Terraform",
-        "GitHub",
-        "Bash",
-        "Datadog"
-      ]
-    },
-    {
-      "name": "Databases",
-      "level": "Senior",
-      "keywords": [
-        "SQL",
-        "PostgreSQL",
-        "MySQL",
-        "DynamoDB",
-        "Couchbase",
-        "MongoDB",
-        "Hadoop"
-      ]
-    },
-    {
-      "name": "AI/ML",
-      "level": "Intermediate",
-      "keywords": [
-        "SLM",
-        "LLM",
-        "vLLM",
-        "LoRA",
-        "Triton",
-        "Generative AI",
-        "CNN",
-        "DNN",
-        "FP8 Quantization",
-        "GPU Serving",
-        "Fine-tuning",
-        "Embeddings"
-      ]
-    },
-    {
-      "name": "AI Tooling",
-      "level": "Senior",
-      "keywords": [
-        "Claude Code",
-        "Gemini",
-        "Agentic Coding Workflows",
-        "Spec-Driven Development",
-        "MCP"
-      ]
-    },
-    {
-      "name": ".NET",
-      "level": "Intermediate",
-      "keywords": [
-        "C#"
-      ]
-    },
-    {
-      "name": "Game Development",
-      "level": "Beginner",
-      "keywords": [
-        "Unity"
-      ]
-    },
-    {
-      "name": "Mobile Development",
-      "level": "Beginner",
-      "keywords": [
-        "Android",
-        "Java"
-      ]
-    },
-    {
-      "name": "Nix",
-      "level": "Intermediate",
-      "keywords": [
-        "NixOS",
-        "Flakes",
-        "flake-parts",
-        "Home Manager",
-        "sops"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Full Professional"
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Boardgames",
-      "keywords": [
-        "Analytics",
-        "Logic",
-        "Planning",
-        "Problem-solving",
-        "Strategy"
-      ]
-    },
-    {
-      "name": "Self-host",
-      "keywords": [
-        "Automation",
-        "Bash",
-        "Containerization",
-        "Homelab",
-        "Linux",
-        "Networking",
-        "Open-source",
-        "Server"
-      ]
-    },
-    {
-      "name": "Pickleball",
-      "keywords": [
-        "Collaboration",
-        "Community",
-        "Coordination",
-        "Strategy",
-        "Teamwork"
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "name": "den",
-      "description": "Personal multi-host NixOS configuration managed as a Nix flake",
-      "startDate": "2025-12-14",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "Declarative config for a dev laptop, a family machine and a NAS: Home Manager, encrypted secrets, CI-checked builds",
-        "Assembles every host from auto-discovered flake-parts modules using the dendritic pattern"
-      ],
-      "type": "Configuration",
-      "url": "https://github.com/bubuntux/den",
-      "keywords": [
-        "Flakes",
-        "flake-parts",
-        "GitHub Actions",
-        "Home Manager",
-        "Linux",
-        "Nix",
-        "NixOS",
-        "sops"
-      ]
-    },
-    {
-      "name": "NordVPN container",
-      "description": "Official NordVPN client in a Docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch",
-      "startDate": "2018-02-24",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "18M+ downloads",
-        "800+ stars",
-        "200+ forks"
-      ],
-      "type": "Container",
-      "url": "https://github.com/bubuntux/nordvpn",
-      "keywords": [
-        "Bash",
-        "Container",
-        "Docker",
-        "iptables",
-        "Networking",
-        "NordVPN",
-        "OpenVpn",
-        "Podman",
-        "s6",
-        "VPN",
-        "Wireguard"
-      ],
-      "endDate": "2025-11-22"
-    },
-    {
-      "name": "Nordlynx container",
-      "description": "NordLynx is a technology built around the WireGuard® VPN protocol, making routing traffic through the NordVPN network easy and secure",
-      "startDate": "2021-09-09",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "225k+ downloads",
-        "250+ stars",
-        "50+ forks"
-      ],
-      "type": "Container",
-      "url": "https://github.com/bubuntux/nordlynx",
-      "keywords": [
-        "Bash",
-        "Container",
-        "Docker",
-        "iptables",
-        "Networking",
-        "NordVPN",
-        "Nordlynx",
-        "Podman",
-        "s6",
-        "VPN",
-        "Wireguard"
-      ],
-      "endDate": "2025-11-22"
-    },
-    {
-      "name": "JUPR",
-      "description": "A WhatsApp bot that scans group chats, parses pickleball match results and exports them to DUPR, the universal pickleball rating platform",
-      "startDate": "2024-11-11",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "Implemented a WhatsApp bot that scans messages in group chats, parses matches and exports them to DUPR"
-      ],
-      "type": "Application",
-      "keywords": [
-        "actix-web",
-        "DUPR",
-        "Pickleball",
-        "PostgreSQL",
-        "Regex",
-        "Rust",
-        "SeaORM",
-        "WhatsApp"
-      ],
-      "url": "https://github.com/bubuntux/whatsapp_to_dupr"
-    },
-    {
-      "name": "Poker Engine",
-      "description": "A Java engine that runs Texas hold 'em hands, evaluating and ranking players' hands to resolve a showdown",
-      "startDate": "2014-03-19",
-      "endDate": "2020-05-04",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "35+ stars",
-        "28+ forks"
-      ],
-      "type": "Library",
-      "url": "https://github.com/bubuntux/poker-engine",
-      "keywords": [
-        "Gradle",
-        "Java",
-        "Poker",
-        "Travis CI"
-      ]
-    },
-    {
-      "name": "Rocks",
-      "description": "1st place winner at Unearthed Denver 2017",
-      "startDate": "2017-09-24",
-      "endDate": "2017-09-27",
-      "roles": [
-        "Project lead"
-      ],
-      "highlights": [
-        "Designed a system to filter out low-quality minerals using machine learning and a tomato-sorting-like machine",
-        "Trained a convolutional neural network to classify minerals"
-      ],
-      "entity": "Unearthed's Hackathon",
-      "type": "Application",
-      "keywords": [
-        "Python",
-        "Google Cloud ML",
-        "TensorFlow",
-        "InceptionV3",
-        "Hackathon",
-        "CNN"
-      ]
-    },
-    {
-      "name": "Bitcoin Payment Connector",
-      "description": "Enabled a travel platform to accept Bitcoin payments",
-      "startDate": "2015-09-24",
-      "endDate": "2015-09-27",
-      "roles": [
-        "Project lead"
-      ],
-      "highlights": [
-        "People's Choice Award winner",
-        "Integration with Coinbase and TestNet"
-      ],
-      "entity": "Switchfly's Hackathon",
-      "type": "Application",
-      "keywords": [
-        "Bitcoin",
-        "Blockchain",
-        "Coinbase",
-        "Cryptocurrency",
-        "Java",
-        "Hackathon",
-        "TestNet"
-      ]
-    },
-    {
-      "name": "Boardless Games",
-      "description": "A multiplayer framework to play board games on phones",
-      "startDate": "2013-06-02",
-      "endDate": "2015-12-08",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "Supported games: Love Letter and The Resistance",
-        "2nd place winner",
-        "Rewrote the original hackathon build on Meteor"
-      ],
-      "entity": "Nearsoft's Hackathon",
-      "type": "Application",
-      "url": "https://github.com/bubuntux/boardless-games-meteor",
-      "keywords": [
-        "Boardgames",
-        "CoffeeScript",
-        "CSS",
-        "HTML",
-        "Jade",
-        "JavaScript",
-        "Hackathon",
-        "Meteor",
-        "MongoDB",
-        "Node.js",
-        "Pug"
-      ]
-    },
-    {
-      "name": "Element-web container",
-      "description": "Element (formerly Vector/Riot) is a web client for Matrix, an open network for secure, decentralized communication",
-      "startDate": "2017-06-28",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "3.6M+ downloads across the riot-web and element-web images"
-      ],
-      "type": "Container",
-      "url": "https://github.com/bubuntux/element-web",
-      "keywords": [
-        "Bash",
-        "Container",
-        "Docker",
-        "Element",
-        "Matrix",
-        "Podman"
-      ],
-      "endDate": "2021-05-15"
-    },
-    {
-      "name": "Protorrent",
-      "description": "Proton VPN + qBittorrent container",
-      "startDate": "2023-10-10",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [
-        "Pre-configured to prevent IP leaks",
-        "2.8k+ downloads"
-      ],
-      "type": "Container",
-      "url": "https://github.com/bubuntux/protorrent",
-      "keywords": [
-        "Bash",
-        "Container",
-        "Docker",
-        "iptables",
-        "Networking",
-        "Podman",
-        "ProtonVPN",
-        "qBittorrent",
-        "s6",
-        "Torrent",
-        "VPN",
-        "Wireguard"
-      ],
-      "endDate": "2025-11-22"
-    },
-    {
-      "name": "Somechat",
-      "description": "A chat program that connects to multiple chat networks",
-      "startDate": "2014-03-29",
-      "endDate": "2014-04-01",
-      "entity": "ITESM's Hackathon",
-      "roles": [
-        "Project lead"
-      ],
-      "highlights": [
-        "Support for Whatsapp and Facebook"
-      ],
-      "type": "Application",
-      "url": "https://github.com/bubuntux/somechat",
-      "keywords": [
-        "Chat",
-        "Facebook",
-        "Messenger",
-        "Python",
-        "Hackathon",
-        "Whatsapp"
-      ]
-    },
-    {
-      "name": "Easy workflow generator",
-      "description": "A jQuery plugin to generate flow charts",
-      "startDate": "2013-04-12",
-      "endDate": "2013-04-25",
-      "entity": "Nearsoft's Hackathon",
-      "roles": [
-        "Backend Web Developer"
-      ],
-      "type": "Library",
-      "url": "https://github.com/bubuntux/easyworkflowgenerator",
-      "keywords": [
-        "jQuery",
-        "Hackathon",
-        "JavaScript"
-      ]
-    },
-    {
-      "name": "Jaturalquimia",
-      "description": "A Naturalquimia clone for Android",
-      "startDate": "2011-08-30",
-      "endDate": "2011-09-15",
-      "roles": [
-        "Owner"
-      ],
-      "highlights": [],
-      "type": "Mobile Game",
-      "url": "https://code.google.com/archive/p/jaturalquimia",
-      "keywords": [
-        "Android",
-        "Java",
-        "Mobile Game",
-        "Tetris",
-        "Videogame"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "genai-bench",
-      "summary": "Benchmarking tool for LLM serving",
-      "position": "Contributor",
-      "url": "https://github.com/sgl-project/genai-bench",
-      "highlights": [
-        "[Fixed SSE parser to handle optional/variable whitespace after 'data:'](https://github.com/sgl-project/genai-bench/pull/163)"
-      ],
-      "startDate": "2026-01-31",
-      "endDate": "2026-02-13"
-    },
-    {
-      "organization": "BlueBuild",
-      "summary": "The BlueBuild project creates accessible tools for you to create, configure & build custom images of atomic Fedora distributions.",
-      "position": "Contributor",
-      "url": "https://github.com/blue-build",
-      "highlights": [
-        "[Fixed fonts module](https://github.com/blue-build/modules/pull/373)"
-      ],
-      "startDate": "2024-12-04",
-      "endDate": "2024-12-04"
-    },
-    {
-      "organization": "NixOS",
-      "summary": "Declarative builds and deployments",
-      "position": "Contributor",
-      "url": "https://github.com/NixOS",
-      "highlights": [
-        "[Updated cloudflare-wrap enrollment command](https://github.com/NixOS/nixpkgs/pull/354062)",
-        "[Added ivsc-firmware to ipu6 option](https://github.com/NixOS/nixpkgs/pull/296164)",
-        "[Added a1_prod symbolic links to fix ipu6 webcams](https://github.com/NixOS/nixpkgs/pull/295508)"
-      ],
-      "startDate": "2024-03-13",
-      "endDate": "2024-11-07"
-    },
-    {
-      "organization": "Universal Blue",
-      "summary": "Custom Operating System Images",
-      "position": "Contributor",
-      "url": "https://github.com/ublue-os",
-      "highlights": [
-        "[Added arch toolbox](https://github.com/ublue-os/config/pull/73)",
-        "[Added clipman for sericea](https://github.com/ublue-os/main/pull/273)",
-        "[Removed unecessary workaround](https://github.com/ublue-os/main/pull/271)"
-      ],
-      "startDate": "2023-07-07",
-      "endDate": "2023-07-15"
-    },
-    {
-      "organization": "Distrobox",
-      "summary": "Use any Linux distribution inside your terminal",
-      "position": "Contributor",
-      "url": "https://github.com/89luca89/distrobox",
-      "highlights": [
-        "[Fixed --sudo when not --login](https://github.com/89luca89/distrobox/pull/860)",
-        "[Exported to host_home by default](https://github.com/89luca89/distrobox/pull/859)",
-        "[Added a flag to upgrade only running instances](https://github.com/89luca89/distrobox/pull/823)",
-        "[Fixed handling of symbolic links pointing at a non-existing file](https://github.com/89luca89/distrobox/pull/792)",
-        "[Ignored net files when unsharing nets](https://github.com/89luca89/distrobox/pull/766)",
-        "[Documented distrobox-export](https://github.com/89luca89/distrobox/pull/676)",
-        "[Documented compatibility](https://github.com/89luca89/distrobox/pull/649)",
-        "7 merged pull requests on a project with 12k+ stars"
-      ],
-      "startDate": "2023-03-06",
-      "endDate": "2023-07-13"
-    },
-    {
-      "organization": "Gluetun",
-      "summary": "VPN client in a thin Docker container for multiple VPN providers, written in Go",
-      "position": "Contributor",
-      "url": "https://github.com/qdm12/gluetun",
-      "highlights": [
-        "[Added a new NordVPN API endpoint and WireGuard support](https://github.com/qdm12/gluetun/pull/1380)",
-        "[Added generics to some methods](https://github.com/qdm12/gluetun/pull/1427)",
-        "Merged into a project with 15k+ stars, carrying over the NordVPN work from my own containers"
-      ],
-      "keywords": [
-        "Go"
-      ],
-      "startDate": "2023-02-01",
-      "endDate": "2023-06-08"
-    },
-    {
-      "organization": "Datafaker",
-      "summary": "Library generates fake data",
-      "position": "Contributor",
-      "url": "https://github.com/datafaker-net/datafaker",
-      "highlights": [
-        "[Lazy cache all locale values](https://github.com/datafaker-net/datafaker/pull/82)",
-        "Drove Indeed's org-wide migration off the abandoned JavaFaker library onto Datafaker through a Sourcegraph campaign, reaching ~40% adoption",
-        "Recognized by Indeed's Open Source Team for the company's first captured contribution to an open source project it depends on"
-      ],
-      "startDate": "2022-03-10",
-      "endDate": "2022-03-10"
-    },
-    {
-      "organization": "vim-numbertoggle",
-      "summary": "Toggles between hybrid and absolute line numbers automatically",
-      "position": "Contributor",
-      "url": "https://github.com/jeffkreeftmeijer/vim-numbertoggle",
-      "highlights": [
-        "[Kept norelativenumber in insert mode when focus is regained](https://github.com/jeffkreeftmeijer/vim-numbertoggle/pull/50)"
-      ],
-      "startDate": "2020-05-28",
-      "endDate": "2020-12-30"
-    },
-    {
-      "organization": "intl-tel-input",
-      "summary": "JavaScript plugin for entering and validating international telephone numbers",
-      "position": "Contributor",
-      "url": "https://github.com/jackocnr/intl-tel-input",
-      "highlights": [
-        "[Fixed the bundled utils.js](https://github.com/jackocnr/intl-tel-input/pull/425)"
-      ],
-      "startDate": "2016-06-08",
-      "endDate": "2016-06-08"
-    },
-    {
-      "organization": "Antergos/Cnchi",
-      "summary": "Graphical Installer for Antergos Linux",
-      "position": "Contributor",
-      "url": "https://github.com/Antergos/Cnchi",
-      "highlights": [
-        "[Fixed issues generating fallback entries](https://github.com/Antergos/Cnchi/pull/456)"
-      ],
-      "startDate": "2015-10-31",
-      "endDate": "2015-10-31"
-    },
-    {
-      "organization": "PlayN",
-      "summary": "PlayN is a cross-platform Java game development library written in Java",
-      "position": "Contributor",
-      "url": "https://github.com/threerings/playn",
-      "highlights": [
-        "[Fixed run-java target](https://github.com/threerings/playn/pull/23)"
-      ],
-      "startDate": "2013-06-08",
-      "endDate": "2013-06-08"
-    },
-    {
-      "organization": "ScribeJava",
-      "summary": "Simple OAuth client Java lib",
-      "url": "https://github.com/scribejava/scribejava",
-      "position": "Contributor",
-      "highlights": [
-        "[Added support for Ubuntu One](https://github.com/scribejava/scribejava/pull/298)",
-        "[Update Dropbox api](https://github.com/scribejava/scribejava/pull/259)"
-      ],
-      "startDate": "2012-04-29",
-      "endDate": "2012-09-13"
-    },
-    {
-      "organization": "TestNG",
-      "position": "Contributor",
-      "summary": "TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.",
-      "url": "https://github.com/testng-team/testng",
-      "highlights": [
-        "[Fix an issue with @BeforeTest method in a super class will be called multiple time when alwayRun = true](https://github.com/testng-team/testng/pull/114)"
-      ],
-      "startDate": "2011-10-25",
-      "endDate": "2011-10-28"
-    },
-    {
-      "organization": "Emesene",
-      "position": "Contributor",
-      "url": "https://github.com/emesene/emesene",
-      "summary": "Emesene is an instant messenger capable of connecting to various networks.",
-      "highlights": [
-        "[Added feature to only show notifications when available](https://github.com/emesene/emesene/pull/838)",
-        "[Hide close button tab if only has one tab](https://github.com/emesene/emesene/pull/822)"
-      ],
-      "keywords": [
-        "Python"
-      ],
-      "startDate": "2011-09-04",
-      "endDate": "2011-09-08"
-    }
-  ],
-  "references": [
-    {
-      "name": "Lisa Tesar, Product Manager at Indeed",
-      "reference": "Julio is a strong leader, fantastic engineer, and wonderful teammate. As a teammate, he is always ready to support his colleagues in their immediate work and overall skill development. In addition, he is thoughtful of the collective experience of the team and is constantly looking for ways to improve processes. He is extremely collaborative, ensuring a synthesis of all related and interdependent elements of a project, especially those owned by other teams. He is thorough in his investigation and thoughtful in his recommendations."
-    },
-    {
-      "name": "Lauren Kleinert, Software Engineer Intern at Indeed",
-      "reference": "Julio is an exceptional software engineer and an outstanding mentor. His technical knowledge and problem-solving skills are top-notch. He served as my mentor during my first software engineering internship. His guidance was invaluable, and has left a lasting impact on my growth as an engineer.\nDuring my internship, I quickly saw how committed Julio is to improving team practices and engineering processes. He is responsive, efficient, and consistently leads team discussions with clarity and confidence.\nDespite the demands of his role as a staff engineer, Julio always found time to mentor me in coding best practices, system design fundamentals, and—most importantly—how to frame my work within the broader goals of our team and the company. \nJulio is an asset to any organization he joins!"
-    },
-    {
-      "name": "Andrew Roth, Software Engineer at Indeed",
-      "reference": "I really appreciate Julio's contributions when it comes to evaluating and establishing new team processes. He's never afraid to speak his mind, even when he disagrees with the proposition being discussed, but he always does so in a way that facilitates conversation rather than hinders it, and as a result, the process always comes out stronger for it. He additionally encourages the team to find ways to measure processes, even if at first glance the process feels more qualitative than quantifiable."
-    }
-  ],
-  "meta": {
-    "version": "v1.0.0",
-    "canonical": "https://julioguti.dev/resume.json",
-    "lastModified": "2026-09-14T00:00:00"
-  }
+	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+	"basics": {
+		"name": "Julio Gutierrez",
+		"label": "Staff Software Engineer",
+		"image": "https://julioguti.dev/img/avatar.png",
+		"email": "cv@julioguti.dev",
+		"url": "https://julioguti.dev",
+		"summary": "Staff Software Engineer with over 15 years of experience in designing and building scalable and reliable systems. Proficient in a wide range of technologies including Java, Python, and AWS. Passionate about mentorship and leveraging AI to solve complex problems. When not at the keyboard, I am a proud father of three, a board game enthusiast, and an avid self-hoster.",
+		"location": {
+			"city": "Austin",
+			"countryCode": "US",
+			"region": "Texas"
+		},
+		"profiles": [
+			{
+				"network": "GitHub",
+				"username": "bubuntux",
+				"url": "https://github.com/bubuntux"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "julio-guti",
+				"url": "https://www.linkedin.com/in/julio-guti"
+			},
+			{
+				"network": "Docker",
+				"username": "bubuntux",
+				"url": "https://hub.docker.com/u/bubuntux"
+			}
+		]
+	},
+	"work": [
+		{
+			"name": "Indeed",
+			"logo": "./img/logos/indeed.svg",
+			"url": "https://www.indeed.com",
+			"location": "(Remote) Austin, TX",
+			"description": "Hiring platform",
+			"position": "Staff Software Engineer",
+			"startDate": "2021-10-11",
+			"summary": "Staff engineer on a model-serving platform team, building and operating the self-hosted small language model inference stack and leading cost, reliability, and migration initiatives across partner teams.",
+			"highlights": [
+				"Designed and delivered the company's first self-hosted SLM inference platform end-to-end, from architecture review to production: vLLM based, drop-in OpenAI Chat Completions API, LoRA adapter serving, FP8 quantization, schema-constrained structured outputs, per-use-case isolation, and KEDA autoscaling.",
+				"Migrated production workloads off external LLM vendors onto the platform, saving over $7M annually, including an 87% reduction (~$5.8M/year) on a 60M request/day generation workload and a 93% reduction (~$1.34M/year) on a fine-tuned ranking model ramped to 100% of traffic.",
+				"Delivered inline query embeddings on the live job-search path at ~20ms p95, a latency budget third-party embedding APIs (~500ms p90) could not meet.",
+				"Productionized a fine-tuned SLM reranker at flat online latency, making a 44% NDCG@10 gain and 63% fewer bad results shippable.",
+				"Led the platform's full lifecycle from an accepted architecture design review through production deployment, standing up 2 new repositories, service-to-service authentication, and 3 Production Readiness Reviews that standardized onboarding for new use cases.",
+				"Adopted genai-bench for inference benchmarking and contributed a bug fix back to the open source project.",
+				"Kept the ranking rollout healthy through A/B testing, resolving production issues in real time, implementing warmup orchestration to cut cold-start latency, and tuning KEDA downscaling to absorb cron-driven traffic spikes.",
+				"Contributed key design input to the LLM proxy integration, shaping the routing layer through which client teams consume the inference platform.",
+				"Spearheaded cost-saving initiatives delivering over $3.3M in annual savings, including sunsetting a legacy email alerts product (~$1.7M/year), cutting the team's AWS account costs (~$1.44M/year), and removing unused data builders (~$180k/year).",
+				"Traced a GPU cost-attribution bug misreporting spend across every GPU deployment in the company, driving the cross-team investigation and proposing the fix.",
+				"Led the migration of bidding models onto the shared model-serving platform as the single point of contact for the initiative, establishing SLO monitoring and shadow testing for safe rollout, and consolidated bidding onto a global cluster, simplifying deployments and improving CPU utilization.",
+				"Drove the creation of comprehensive monitoring dashboards and SLOs for critical services, enhancing system observability and reliability.",
+				"Owned and resolved an 11-month availability failure in a business-critical data pipeline, coordinating 3 engineers and an intern across 5 partner teams, migrating 3 of its indexes to AWS, and restoring the model refresh cadence to daily.",
+				"Built the data-comparison tooling that validated those AWS index migrations within a 1% deviation, adopted by every team performing the migration.",
+				"Led the migration of SERP second-phase scoring off the index service onto the shared model-serving platform, from design through implementation, across three partner teams.",
+				"Led the handover of an entire product area to a new team, writing the transition documentation, running knowledge-sharing sessions, and onboarding their engineers into the on-call rotation.",
+				"Identified and drove company-wide storage savings, including disabling versioning on outbox S3 buckets (2.2PB reclaimed, ~$29k/month) and applying lifecycle policies to analytics buckets.",
+				"Pioneered research into Java 21 with Generational ZGC, documenting the findings and a benchmarking plan for adoption across the platform's services.",
+				"Stepped up as team lead, mentored and onboarded numerous engineers and an intern, and supported the growth of 4+ engineers through regular 1:1s.",
+				"Co-created a new pair programming interview, building the questions and defining the scoring signals, removing 2 interviews from each candidate's loop.",
+				"Set the team's AI-assisted engineering practice, running demos and knowledge-sharing sessions on a spec-driven, agent-assisted workflow that other engineers adopted as their own.",
+				"Corrected the team's testing strategy: wrote the proposal that became a team objective and guided a QA engineer in raising unit test coverage on a core service from under 10% to over 90%.",
+				"Presented the team's technical direction and business impact to senior engineering leadership, and authored the runbooks, load-testing tools, and wiki documentation the team onboards from.",
+				"Acted as a key technical partner and point of contact for numerous cross-functional teams, unblocking critical initiatives and ensuring successful project delivery.",
+				"Improved developer productivity by enabling caching and incremental builds on a Gradle task used in every Java build company-wide, cutting time spent on it by 30%."
+			],
+			"keywords": [
+				"AWS",
+				"Hadoop",
+				"Java",
+				"JavaScript",
+				"Kotlin",
+				"Python",
+				"Pytorch",
+				"React",
+				"Docker",
+				"Scala",
+				"SLM",
+				"Spring",
+				"Triton",
+				"vLLM",
+				"LoRA",
+				"KEDA",
+				"Kubernetes",
+				"DataDog",
+				"Claude",
+				"FP8",
+				"GPU",
+				"Terraform"
+			]
+		},
+		{
+			"name": "Natera",
+			"logo": "./img/logos/natera.svg",
+			"url": "https://www.natera.com",
+			"location": "(Remote) Austin, TX",
+			"description": "Healthcare | Genetic test",
+			"position": "Senior Software Engineer",
+			"startDate": "2020-10-11",
+			"endDate": "2021-10-11",
+			"summary": "Developed and maintained Java-based invoicing systems and client communication platforms",
+			"highlights": [
+				"Engineered a serverless application empowering patients and clinics to manage communication preferences",
+				"Enhanced application performance by implementing query optimization, pagination, and data caching strategies",
+				"Spearheaded the migration to a newer, more secure version of Spring Boot, mitigating security vulnerabilities"
+			],
+			"keywords": [
+				"Java",
+				"Spring",
+				"Hibernate",
+				"JPA",
+				"MySQL",
+				"Mockito",
+				"AWS",
+				"Lambda",
+				"DynamoDB",
+				"TypeScript"
+			]
+		},
+		{
+			"name": "Switchfly",
+			"logo": "./img/logos/switchfly.svg",
+			"url": "https://www.switchfly.com",
+			"location": "San Francisco, CA - Denver, CO - (Remote) Austin, TX",
+			"description": "Travel platform",
+			"position": "Lead Software Engineer",
+			"startDate": "2017-02-01",
+			"endDate": "2020-10-01",
+			"summary": "As a Lead Software Engineer on a travel platform, I focused on integrating and optimizing third-party connections to expand market reach and enhance system capabilities.",
+			"highlights": [
+				"Led a team of four developers, providing technical guidance and overseeing project execution to success",
+				"Expanded market reach by integrating with external hotel, car, insurance, and flight systems in multiple countries",
+				"Architected and implemented a new system design to accelerate the integration of third-party APIs"
+			],
+			"keywords": [
+				"Java",
+				"Spring",
+				"Hibernate",
+				"Couchbase",
+				"PostgreSQL",
+				"Selenium",
+				"EasyMock",
+				"Ember",
+				"FTL"
+			]
+		},
+		{
+			"name": "Nearsoft",
+			"logo": "./img/logos/nearsoft.png",
+			"url": "https://nearsoft.com",
+			"location": "Hermosillo, SO - (Remote) Monterrey, NL",
+			"description": "IT | Outsourcing",
+			"position": "Software Engineer",
+			"startDate": "2011-08-01",
+			"endDate": "2017-02-01",
+			"summary": "Contributed to a variety of software development projects, focusing on technology migrations, CI/CD optimization, and platform enhancements",
+			"highlights": [
+				"Participated in multiple technology migrations including SVN to Git, Maven to Gradle, and Java 7 to Java 8",
+				"Optimized the development feedback loop by parallelizing CI/CD pipelines using Jenkins",
+				"Contributed to the development and enhancement of a travel platform system"
+			],
+			"keywords": [
+				"Java",
+				"Spring",
+				"Hibernate",
+				"Couchbase",
+				"PostgreSQL",
+				"Selenium",
+				"EasyMock",
+				"Ember",
+				"FTL"
+			]
+		},
+		{
+			"name": "FEMSA",
+			"url": "https://www.femsa.com",
+			"location": "Monterrey, NL",
+			"description": "Beverage | Retail",
+			"position": "Software Engineer",
+			"startDate": "2011-03-01",
+			"endDate": "2011-07-01",
+			"summary": "Contributed to the development and migration of Point of Sale (POS) applications for a major retail chain",
+			"highlights": [
+				"Developed and maintained a Point of Sale (POS) application for OXXO, the biggest chain store in Mexico",
+				"Participated in the migration of the POS system from Fortran to Java, ensuring seamless transition and improved performance",
+				"Contributed to the migration of build systems from Ant to Maven, enhancing project management and build automation"
+			],
+			"keywords": ["Java", "Maven", "Oracle DB"]
+		},
+		{
+			"name": "S&C Constructores de Sistemas",
+			"url": "https://www.syc.com.mx",
+			"location": "(Remote) Monterrey, NL",
+			"description": "IT | Outsourcing",
+			"position": "Software Engineer",
+			"startDate": "2010-01-01",
+			"endDate": "2011-02-01",
+			"summary": "Contributed to IT outsourcing projects, focusing on e-invoice systems and platform consolidation",
+			"highlights": [
+				"Established a new business line by building an e-invoice system that integrated with a CMS and regulatory entities",
+				"Implemented a proper branching strategy that consolidated different client implementations into one platform",
+				"Contributed to the development and maintenance of a Content Management System (CMS)"
+			],
+			"keywords": ["Java", "Spring", "MySQL"]
+		},
+		{
+			"name": "Playful Interactive",
+			"url": "https://www.playful.mx/",
+			"location": "Monterrey, NL",
+			"description": "Media Design | Game Studio",
+			"position": "Game developer",
+			"startDate": "2010-08",
+			"endDate": "2010-11",
+			"summary": "Main developer for a mobile platforming game",
+			"highlights": [
+				"Led the development of a mobile platforming game, overseeing all technical aspects from conception to implementation",
+				"Utilized Unity 3D, C#, and JavaScript to build core game mechanics, user interfaces, and interactive elements",
+				"Contributed to a dynamic and engaging gaming experience for mobile users"
+			],
+			"keywords": ["C#", "JavaScript", ".NET", "Unity"]
+		},
+		{
+			"name": "Expert Sistemas Computacionales",
+			"url": "https://www.expert.com.mx",
+			"location": "Monterrey, NL",
+			"description": "Healthcare | IT Services",
+			"position": "Software Engineer (Internship)",
+			"startDate": "2009-02",
+			"endDate": "2009-07",
+			"summary": "Contributed to a patient and human resource management system, focusing on bug fixes and performance optimization",
+			"highlights": [
+				"Fixed critical bugs in a Java-based patient and human resource management system",
+				"Optimized PostgreSQL database connections for improved system performance and responsiveness",
+				"Gained experience in enterprise application development, database interaction, and performance tuning"
+			],
+			"keywords": ["Java", "PostgreSQL"]
+		},
+		{
+			"name": "Marcatel International",
+			"url": "https://marcatel.com",
+			"location": "Monterrey, NL",
+			"description": "Telecommunications",
+			"position": "Software Engineer (Internship)",
+			"startDate": "2008-08",
+			"endDate": "2009-01",
+			"summary": "Designed and implemented an inventory system to manage equipment and maintenance schedules",
+			"highlights": [
+				"Developed a comprehensive inventory system using .NET C# to track equipment, streamlining maintenance planning and record-keeping",
+				"Enabled efficient scheduling of preventive maintenance by providing clear visibility into equipment status and service requirements",
+				"Contributed to improving operational efficiency by ensuring timely maintenance and reducing equipment downtime"
+			]
+		},
+		{
+			"name": "Block Networks",
+			"url": "https://bnext.mx",
+			"location": "Monterrey, NL",
+			"description": "IT Services | IT Consulting",
+			"position": "Software Engineer (Internship)",
+			"startDate": "2008-05",
+			"endDate": "2008-07",
+			"summary": "Contributed to the development and quality assurance of point-of-sale systems",
+			"highlights": [
+				"Resolved critical bugs in point-of-sale applications using C# and .NET, improving system stability and user experience",
+				"Developed and implemented automated test scripts to ensure software quality and accelerate the testing cycle",
+				"Gained practical experience in software development lifecycle, debugging, and quality assurance processes"
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "Facultad de Ciencias Físico Matemáticas, UANL",
+			"location": "San Nicolás de los Garza, NL",
+			"url": "https://www.fcfm.uanl.mx",
+			"area": "Computer Science",
+			"studyType": "Bachelor of Science",
+			"startDate": "2005-03-01",
+			"endDate": "2009-12-01",
+			"courses": ["Software Engineering", "Design Patterns", "Database Systems"]
+		}
+	],
+	"certificates": [
+		{
+			"name": "Oracle Certified Professional, Java EE 5 Web Component Developer",
+			"date": "2013-11-19",
+			"url": "https://www.credly.com/badges/7a58ac90-8119-485d-bd8a-83f0d3e6c69f",
+			"issuer": "Oracle"
+		},
+		{
+			"name": "Oracle Certified Professional, Java SE 6 Programmer",
+			"date": "2011-03-23",
+			"url": "https://www.credly.com/badges/35fd49cb-90a9-42bd-981f-f64ff37f2655",
+			"issuer": "Oracle"
+		},
+		{
+			"name": "Certified SAFe® 4 Agile Software Engineer",
+			"date": "2019-10-22",
+			"url": "https://www.credly.com/badges/0840fede-90d5-4af9-8dd6-4a4bd41f072a",
+			"issuer": "SAFe by Scaled Agile, Inc"
+		},
+		{
+			"name": "Spring 5.0 and Spring Boot 2.0 New Features",
+			"date": "2020-03-12",
+			"url": "https://www.linkedin.com/learning/certificates/4e6d727e9810872c4ac81b0afbec96019841248b30afcd76366d3d9ab394260d",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Spring: Design Patterns",
+			"date": "2020-03-02",
+			"url": "https://www.linkedin.com/learning/certificates/06f3e5cf12a330fb5988f790c0a2ceb3acc14602f254064169b45066d199d49f",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Docker for Developers",
+			"date": "2020-02-05",
+			"url": "https://www.linkedin.com/learning/certificates/43d293727d1d3109a1fcdd4ef520e6af17ed854024e40196275c48e6b287ec39",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Docker for Java Developers",
+			"date": "2020-02-06",
+			"url": "https://www.linkedin.com/learning/certificates/bd30b667330a74592e804c7575ea92700e9dd5d184a58bdedcb355a3bdf87db0",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Git Intermediate Techniques",
+			"date": "2020-02-20",
+			"url": "https://www.linkedin.com/learning/certificates/bb6e0b92b61d885c3343d1da3209efe352584d34e9cf34acab51f4ac4f4503a0",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Git for Teams",
+			"date": "2020-02-21",
+			"url": "https://www.linkedin.com/learning/certificates/ce2e4c08aedc48fc7e91846627281d6b74aeb909a22a17e7bbd3a6b1119d520c",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Kubernetes: Microservices",
+			"date": "2020-02-25",
+			"url": "https://www.linkedin.com/learning/certificates/7e39d5ffd6fc570855515664df23ec24e7b18a88081e8bdb26fd924da356a6d6",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Learning Terraform",
+			"date": "2020-02-15",
+			"url": "https://www.linkedin.com/learning/certificates/600cd18c5f54d29ba89fbf279d300107cea6440f6bcf80a2207dcd2defb5a89d",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Microservices Foundations",
+			"date": "2020-02-04",
+			"url": "https://www.linkedin.com/learning/certificates/87d8ee2ef7b4a38a99988f8b52a41f7345c59f5645ba69822e18c5252bcb7776",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Spring Boot Essential Training",
+			"date": "2020-02-26",
+			"url": "https://www.linkedin.com/learning/certificates/c62fc3f52e481b3244ea3fb8cd856c6e596192bda0aec395ba28ab8599776f40",
+			"issuer": "LinkedIn"
+		},
+		{
+			"name": "Succeeding in DevOps",
+			"date": "2020-02-14",
+			"url": "https://www.linkedin.com/learning/certificates/3eb5ab3ce0a933c265bfbe45c2a4e1a0c5bdd4bfbac5e3e0e1128ce68869c494",
+			"issuer": "LinkedIn"
+		}
+	],
+	"publications": [
+		{
+			"name": "SLM infra at Indeed (talk)",
+			"publisher": "Indeed, Austin",
+			"releaseDate": "2026-07",
+			"summary": "Presented the serving side of Indeed's small language model stack: platform capabilities, production cost and latency case studies, and guidance on when fine-tuning and self-hosting pay off over a third-party API."
+		},
+		{
+			"name": "SLM at Indeed (talk)",
+			"publisher": "SciCon, Indeed's internal science conference",
+			"releaseDate": "2025-12",
+			"summary": "Introduced self-hosted small language model inference at Indeed and the first production use cases running on it."
+		}
+	],
+	"skills": [
+		{
+			"name": "Java",
+			"level": "Expert",
+			"keywords": [
+				"Java SE",
+				"Java EE",
+				"Spring",
+				"Spring Boot",
+				"Kotlin",
+				"Scala"
+			]
+		},
+		{
+			"name": "Python",
+			"level": "Senior",
+			"keywords": ["PyTorch", "TensorFlow"]
+		},
+		{
+			"name": "Rust",
+			"level": "Intermediate",
+			"keywords": ["actix-web", "SeaORM", "serde", "Tokio"]
+		},
+		{
+			"name": "Go",
+			"level": "Beginner",
+			"keywords": ["Generics", "Containers"]
+		},
+		{
+			"name": "JavaScript",
+			"level": "Senior",
+			"keywords": ["React", "Node.js", "jQuery", "CoffeeScript", "TypeScript"]
+		},
+		{
+			"name": "Web Development",
+			"level": "Senior",
+			"keywords": ["HTML", "CSS", "Microservices", "REST"]
+		},
+		{
+			"name": "Cloud & DevOps",
+			"level": "Senior",
+			"keywords": [
+				"AWS",
+				"CI/CD",
+				"Docker",
+				"Git",
+				"Jenkins",
+				"Kubernetes",
+				"KEDA",
+				"Linux",
+				"Terraform",
+				"GitHub",
+				"Bash",
+				"Datadog"
+			]
+		},
+		{
+			"name": "Databases",
+			"level": "Senior",
+			"keywords": [
+				"SQL",
+				"PostgreSQL",
+				"MySQL",
+				"DynamoDB",
+				"Couchbase",
+				"MongoDB",
+				"Hadoop"
+			]
+		},
+		{
+			"name": "AI/ML",
+			"level": "Intermediate",
+			"keywords": [
+				"SLM",
+				"LLM",
+				"vLLM",
+				"LoRA",
+				"Triton",
+				"Generative AI",
+				"CNN",
+				"DNN",
+				"FP8 Quantization",
+				"GPU Serving",
+				"Fine-tuning",
+				"Embeddings"
+			]
+		},
+		{
+			"name": "AI Tooling",
+			"level": "Senior",
+			"keywords": [
+				"Claude Code",
+				"Gemini",
+				"Agentic Coding Workflows",
+				"Spec-Driven Development",
+				"MCP"
+			]
+		},
+		{
+			"name": ".NET",
+			"level": "Intermediate",
+			"keywords": ["C#"]
+		},
+		{
+			"name": "Game Development",
+			"level": "Beginner",
+			"keywords": ["Unity"]
+		},
+		{
+			"name": "Mobile Development",
+			"level": "Beginner",
+			"keywords": ["Android", "Java"]
+		},
+		{
+			"name": "Nix",
+			"level": "Intermediate",
+			"keywords": ["NixOS", "Flakes", "flake-parts", "Home Manager", "sops"]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Full Professional"
+		},
+		{
+			"language": "Spanish",
+			"fluency": "Native speaker"
+		}
+	],
+	"interests": [
+		{
+			"name": "Boardgames",
+			"keywords": [
+				"Analytics",
+				"Logic",
+				"Planning",
+				"Problem-solving",
+				"Strategy"
+			]
+		},
+		{
+			"name": "Self-host",
+			"keywords": [
+				"Automation",
+				"Bash",
+				"Containerization",
+				"Homelab",
+				"Linux",
+				"Networking",
+				"Open-source",
+				"Server"
+			]
+		},
+		{
+			"name": "Pickleball",
+			"keywords": [
+				"Collaboration",
+				"Community",
+				"Coordination",
+				"Strategy",
+				"Teamwork"
+			]
+		}
+	],
+	"projects": [
+		{
+			"name": "den",
+			"description": "Personal multi-host NixOS configuration managed as a Nix flake",
+			"startDate": "2025-12-14",
+			"roles": ["Owner"],
+			"highlights": [
+				"Declarative config for a dev laptop, a family machine and a NAS: Home Manager, encrypted secrets, CI-checked builds",
+				"Assembles every host from auto-discovered flake-parts modules using the dendritic pattern"
+			],
+			"type": "Configuration",
+			"url": "https://github.com/bubuntux/den",
+			"keywords": [
+				"Flakes",
+				"flake-parts",
+				"GitHub Actions",
+				"Home Manager",
+				"Linux",
+				"Nix",
+				"NixOS",
+				"sops"
+			]
+		},
+		{
+			"name": "NordVPN container",
+			"description": "Official NordVPN client in a Docker container; it makes routing traffic through the NordVPN network easy and secure with an integrated iptables kill switch",
+			"startDate": "2018-02-24",
+			"roles": ["Owner"],
+			"highlights": ["18M+ downloads", "800+ stars", "200+ forks"],
+			"type": "Container",
+			"url": "https://github.com/bubuntux/nordvpn",
+			"keywords": [
+				"Bash",
+				"Container",
+				"Docker",
+				"iptables",
+				"Networking",
+				"NordVPN",
+				"OpenVpn",
+				"Podman",
+				"s6",
+				"VPN",
+				"Wireguard"
+			],
+			"endDate": "2025-11-22"
+		},
+		{
+			"name": "Nordlynx container",
+			"description": "NordLynx is a technology built around the WireGuard® VPN protocol, making routing traffic through the NordVPN network easy and secure",
+			"startDate": "2021-09-09",
+			"roles": ["Owner"],
+			"highlights": ["225k+ downloads", "250+ stars", "50+ forks"],
+			"type": "Container",
+			"url": "https://github.com/bubuntux/nordlynx",
+			"keywords": [
+				"Bash",
+				"Container",
+				"Docker",
+				"iptables",
+				"Networking",
+				"NordVPN",
+				"Nordlynx",
+				"Podman",
+				"s6",
+				"VPN",
+				"Wireguard"
+			],
+			"endDate": "2025-11-22"
+		},
+		{
+			"name": "JUPR",
+			"description": "A WhatsApp bot that scans group chats, parses pickleball match results and exports them to DUPR, the universal pickleball rating platform",
+			"startDate": "2024-11-11",
+			"roles": ["Owner"],
+			"highlights": [
+				"Implemented a WhatsApp bot that scans messages in group chats, parses matches and exports them to DUPR"
+			],
+			"type": "Application",
+			"keywords": [
+				"actix-web",
+				"DUPR",
+				"Pickleball",
+				"PostgreSQL",
+				"Regex",
+				"Rust",
+				"SeaORM",
+				"WhatsApp"
+			],
+			"url": "https://github.com/bubuntux/whatsapp_to_dupr"
+		},
+		{
+			"name": "Poker Engine",
+			"description": "A Java engine that runs Texas hold 'em hands, evaluating and ranking players' hands to resolve a showdown",
+			"startDate": "2014-03-19",
+			"endDate": "2020-05-04",
+			"roles": ["Owner"],
+			"highlights": ["35+ stars", "28+ forks"],
+			"type": "Library",
+			"url": "https://github.com/bubuntux/poker-engine",
+			"keywords": ["Gradle", "Java", "Poker", "Travis CI"]
+		},
+		{
+			"name": "Rocks",
+			"description": "1st place winner at Unearthed Denver 2017",
+			"startDate": "2017-09-24",
+			"endDate": "2017-09-27",
+			"roles": ["Project lead"],
+			"highlights": [
+				"Designed a system to filter out low-quality minerals using machine learning and a tomato-sorting-like machine",
+				"Trained a convolutional neural network to classify minerals"
+			],
+			"entity": "Unearthed's Hackathon",
+			"type": "Application",
+			"keywords": [
+				"Python",
+				"Google Cloud ML",
+				"TensorFlow",
+				"InceptionV3",
+				"Hackathon",
+				"CNN"
+			]
+		},
+		{
+			"name": "Bitcoin Payment Connector",
+			"description": "Enabled a travel platform to accept Bitcoin payments",
+			"startDate": "2015-09-24",
+			"endDate": "2015-09-27",
+			"roles": ["Project lead"],
+			"highlights": [
+				"People's Choice Award winner",
+				"Integration with Coinbase and TestNet"
+			],
+			"entity": "Switchfly's Hackathon",
+			"type": "Application",
+			"keywords": [
+				"Bitcoin",
+				"Blockchain",
+				"Coinbase",
+				"Cryptocurrency",
+				"Java",
+				"Hackathon",
+				"TestNet"
+			]
+		},
+		{
+			"name": "Boardless Games",
+			"description": "A multiplayer framework to play board games on phones",
+			"startDate": "2013-06-02",
+			"endDate": "2015-12-08",
+			"roles": ["Owner"],
+			"highlights": [
+				"Supported games: Love Letter and The Resistance",
+				"2nd place winner",
+				"Rewrote the original hackathon build on Meteor"
+			],
+			"entity": "Nearsoft's Hackathon",
+			"type": "Application",
+			"url": "https://github.com/bubuntux/boardless-games-meteor",
+			"keywords": [
+				"Boardgames",
+				"CoffeeScript",
+				"CSS",
+				"HTML",
+				"Jade",
+				"JavaScript",
+				"Hackathon",
+				"Meteor",
+				"MongoDB",
+				"Node.js",
+				"Pug"
+			]
+		},
+		{
+			"name": "Element-web container",
+			"description": "Element (formerly Vector/Riot) is a web client for Matrix, an open network for secure, decentralized communication",
+			"startDate": "2017-06-28",
+			"roles": ["Owner"],
+			"highlights": [
+				"3.6M+ downloads across the riot-web and element-web images"
+			],
+			"type": "Container",
+			"url": "https://github.com/bubuntux/element-web",
+			"keywords": [
+				"Bash",
+				"Container",
+				"Docker",
+				"Element",
+				"Matrix",
+				"Podman"
+			],
+			"endDate": "2021-05-15"
+		},
+		{
+			"name": "Protorrent",
+			"description": "Proton VPN + qBittorrent container",
+			"startDate": "2023-10-10",
+			"roles": ["Owner"],
+			"highlights": ["Pre-configured to prevent IP leaks", "2.8k+ downloads"],
+			"type": "Container",
+			"url": "https://github.com/bubuntux/protorrent",
+			"keywords": [
+				"Bash",
+				"Container",
+				"Docker",
+				"iptables",
+				"Networking",
+				"Podman",
+				"ProtonVPN",
+				"qBittorrent",
+				"s6",
+				"Torrent",
+				"VPN",
+				"Wireguard"
+			],
+			"endDate": "2025-11-22"
+		},
+		{
+			"name": "Somechat",
+			"description": "A chat program that connects to multiple chat networks",
+			"startDate": "2014-03-29",
+			"endDate": "2014-04-01",
+			"entity": "ITESM's Hackathon",
+			"roles": ["Project lead"],
+			"highlights": ["Support for Whatsapp and Facebook"],
+			"type": "Application",
+			"url": "https://github.com/bubuntux/somechat",
+			"keywords": [
+				"Chat",
+				"Facebook",
+				"Messenger",
+				"Python",
+				"Hackathon",
+				"Whatsapp"
+			]
+		},
+		{
+			"name": "Easy workflow generator",
+			"description": "A jQuery plugin to generate flow charts",
+			"startDate": "2013-04-12",
+			"endDate": "2013-04-25",
+			"entity": "Nearsoft's Hackathon",
+			"roles": ["Backend Web Developer"],
+			"type": "Library",
+			"url": "https://github.com/bubuntux/easyworkflowgenerator",
+			"keywords": ["jQuery", "Hackathon", "JavaScript"]
+		},
+		{
+			"name": "Jaturalquimia",
+			"description": "A Naturalquimia clone for Android",
+			"startDate": "2011-08-30",
+			"endDate": "2011-09-15",
+			"roles": ["Owner"],
+			"highlights": [],
+			"type": "Mobile Game",
+			"url": "https://code.google.com/archive/p/jaturalquimia",
+			"keywords": ["Android", "Java", "Mobile Game", "Tetris", "Videogame"]
+		}
+	],
+	"volunteer": [
+		{
+			"organization": "genai-bench",
+			"summary": "Benchmarking tool for LLM serving",
+			"position": "Contributor",
+			"url": "https://github.com/sgl-project/genai-bench",
+			"highlights": [
+				"[Fixed SSE parser to handle optional/variable whitespace after 'data:'](https://github.com/sgl-project/genai-bench/pull/163)"
+			],
+			"startDate": "2026-01-31",
+			"endDate": "2026-02-13"
+		},
+		{
+			"organization": "BlueBuild",
+			"summary": "The BlueBuild project creates accessible tools for you to create, configure & build custom images of atomic Fedora distributions.",
+			"position": "Contributor",
+			"url": "https://github.com/blue-build",
+			"highlights": [
+				"[Fixed fonts module](https://github.com/blue-build/modules/pull/373)"
+			],
+			"startDate": "2024-12-04",
+			"endDate": "2024-12-04"
+		},
+		{
+			"organization": "NixOS",
+			"summary": "Declarative builds and deployments",
+			"position": "Contributor",
+			"url": "https://github.com/NixOS",
+			"highlights": [
+				"[Updated cloudflare-wrap enrollment command](https://github.com/NixOS/nixpkgs/pull/354062)",
+				"[Added ivsc-firmware to ipu6 option](https://github.com/NixOS/nixpkgs/pull/296164)",
+				"[Added a1_prod symbolic links to fix ipu6 webcams](https://github.com/NixOS/nixpkgs/pull/295508)"
+			],
+			"startDate": "2024-03-13",
+			"endDate": "2024-11-07"
+		},
+		{
+			"organization": "Universal Blue",
+			"summary": "Custom Operating System Images",
+			"position": "Contributor",
+			"url": "https://github.com/ublue-os",
+			"highlights": [
+				"[Added arch toolbox](https://github.com/ublue-os/config/pull/73)",
+				"[Added clipman for sericea](https://github.com/ublue-os/main/pull/273)",
+				"[Removed unecessary workaround](https://github.com/ublue-os/main/pull/271)"
+			],
+			"startDate": "2023-07-07",
+			"endDate": "2023-07-15"
+		},
+		{
+			"organization": "Distrobox",
+			"summary": "Use any Linux distribution inside your terminal",
+			"position": "Contributor",
+			"url": "https://github.com/89luca89/distrobox",
+			"highlights": [
+				"[Fixed --sudo when not --login](https://github.com/89luca89/distrobox/pull/860)",
+				"[Exported to host_home by default](https://github.com/89luca89/distrobox/pull/859)",
+				"[Added a flag to upgrade only running instances](https://github.com/89luca89/distrobox/pull/823)",
+				"[Fixed handling of symbolic links pointing at a non-existing file](https://github.com/89luca89/distrobox/pull/792)",
+				"[Ignored net files when unsharing nets](https://github.com/89luca89/distrobox/pull/766)",
+				"[Documented distrobox-export](https://github.com/89luca89/distrobox/pull/676)",
+				"[Documented compatibility](https://github.com/89luca89/distrobox/pull/649)",
+				"7 merged pull requests on a project with 12k+ stars"
+			],
+			"startDate": "2023-03-06",
+			"endDate": "2023-07-13"
+		},
+		{
+			"organization": "Gluetun",
+			"summary": "VPN client in a thin Docker container for multiple VPN providers, written in Go",
+			"position": "Contributor",
+			"url": "https://github.com/qdm12/gluetun",
+			"highlights": [
+				"[Added a new NordVPN API endpoint and WireGuard support](https://github.com/qdm12/gluetun/pull/1380)",
+				"[Added generics to some methods](https://github.com/qdm12/gluetun/pull/1427)",
+				"Merged into a project with 15k+ stars, carrying over the NordVPN work from my own containers"
+			],
+			"keywords": ["Go"],
+			"startDate": "2023-02-01",
+			"endDate": "2023-06-08"
+		},
+		{
+			"organization": "Datafaker",
+			"summary": "Library generates fake data",
+			"position": "Contributor",
+			"url": "https://github.com/datafaker-net/datafaker",
+			"highlights": [
+				"[Lazy cache all locale values](https://github.com/datafaker-net/datafaker/pull/82)",
+				"Drove Indeed's org-wide migration off the abandoned JavaFaker library onto Datafaker through a Sourcegraph campaign, reaching ~40% adoption",
+				"Recognized by Indeed's Open Source Team for the company's first captured contribution to an open source project it depends on"
+			],
+			"startDate": "2022-03-10",
+			"endDate": "2022-03-10"
+		},
+		{
+			"organization": "vim-numbertoggle",
+			"summary": "Toggles between hybrid and absolute line numbers automatically",
+			"position": "Contributor",
+			"url": "https://github.com/jeffkreeftmeijer/vim-numbertoggle",
+			"highlights": [
+				"[Kept norelativenumber in insert mode when focus is regained](https://github.com/jeffkreeftmeijer/vim-numbertoggle/pull/50)"
+			],
+			"startDate": "2020-05-28",
+			"endDate": "2020-12-30"
+		},
+		{
+			"organization": "intl-tel-input",
+			"summary": "JavaScript plugin for entering and validating international telephone numbers",
+			"position": "Contributor",
+			"url": "https://github.com/jackocnr/intl-tel-input",
+			"highlights": [
+				"[Fixed the bundled utils.js](https://github.com/jackocnr/intl-tel-input/pull/425)"
+			],
+			"startDate": "2016-06-08",
+			"endDate": "2016-06-08"
+		},
+		{
+			"organization": "Antergos/Cnchi",
+			"summary": "Graphical Installer for Antergos Linux",
+			"position": "Contributor",
+			"url": "https://github.com/Antergos/Cnchi",
+			"highlights": [
+				"[Fixed issues generating fallback entries](https://github.com/Antergos/Cnchi/pull/456)"
+			],
+			"startDate": "2015-10-31",
+			"endDate": "2015-10-31"
+		},
+		{
+			"organization": "PlayN",
+			"summary": "PlayN is a cross-platform Java game development library written in Java",
+			"position": "Contributor",
+			"url": "https://github.com/threerings/playn",
+			"highlights": [
+				"[Fixed run-java target](https://github.com/threerings/playn/pull/23)"
+			],
+			"startDate": "2013-06-08",
+			"endDate": "2013-06-08"
+		},
+		{
+			"organization": "ScribeJava",
+			"summary": "Simple OAuth client Java lib",
+			"url": "https://github.com/scribejava/scribejava",
+			"position": "Contributor",
+			"highlights": [
+				"[Added support for Ubuntu One](https://github.com/scribejava/scribejava/pull/298)",
+				"[Update Dropbox api](https://github.com/scribejava/scribejava/pull/259)"
+			],
+			"startDate": "2012-04-29",
+			"endDate": "2012-09-13"
+		},
+		{
+			"organization": "TestNG",
+			"position": "Contributor",
+			"summary": "TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.",
+			"url": "https://github.com/testng-team/testng",
+			"highlights": [
+				"[Fix an issue with @BeforeTest method in a super class will be called multiple time when alwayRun = true](https://github.com/testng-team/testng/pull/114)"
+			],
+			"startDate": "2011-10-25",
+			"endDate": "2011-10-28"
+		},
+		{
+			"organization": "Emesene",
+			"position": "Contributor",
+			"url": "https://github.com/emesene/emesene",
+			"summary": "Emesene is an instant messenger capable of connecting to various networks.",
+			"highlights": [
+				"[Added feature to only show notifications when available](https://github.com/emesene/emesene/pull/838)",
+				"[Hide close button tab if only has one tab](https://github.com/emesene/emesene/pull/822)"
+			],
+			"keywords": ["Python"],
+			"startDate": "2011-09-04",
+			"endDate": "2011-09-08"
+		}
+	],
+	"references": [
+		{
+			"name": "Lisa Tesar, Product Manager at Indeed",
+			"reference": "Julio is a strong leader, fantastic engineer, and wonderful teammate. As a teammate, he is always ready to support his colleagues in their immediate work and overall skill development. In addition, he is thoughtful of the collective experience of the team and is constantly looking for ways to improve processes. He is extremely collaborative, ensuring a synthesis of all related and interdependent elements of a project, especially those owned by other teams. He is thorough in his investigation and thoughtful in his recommendations."
+		},
+		{
+			"name": "Lauren Kleinert, Software Engineer Intern at Indeed",
+			"reference": "Julio is an exceptional software engineer and an outstanding mentor. His technical knowledge and problem-solving skills are top-notch. He served as my mentor during my first software engineering internship. His guidance was invaluable, and has left a lasting impact on my growth as an engineer.\n\nDuring my internship, I quickly saw how committed Julio is to improving team practices and engineering processes. He is responsive, efficient, and consistently leads team discussions with clarity and confidence.\n\nDespite the demands of his role as a staff engineer, Julio always found time to mentor me in coding best practices, system design fundamentals, and, *most importantly*, how to frame my work within the broader goals of our team and the company.\n\nJulio is an asset to any organization he joins!"
+		},
+		{
+			"name": "Andrew Roth, Software Engineer at Indeed",
+			"reference": "I really appreciate Julio's contributions when it comes to evaluating and establishing new team processes. He's never afraid to speak his mind, even when he disagrees with the proposition being discussed, but he always does so in a way that facilitates conversation rather than hinders it, and as a result, the process always comes out stronger for it. He additionally encourages the team to find ways to measure processes, even if at first glance the process feels more qualitative than quantifiable."
+		}
+	],
+	"meta": {
+		"version": "v1.0.0",
+		"canonical": "https://julioguti.dev/resume.json",
+		"lastModified": "2026-09-14T00:00:00"
+	}
 }

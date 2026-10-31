@@ -124,10 +124,14 @@
 
   <h2>References</h2>
   {% for reference in resume.references %}
-  <blockquote>
-    <p>{{ reference.reference }}</p>
-    <footer>{{ reference.name }}</footer>
-  </blockquote>
+  {# name is "Person, Role at Company"; split it so the person reads as the heading. #}
+  {% set name_parts = reference.name | split(pat=", ") %}
+  <figure class="reference">
+    <figcaption><strong>{{ name_parts | first }}</strong>{% if name_parts | length > 1 %} <span class="meta">· {{ name_parts[1:] | join(sep=", ") }}</span>{% endif %}</figcaption>
+    <blockquote>
+      {{ reference.reference | markdown | safe }}
+    </blockquote>
+  </figure>
   {% endfor %}
 </article>
 {% endblock %}
