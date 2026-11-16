@@ -988,6 +988,10 @@
 			"reference": "Julio is an exceptional software engineer and an outstanding mentor. His technical knowledge and problem-solving skills are top-notch. He served as my mentor during my first software engineering internship. His guidance was invaluable, and has left a lasting impact on my growth as an engineer.\n\nDuring my internship, I quickly saw how committed Julio is to improving team practices and engineering processes. He is responsive, efficient, and consistently leads team discussions with clarity and confidence.\n\nDespite the demands of his role as a staff engineer, Julio always found time to mentor me in coding best practices, system design fundamentals, and, *most importantly*, how to frame my work within the broader goals of our team and the company.\n\nJulio is an asset to any organization he joins!"
 		},
 		{
+			"name": "Shan Huang, Staff MLE at Indeed",
+			"reference": "Julio was the primary driver and pillar of support for the ranking + bidding model unification initiative, and his technical expertise and ownership were key to achieving multiple project milestones. The migration required extensive cross-functional collaboration and strong alignment between science and engineering. Julio consistently listened to data science needs and clearly explained the required work and potential blockers to reach our goals.\n\nThroughout the migration, we encountered numerous unexpected issues and infrastructure limitations. Even when solutions were unclear, Julio's expertise and persistence helped move us forward. He stayed closely involved in the execution across multiple workstreams, keeping all the moving parts coordinated and on track. Thanks to Julio's contributions, we achieved most of our unification goals and are now much closer to a unified ML ecosystem."
+		},
+		{
 			"name": "Andrew Roth, Software Engineer at Indeed",
 			"reference": "I really appreciate Julio's contributions when it comes to evaluating and establishing new team processes. He's never afraid to speak his mind, even when he disagrees with the proposition being discussed, but he always does so in a way that facilitates conversation rather than hinders it, and as a result, the process always comes out stronger for it. He additionally encourages the team to find ways to measure processes, even if at first glance the process feels more qualitative than quantifiable."
 		}
@@ -995,6 +999,6 @@
 	"meta": {
 		"version": "v1.0.0",
 		"canonical": "https://julioguti.dev/resume.json",
-		"lastModified": "2026-09-14T00:00:00"
+		"lastModified": "2026-11-16T00:00:00"
 	}
 }
