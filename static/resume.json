@@ -801,7 +801,9 @@
 			"startDate": "2011-08-30",
 			"endDate": "2011-09-15",
 			"roles": ["Owner"],
-			"highlights": [],
+			"highlights": [
+				"[Gameplay demo on YouTube](https://www.youtube.com/watch?v=q7Wfw8XhEAM)"
+			],
 			"type": "Mobile Game",
 			"url": "https://code.google.com/archive/p/jaturalquimia",
 			"keywords": ["Android", "Java", "Mobile Game", "Tetris", "Videogame"]
